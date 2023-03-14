@@ -1,0 +1,50 @@
+.project {
+    width: 280px;
+    background-color: #fbfbfc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projectImg {
+    width: 280px;
+    height: 280px;
+    background-color: #a6a4a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectButton {
+    border: 1px solid;
+    text-align: center;
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+    background-color: #bebbbb;
+    position: relative;
+}
+
+.projectText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.projectTitle {
+    background-color: #dbd9d9;
+    width: 80%;
+}
+
+.projectDescription {
+    background-color: #dbd9d9;
+    width: 80%;
+}

@@ -1,0 +1,35 @@
+.footer {
+    /*height: 50vh;*/
+    background-color: #b9fff4;
+    flex-wrap: wrap;
+}
+.footerContainer {
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title {
+    background-color: #bebbbb;
+}
+
+.boxContainer {
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 280px;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.box {
+    background-color: #bebbbb;
+    width: 60px;
+    height: 60px;
+}
+
+.copyright {
+    background-color: #bebbbb;
+    text-align: center;
+}

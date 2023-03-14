@@ -1,0 +1,46 @@
+.contacts {
+    /*height: 100vh;*/
+    background-color: #fed0b6;
+}
+
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    background-color: #bebbbb;
+}
+
+.form {
+    background-color: #fed0b6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 150px;
+    width: 280px;
+    margin: 50px 0;
+}
+
+.input {
+    width: 100%;
+    background-color: #bebbbb;
+    margin-bottom: 15px;
+}
+
+.textarea {
+    width: 100%;
+    height: 100%;
+    background-color: #bebbbb;
+}
+
+.submit {
+    border: 1px solid;
+    text-align: center;
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+    background-color: #bebbbb;
+}
