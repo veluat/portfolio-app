@@ -13,7 +13,7 @@ export const Footer = () => {
                     <div className={s.box}></div>
                     <div className={s.box}></div>
                 </div>
-                <span className={s.copyright}>COPYRIGHT © 2023. ALL RIGHTS RESERVED.</span>
+                <span className={s.copyright}>Copyright © 2023. All Rights Reserved</span>
             </div>
         </div>
     );

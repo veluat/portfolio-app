@@ -17,12 +17,16 @@ export const Skills = () => {
                            description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.'}/>
                     <Skill title={'Redux'}
                            description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero. Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero'}/>
+                    <Skill title={'Unit Test'}
+                           description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.'}/>
                     <Skill title={'HTML/CSS'}
                            description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.'}/>
                     <Skill title={'RestApi'}
                            description={'Lorem ipsum dolor sit amet elit suscipit orci. Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id liberoLorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id liberoLorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id liberoDonec molestie velit id libero.'}/>
-                    <Skill title={'Unit Test'}
+                    <Skill title={'Storybook'}
                            description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.'}/>
+                    <Skill title={'Git'}
+                           description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero. Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero'}/>
                 </div>
             </div>
         </div>
