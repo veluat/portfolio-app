@@ -18,9 +18,10 @@
     background-color: #fed0b6;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     height: 150px;
-    width: 280px;
+    /*width: 280px;*/
+    width: 50%;
     margin: 50px 0;
 }
 
@@ -41,11 +42,13 @@
     border: none;
 }
 
-.submit {
-    border: 1px solid;
-    text-align: center;
-    font-weight: bold;
-    width: 120px;
-    height: 30px;
+.submitBtn {
+    /*border: 1px solid;*/
+    /*text-align: center;*/
+    /*font-weight: bold;*/
+    /*width: 120px;*/
+    /*height: 30px;*/
+    /*background-color: #bebbbb;*/
+    padding: 10px 20px;
     background-color: #bebbbb;
 }
