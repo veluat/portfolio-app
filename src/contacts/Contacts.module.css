@@ -52,3 +52,9 @@
     padding: 10px 20px;
     background-color: #bebbbb;
 }
+
+@media screen and (max-width: 704px){
+    .form {
+        width: 100%;
+    }
+}
