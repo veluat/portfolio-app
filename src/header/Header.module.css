@@ -1,6 +1,8 @@
 .header {
     height: 80px;
-    background-color: #86c7e6;
+    --tw-bg-opacity: 1;
+    background-color: rgb(15 23 42/var(--tw-bg-opacity));
+    --tw-backdrop-blur: blur(16px);
     display: flex;
     justify-content: flex-end;
     align-items: center;

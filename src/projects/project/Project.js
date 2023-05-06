@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 import s from './Project.module.css';
 
 export const Project = (props) => {
     return (
         <div className={s.project}>
-            <div className={s.projectContainer}>
-                <div className={s.projectImg}>
-                    <a className={s.projectButton}>READ MORE</a>
-                </div>
+            <div className={s.projectImg} style={props.style}>
+                <button className={s.projectButton}>
+                    <span>Read more</span>
+                </button>
             </div>
             <div className={s.projectText}>
-                <h3 className={s.projectTitle}>{props.projectTitle}</h3>
-                <span className={s.projectDescription}>{props.projectDescription}</span>
+                <h3>{props.projectTitle}</h3>
+                <p>{props.projectDescription}</p>
             </div>
         </div>
     );

@@ -1,6 +1,7 @@
 import React from "react";
 import s from './RemoteWork.module.css';
 import sc from "../common/styles/Container.module.css";
+import {Title} from "../common/components/title/Title";
 
 
 export const RemoteWork = () => {
@@ -8,8 +9,10 @@ export const RemoteWork = () => {
         <div className={s.workFromHomeBlock}>
             <div className={`${sc.container} ${s.workFromHomeContainer}`}>
                 <div className={s.content}>
-                    <h2 className={s.title}>Remote work possible</h2>
-                    <a className={s.getInTouch}>Get in Touch</a>
+                    <Title className={s.title} text={'Remote work possible'}  shadowText={'Remote'}/>
+                    <button className={s.getInTouch}>
+                        <span>Get in Touch</span>
+                    </button>
                 </div>
             </div>
         </div>

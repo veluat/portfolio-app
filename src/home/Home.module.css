@@ -1,7 +1,8 @@
 .homeBlock {
     height: 100vh;
-    background-color: #febee0;
-}
+    --tw-bg-opacity: 1;
+    background-color: rgb(15 23 42/var(--tw-bg-opacity));
+    --tw-backdrop-blur: blur(16px);}
 
 .nameBlock {
     width: 300px;

@@ -1,6 +1,7 @@
 .workFromHomeBlock {
-    /*height: 50vh;*/
-    background-color: #f0ecc5;
+    --tw-bg-opacity: 1;
+    background-color: rgb(15 23 42/var(--tw-bg-opacity));
+    --tw-backdrop-blur: blur(16px);
     width: 100%;
 }
 
@@ -24,10 +25,25 @@
 }
 
 .getInTouch {
-    border: 1px solid;
+    --tw-bg-opacity: 0.9;
+    background-color: rgb(114 226 174/var(--tw-text-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(15 23 42/var(--tw-bg-opacity));
+    padding: 0.375rem 1rem;
+    position: relative;
+    display: inline-block;
+    height: auto;
+    min-height: 0;
+    width: auto;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0.25rem;
+    border-width: 0;
     text-align: center;
-    font-weight: bold;
-    width: 120px;
-    height: 30px;
-    background-color: #bebbbb;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
 }

@@ -1,6 +1,7 @@
 .skillsBlock {
-    /*min-height: 100vh;*/
-    background-color: #bfffbf;
+    --tw-bg-opacity: 1;
+    background-color: rgb(15 23 42/var(--tw-bg-opacity));
+    --tw-backdrop-blur: blur(16px);
 }
 
 .skillsContainer {
@@ -17,16 +18,34 @@
 }
 
 .skills {
-    border: 1px solid;
+    /*border: 1px solid;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
+    gap: 1.75rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    display: grid;
+    margin-top: 1rem;
+    grid-column: span 4;
+    counter-reset: section;
 }
 
-@media screen and (max-width: 704px){
-    .skills {
-        justify-content: center;
+/*@media screen and (max-width: 704px) {*/
+/*    .skills {*/
+/*        justify-content: center;*/
+/*    }*/
+/*}*/
 
+
+@media screen and (max-width: 704px) {
+    .skills {
+        grid-column: span 1 / span 1;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .skills {
+        grid-column: span 2/span 2;
     }
 }

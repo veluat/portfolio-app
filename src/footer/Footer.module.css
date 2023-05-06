@@ -1,6 +1,7 @@
 .footer {
-    /*height: 50vh;*/
-    background-color: #b9fff4;
+    --tw-bg-opacity: 1;
+    background-color: rgb(15 23 42/var(--tw-bg-opacity));
+    --tw-backdrop-blur: blur(16px);
     flex-wrap: wrap;
 }
 .footerContainer {

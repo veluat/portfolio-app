@@ -2,12 +2,13 @@ import React from "react";
 import s from './Skills.module.css';
 import sc from './../common/styles/Container.module.css'
 import {Skill} from "./skill/Skill";
+import {Title} from "../common/components/title/Title";
 
 export const Skills = () => {
     return (
         <div className={s.skillsBlock}>
             <div className={`${sc.container} ${s.skillsContainer}`}>
-                <h2 className={s.title}>Skills</h2>
+                <Title text={'My Skills'} shadowText={'Skills'}/>
                 <div className={s.skills}>
                     <Skill title={'JavaScript'}
                            description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero. Donec molestie velit id libero.'}/>

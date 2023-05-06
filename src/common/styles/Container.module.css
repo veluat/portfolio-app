@@ -1,5 +1,8 @@
 .container {
     border: 1px solid;
+    --tw-bg-opacity: 1;
+    background-color: rgb(15 23 42/var(--tw-bg-opacity));
+    --tw-backdrop-blur: blur(16px);
     height: 100%;
     width: 80%;
     margin: 0 auto;
@@ -7,4 +10,5 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-top: 6rem;
 }
