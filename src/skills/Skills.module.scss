@@ -1,0 +1,37 @@
+@import './../common/styles/sass/variables';
+
+.skillsBlock {
+  background-color: $backgroundColor;
+  --tw-backdrop-blur: blur(16px);
+
+  .skillsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .skills {
+      /*border: 1px solid;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;*/
+      gap: 1.75rem;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      display: grid;
+      margin-top: 1rem;
+      grid-column: span 4;
+      counter-reset: section;
+      @media screen and (max-width: 704px) {
+        grid-column: span 1 / span 1;
+      }
+      @media screen and (max-width: 1024px) {
+        grid-column: span 2/span 2;
+      }
+    }
+  }
+}
+
+/*@media screen and (max-width: 704px) {*/
+/*    .skills {*/
+/*        justify-content: center;*/
+/*    }*/
+/*}*/

@@ -1,0 +1,57 @@
+@import './../common/styles/sass/variables';
+@import './../common/styles/sass/mixins';
+
+.contacts {
+  background-color: $backgroundColor;
+  --tw-backdrop-blur: blur(16px);
+
+  .contactsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 150px;
+      /*width: 280px;*/
+      width: 50%;
+      margin: 50px 0;
+      @media screen and (max-width: 704px) {
+        width: 100%;
+      }
+
+      .input {
+        width: 100%;
+        height: 40px;
+        background-color: #fbfbfc;
+        margin-bottom: 10px;
+        outline: none;
+        border: none;
+      }
+
+      .textarea {
+        width: 100%;
+        height: 100%;
+        background-color: #fbfbfc;
+        outline: none;
+        border: none;
+      }
+    }
+
+    .submitBtn {
+      background-color: $primaryColor;
+      color: $backgroundColor;
+      @include btnProperties();
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,7 +1,8 @@
+@import './../common/styles/sass/variables';
+
 .header {
     height: 80px;
-    --tw-bg-opacity: 1;
-    background-color: rgb(15 23 42/var(--tw-bg-opacity));
+    background-color: $backgroundColor;
     --tw-backdrop-blur: blur(16px);
     display: flex;
     justify-content: flex-end;

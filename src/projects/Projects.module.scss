@@ -1,26 +1,24 @@
-.projectsBlock {
-    --tw-bg-opacity: 1;
-    background-color: rgb(15 23 42/var(--tw-bg-opacity));
-    --tw-backdrop-blur: blur(16px);
-}
+@import './../common/styles/sass/variables';
 
-.projectsContainer {
+.projectsBlock {
+  background-color: $backgroundColor;
+  --tw-backdrop-blur: blur(16px);
+
+  .projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
-}
 
-.projects {
-    gap: 1.75rem;
-    grid-template-columns: repeat(2,minmax(0,1fr));
-    display: grid;
-    margin-top: 1rem;
-    justify-items: center;
-}
-
-@media screen and (max-width: 704px){
     .projects {
+      gap: 1.75rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      display: grid;
+      margin-top: 1rem;
+      justify-items: center;
+      @media screen and (max-width: 704px) {
         justify-content: center;
+      }
     }
+  }
 }
 
 /*@media screen and (min-width: 640px) {*/

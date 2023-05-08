@@ -1,0 +1,33 @@
+@import './../common/styles/sass/variables';
+@import './../common/styles/sass/mixins';
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 5em;
+
+  .link {
+    a {
+      @include headerNav();
+    }
+
+  }
+
+  .btnCV {
+
+    a {
+      @include headerNav();
+    }
+
+    .resume {
+      font-weight: 700;
+      background-color: $primaryColor;
+      color: black;
+      border: 0;
+    }
+  }
+}
+
