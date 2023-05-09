@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Home.module.scss';
 import sc from '../common/styles/Container.module.scss'
-import avatar from "../assets/images/myPhoto.jpg";
+import avatar from "../assets/images/myPhotoBlWt.png";
 
 
 export const Home = () => {

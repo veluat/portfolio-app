@@ -7,7 +7,6 @@ export const Footer = () => {
     return (
         <div className={s.footer}>
             <div className={`${sc.container} ${s.footerContainer}`}>
-                <Title text={'Julia Popova'} shadowText={'Popova'}/>
                 <div className={s.boxContainer}>
                     <div className={s.box}></div>
                     <div className={s.box}></div>

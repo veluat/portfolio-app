@@ -16,7 +16,6 @@
       flex-direction: column;
       align-items: center;
       height: 150px;
-      /*width: 280px;*/
       width: 50%;
       margin: 50px 0;
       @media screen and (max-width: 704px) {
@@ -44,6 +43,12 @@
     .submitBtn {
       background-color: $primaryColor;
       color: $backgroundColor;
+
+      &:hover {
+        background: $aColor;
+        color: $backgroundColor;
+      }
+
       @include btnProperties();
     }
   }

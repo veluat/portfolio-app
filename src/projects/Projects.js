@@ -16,7 +16,7 @@ export const Projects = () => {
     return (
         <div className={s.projectsBlock}>
             <div className={`${sc.container} ${s.projectsContainer}`}>
-                <Title text={'My Projects'} shadowText={'Projects'}/>
+                <Title text={'My Projects'} shadowText={'PORTFOLIO'}/>
                 <div className={s.projects}>
                     <Project style={todolist} projectTitle={'To-do list'}
                              projectDescription={'Lorem ipsum dolor sit amet elit suscipit orci.'}/>

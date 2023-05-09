@@ -12,7 +12,7 @@
 
     .content {
       width: 100%;
-      height: 40%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -21,6 +21,13 @@
       .getInTouch {
         background-color: $primaryColor;
         color: black;
+        padding-top: 2em;
+
+        &:hover {
+          background: $aColor;
+          color: $backgroundColor;
+        }
+
         @include btnProperties();
       }
     }

@@ -12,40 +12,40 @@ import html5 from './../assets/images/html5.svg'
 import sass from './../assets/images/sass.svg'
 import storybook from './../assets/images/storybook.svg'
 import materialui from './../assets/images/materialui.svg'
-import formik from './../assets/images/formik.svg'
-import restAPI from './../assets/images/restAPI.svg'
 import unitTest from './../assets/images/unitTest.svg'
+import restAPI from './../assets/images/restAPI.png'
+import formik from './../assets/images/formik.png'
 
 export const Skills = () => {
     return (
         <div className={s.skillsBlock}>
             <div className={`${sc.container} ${s.skillsContainer}`}>
-                <Title text={'My Skills'} shadowText={'Skills'}/>
+                <Title text={'My Skills'} shadowText={'WHAT I KNOW'}/>
                 <div className={s.skills}>
                     <Skill title={'JavaScript'} src={javascript} alt={"JS"}
-                           description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero. Donec molestie velit '}/>
+                           description={'80%'} style={{width: '80%'}}/>
                     <Skill title={'TypeScript'} src={ts} alt={"TS"}
-                           description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.'}/>
+                           description={'95%'} style={{width: '95%'}}/>
                     <Skill title={'React'} src={react} alt={"React"}
-                           description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.'}/>
+                           description={'85%'} style={{width: '85%'}}/>
                     <Skill title={'Redux'} src={redux} alt={"Redux"}
-                           description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero. Lorem ipsum dolor '}/>
+                           description={'75%'} style={{width: '75%'}}/>
                     <Skill title={'Unit Test'} src={unitTest} alt={"Unit test"}
-                           description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.'}/>
+                           description={'80%'} style={{width: '80%'}}/>
                     <Skill title={'RestApi'} src={restAPI} alt={"RestApi"}
-                           description={'Lorem ipsum dolor sit amet elit suscipit orci. Lorem ipsum dolor sit amet elit suscipit orci. '}/>
+                           description={'75%'} style={{width: '75%'}}/>
                     <Skill title={'Storybook'} src={storybook} alt={"Storybook"}
-                           description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.'}/>
+                           description={'80%'} style={{width: '80%'}}/>
                     <Skill title={'Git'} src={git} alt={"Git"}
-                           description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero. Lorem ipsum dolor '}/>
+                           description={'85%'} style={{width: '85%'}}/>
                     <Skill title={'Formik'} src={formik} alt={"Formik"}
-                           description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero. Lorem ipsum dolor '}/>
+                           description={'75%'} style={{width: '75%'}}/>
                     <Skill title={'SASS'} src={sass} alt={"SASS"}
-                           description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.'}/>
+                           description={'80%'} style={{width: '80%'}}/>
                     <Skill title={'HTML5/CSS'} src={html5} alt={"HTML/CSS"}
-                           description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.'}/>
+                           description={'90%'} style={{width: '90%'}}/>
                     <Skill title={'MaterialUI'} src={materialui} alt={"MaterialUI"}
-                           description={'Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero. Lorem ipsum dolor '}/>
+                           description={'75%'} style={{width: '75%'}}/>
                 </div>
             </div>
         </div>

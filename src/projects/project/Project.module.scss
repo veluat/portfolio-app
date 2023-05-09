@@ -35,6 +35,14 @@
     .projectButton {
       background-color: $backgroundColor;
       color: $primaryColor;
+
+      &:hover {
+        background: $primaryColor;
+        color: $backgroundColor;
+        transform: scale(1.2);
+        border: 2px solid $backgroundColor;
+      }
+
       @include btnProperties();
     }
   }
