@@ -16,7 +16,7 @@ export const Home = () => {
                         <span>Hi, my name is </span>
                         <span className={s.spanPrimary}>Julia Popova</span>
                     </h1>
-                    <p className={s.description}>I am a frontend developer, and I'm very passionate and dedicated to my work.
+                    <p className={s.description}>I am a junior frontend developer, and I'm very passionate and dedicated to my work.
                         <br/>
                         I have acquired the skills and knowledge.</p>
                 </div>

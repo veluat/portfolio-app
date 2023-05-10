@@ -12,8 +12,8 @@ import html5 from './../assets/images/html5.svg'
 import sass from './../assets/images/sass.svg'
 import storybook from './../assets/images/storybook.svg'
 import materialui from './../assets/images/materialui.svg'
-import unitTest from './../assets/images/unitTest.svg'
-import restAPI from './../assets/images/restAPI.png'
+import unitTest from './../assets/images/unit.png'
+import restAPI from './../assets/images/restAPI.svg'
 import formik from './../assets/images/formik.png'
 
 export const Skills = () => {

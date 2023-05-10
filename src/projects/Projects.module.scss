@@ -2,7 +2,7 @@
 
 .projectsBlock {
   background-color: $backgroundColor;
-  --tw-backdrop-blur: blur(16px);
+  backdrop-filter: blur(16px);
 
   .projectsContainer {
     flex-direction: column;
@@ -14,21 +14,15 @@
       display: grid;
       margin-top: 1rem;
       justify-items: center;
-      @media screen and (max-width: 704px) {
-        justify-content: center;
+      @media screen and (min-width: 640px) {
+        grid-column: span 1/span 1;
+      }
+
+      @media screen and (min-width: 1024px) {
+        grid-column: span 2/span 2
       }
     }
   }
 }
 
-/*@media screen and (min-width: 640px) {*/
-/*    .projectsBlock {*/
-/*        grid-column: span 1/span 1;*/
-/*    }*/
-/*}*/
 
-/*@media screen and (min-width: 1024px) {
-    .projects {
-        grid-column: span 2/span 2
-    }
-}*/

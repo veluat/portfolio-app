@@ -11,15 +11,19 @@
   }
 
   .icon {
-    width: 50%;
+    width: 45%;
     padding: 3px;
     margin-bottom: 1em;
     background-color: $aColor;
     border-radius: 0.5rem;
 
-    /*&:hover {
-      transform: rotate(-360deg);
-    }*/
+    &:hover {
+      /*
+      transform: rotate(350deg);
+      */
+
+      animation: 1.2s ease-in-out 0s normal none infinite running shake-animation;
+    }
   }
 
   .progress {
@@ -56,5 +60,15 @@
     }
   }
 }
-
+@keyframes shake-animation {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  10%, 30% {
+    transform: rotate(-10deg);
+  }
+  20%, 40% {
+    transform: rotate(10deg);
+  }
+}
 

@@ -3,7 +3,7 @@
 
 .workFromHomeBlock {
   background-color: $backgroundColor;
-  --tw-backdrop-blur: blur(16px);
+  backdrop-filter: blur(16px);
   width: 100%;
 
   .workFromHomeContainer {

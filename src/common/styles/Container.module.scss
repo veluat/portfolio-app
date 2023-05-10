@@ -2,7 +2,7 @@
 
 .container {
     background-color: $backgroundColor;
-    --tw-backdrop-blur: blur(16px);
+    backdrop-filter: blur(16px);
     height: 100%;
     width: 80%;
     margin: 0 auto;

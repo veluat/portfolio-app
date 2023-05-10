@@ -5,7 +5,7 @@
   height: 100%;
   padding: 40px 0;
   background-color: $backgroundColor;
-  --tw-backdrop-blur: blur(16px);
+  backdrop-filter: blur(16px);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

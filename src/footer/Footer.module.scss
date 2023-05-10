@@ -2,7 +2,7 @@
 
 .footer {
   background-color: $backgroundColor;
-  --tw-backdrop-blur: blur(16px);
+  backdrop-filter: blur(16px);
 
   .footerContainer {
     display: flex;
@@ -11,25 +11,54 @@
     align-items: center;
     flex-wrap: wrap;
 
+    .name {
+      display: block;
+      margin: 0;
+      font-family: Radio Canada,sans-serif;
+      color: $aColor;
+      word-break: break-word;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.5;
+      text-decoration: inherit;
+    }
+
     .boxContainer {
-      border: 1px solid;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 280px;
+      display: inline-flex;
+      margin-bottom: 0;
       flex-wrap: wrap;
-      margin: 50px 0;
+      gap: 0.75rem;
+
+
+      @media screen and (min-width: 640px) {
+        gap: 1rem;
+
+      }
+
 
       .box {
-        background-color: #bebbbb;
-        width: 60px;
-        height: 60px;
+        background-color: $backgroundBlockColor;
+        margin: 0.25em 0 0.75em;
+        vertical-align: middle;
+        display: inline-block;
+        border-width: 1px;
+        border-color: $borderColor;
+        border-radius: 0.25rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        position: relative;
       }
     }
 
     .copyright {
-      background-color: #bebbbb;
-      text-align: center;
+      margin: 0 0 1rem;
+      font-family: Radio Canada,sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 400;
+      color: rgba(191, 190, 203, 1);
+      display: block;
+      word-break: break-word;
     }
   }
 }

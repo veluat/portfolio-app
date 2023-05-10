@@ -2,7 +2,7 @@
 
 .skillsBlock {
   background-color: $backgroundColor;
-  --tw-backdrop-blur: blur(16px);
+  backdrop-filter: blur(16px);
 
   .skillsContainer {
     flex-direction: column;
@@ -24,9 +24,3 @@
     }
   }
 }
-
-/*@media screen and (max-width: 704px) {*/
-/*    .skills {*/
-/*        justify-content: center;*/
-/*    }*/
-/*}*/

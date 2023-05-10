@@ -8,9 +8,9 @@ export const Title = (props) => {
                         <span className={s.projectSlider2}/>
                     </span>
             <h2>{props.text}</h2>
-            <span className={s.projectTitleLine}>
+            {/*<span className={s.projectTitleLine}>
                         <span className={s.projectSlider}/>
-                    </span>
+                    </span>*/}
             <span className={s.projectTitleShadow}>{props.shadowText}</span>
         </div>
     );
