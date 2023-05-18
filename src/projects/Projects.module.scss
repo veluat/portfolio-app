@@ -1,4 +1,5 @@
 @import './../common/styles/sass/variables';
+@import './../common/styles/sass/mixins';
 
 .projectsBlock {
   background-color: $backgroundColor;
@@ -7,6 +8,7 @@
   .projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
+    @include container();
 
     .projects {
       gap: 1.75rem;

@@ -1,4 +1,5 @@
 @import './../common/styles/sass/variables';
+@import './../common/styles/sass/mixins';
 
 .footer {
   background-color: $backgroundColor;
@@ -10,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    @include container();
 
     .name {
       display: block;

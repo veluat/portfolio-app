@@ -1,12 +1,11 @@
 import React from "react";
 import s from './Contacts.module.scss';
-import sc from "../common/styles/Container.module.scss";
 import {Title} from "../common/components/title/Title";
 import email from "../assets/images/phone.png";
 
 export const Contacts = () => {
     return (
-        <div className={`${sc.container} ${s.contacts}`}>
+        <div className={s.contacts}>
             <Title text={'Contacts'} shadowText={'Contact Me'}/>
             <div className={s.grid}>
                 <div className={s.contactsContainer}>

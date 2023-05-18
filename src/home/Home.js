@@ -1,13 +1,12 @@
 import React from "react";
 import s from './Home.module.scss';
-import sc from '../common/styles/Container.module.scss'
 import avatar from "../assets/images/myPhotoBlWt.png";
 
 
 export const Home = () => {
     return (
         <div className={s.homeBlock}>
-            <div className={sc.container}>
+            <div className={s.container}>
                 <div className={s.photo}>
                     <img className={s.avatar} src={avatar} alt="" />
                 </div>

@@ -9,6 +9,7 @@
   .workFromHomeContainer {
     flex-direction: column;
     justify-content: center;
+    @include container();
 
     .content {
       width: 100%;
