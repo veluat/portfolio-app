@@ -63,12 +63,15 @@
     }
 
     .photo {
-      max-width: 40%;
+      width: 40%;
       transform: none;
       background-color: $backgroundBlockColor;
       border-radius: 0.5rem;
       border: 1px solid $borderColor;
       padding: 2%;
+      @media (max-width: 768px) {
+        width: 80%;
+      }
 
       .avatar {
         max-width: 100%;
