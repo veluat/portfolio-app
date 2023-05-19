@@ -14,13 +14,17 @@ export const Projects = () => {
     };
     return (
         <div className={s.projectsBlock}>
+            <Title text={'My Projects'} shadowText={'PORTFOLIO'}/>
             <div className={s.projectsContainer}>
-                <Title text={'My Projects'} shadowText={'PORTFOLIO'}/>
                 <div className={s.projects}>
-                    <Project style={todolist} projectTitle={'To-do list'}
-                             projectDescription={'Lorem ipsum dolor sit amet elit suscipit orci.'}/>
-                    <Project style={socialNetwork} projectTitle={'Social network'}
-                             projectDescription={'Lorem ipsum dolor sit amet elit suscipit orci.'}/>
+                    <div className={s.projectGrid}>
+                        <Project style={todolist} projectTitle={'To-do list'}
+                                 projectDescription={'Lorem ipsum dolor sit amet elit suscipit orci.'}/>
+                    </div>
+                    <div className={s.projectGrid}>
+                        <Project style={socialNetwork} projectTitle={'Social network'}
+                                 projectDescription={'Lorem ipsum dolor sit amet elit suscipit orci.'}/>
+                    </div>
                 </div>
             </div>
         </div>

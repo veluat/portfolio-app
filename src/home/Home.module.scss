@@ -10,10 +10,15 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 6em;
 
   .container {
     @include container();
-
+    @media (max-width: 1503px) {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
     .textContainer {
       .nameBlock {
@@ -36,6 +41,10 @@
           line-height: 1.2;
           margin: 0 0 0.75rem;
         }
+        @media (max-width: 1503px) {
+          text-align: center;
+
+        }
 
         .spanPrimary {
           color: $primaryColor;
@@ -54,18 +63,16 @@
       }
     }
 
-
     .photo {
+      max-width: 40%;
       transform: none;
       background-color: $backgroundBlockColor;
       border-radius: 0.5rem;
       border: 1px solid $borderColor;
-      @media screen and (min-width: 768px) {
-        padding: 1.25rem
-      }
+      padding: 2%;
 
       .avatar {
-        height: 400px;
+        max-width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -77,6 +84,3 @@
     }
   }
 }
-
-
-

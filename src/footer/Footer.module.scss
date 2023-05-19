@@ -12,11 +12,12 @@
     align-items: center;
     flex-wrap: wrap;
     @include container();
+    margin-top: 4em;
 
     .name {
       display: block;
-      margin: 0;
-      font-family: Radio Canada,sans-serif;
+      margin: 0 0 0.75em;
+      font-family: Radio Canada, sans-serif;
       color: $aColor;
       word-break: break-word;
       font-weight: 700;
@@ -31,12 +32,10 @@
       flex-wrap: wrap;
       gap: 0.75rem;
 
-
       @media screen and (min-width: 640px) {
         gap: 1rem;
 
       }
-
 
       .box {
         background-color: $backgroundBlockColor;
@@ -49,18 +48,24 @@
         width: 2.5rem;
         height: 2.5rem;
         position: relative;
+
+        &:hover {
+          border: 2px solid $backgroundColor;
+        }
       }
     }
 
     .copyright {
-      margin: 0 0 1rem;
-      font-family: Radio Canada,sans-serif;
+      width: 100%;
+      margin: 1rem 0;
+      font-family: Radio Canada, sans-serif;
       font-size: 16px;
       line-height: 1.5;
       font-weight: 400;
       color: rgba(191, 190, 203, 1);
       display: block;
       word-break: break-word;
+      text-align: center;
     }
   }
 }

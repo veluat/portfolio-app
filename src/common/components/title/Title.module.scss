@@ -1,23 +1,25 @@
 .projectTitle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 170px;
-  font-family: 'Radio Canada', sans-serif;
-  font-weight: 700;
-  color: rgba(250, 250, 250, 1);
-  word-break: break-word;
-  font-size: 32px;
-  text-transform: uppercase;
   position: relative;
-  opacity: 1;
   text-align: center;
   overflow: hidden;
-  margin: 2em 0 1em;
+  padding-bottom: 3.5rem;
 
   h2 {
-    margin: 2.75rem 0 1rem 0;
+    position: relative;
+    font-family: 'Radio Canada', sans-serif;
+    font-weight: 700;
+    color: rgba(250, 250, 250, 1);
+    word-break: break-word;
+    font-size: 32px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
     padding-top: 1em;
+    z-index: 10;
+    @media screen and (min-width: 768px) {
+      font-size: 36px;
+      line-height: 1.2;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -32,10 +34,8 @@
     height: 0.375rem;
     display: inline-block;
     z-index: 10;
-    position: absolute;
-    transform: translate(0%, 70%);
-    --tw-gradient-stops: transparent, #72e2ae, transparent;
-
+    position: relative;
+    transform: translate(0, -400%);
 
     .projectSlider {
       background-color: rgba(114, 226, 174, 1);
@@ -48,73 +48,38 @@
       width: 0.5rem;
       animation: titleSliderAnimation 3s ease-in-out infinite;
       animation-direction: alternate-reverse;
-
-    }
-  }
-
-  .projectTitleLine2 {
-    background-color: rgba(114, 226, 174, 0.2);
-    border-radius: 9999px;
-    overflow: hidden;
-    width: 8rem;
-    height: 0.375rem;
-    display: inline-block;
-    z-index: 10;
-    position: absolute;
-    transform: translate(0, 2720%);
-
-    .projectSlider2 {
-      background-color: rgba(114, 226, 174, 1);
-      border-radius: 9999px;
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 0.5rem;
-      animation: titleSliderAnimation2 3s ease-in-out infinite;
-      animation-direction: alternate-reverse;
-
     }
   }
 
   .projectTitleShadow {
+    width: 100%;
     will-change: transform;
     opacity: 0.05;
     color: rgba(250, 250, 250, 1);
     text-transform: uppercase;
     font-weight: 700;
-    transform: translate(-50%, -128%) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1.1);
+    transform: translate(-50%, -5%) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
     font-size: 8rem;
     line-height: 1;
     z-index: 0;
     left: 50%;
     top: -0.5rem;
-    --tw-translate-x: -50%;
-    position: inherit;
+    position: absolute;
     pointer-events: none;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
 @keyframes titleSliderAnimation {
   0% {
-    transform: translateX(-6px);
+    transform: translateX(130px);
   }
   100% {
-    transform: translateX(128px);
+    transform: translateX(-10px);
   }
 }
-
-@keyframes titleSliderAnimation2 {
-  0% {
-    transform: translateX(128px);
-  }
-  100% {
-    transform: translateX(-6px);
-  }
-
-}
-
 
 
 

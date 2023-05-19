@@ -4,6 +4,7 @@
 .skillsBlock {
   background-color: $backgroundColor;
   backdrop-filter: blur(16px);
+  margin-bottom: 6em;
 
   .skillsContainer {
     flex-direction: column;
@@ -11,17 +12,15 @@
     @include container();
 
     .skills {
+      display: grid;
       gap: 1.75rem;
       grid-template-columns: repeat(4, minmax(0, 1fr));
-      display: grid;
       margin-top: 1rem;
-      grid-column: span 4;
-      counter-reset: section;
-      @media screen and (max-width: 704px) {
-        grid-column: span 1 / span 1;
-      }
-      @media screen and (max-width: 1024px) {
-        grid-column: span 2/span 2;
+
+      .skillGrid {
+        @media screen and (max-width: 640px) {
+          grid-column: span 2/span 2;
+        }
       }
     }
   }

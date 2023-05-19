@@ -1,11 +1,13 @@
 @import './../../common/styles/sass/variables';
 
 .skill {
+  width: 100%;
   opacity: 1;
   transform: none;
   background-color: $backgroundBlockColor;
   border-radius: 0.5rem;
   border: 1px solid $borderColor;
+
   @media screen and (min-width: 768px) {
     padding: 1.25rem
   }
@@ -18,25 +20,17 @@
     border-radius: 0.5rem;
 
     &:hover {
-      /*
-      transform: rotate(350deg);
-      */
-
       animation: 1.2s ease-in-out 0s normal none infinite running shake-animation;
     }
   }
 
   .progress {
-
     .h3 {
-
     }
 
     .primary {
       color: $primaryColor;
       padding: 0 0 1.25rem;
-
-
     }
 
     .progressBar {
@@ -60,6 +54,7 @@
     }
   }
 }
+
 @keyframes shake-animation {
   0%, 50%, 100% {
     transform: rotate(0deg);
