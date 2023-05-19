@@ -47,27 +47,26 @@
         width: 2.5rem;
         height: 2.5rem;
         position: relative;
-
         &:hover {
-          border: 2px solid $backgroundColor;
+          transform: scale(1.2);
         }
       }
     }
-
-    .copyright {
-      width: 100%;
-      margin: 1rem 0;
-      font-family: Radio Canada, sans-serif;
-      font-size: 16px;
-      line-height: 1.5;
-      font-weight: 400;
-      color: rgba(191, 190, 203, 1);
-      display: block;
-      word-break: break-word;
-      text-align: center;
+      .copyright {
+        width: 100%;
+        margin: 1rem 0;
+        font-family: Radio Canada, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 400;
+        color: rgba(191, 190, 203, 1);
+        display: block;
+        word-break: break-word;
+        text-align: center;
+      }
     }
   }
-}
+
 
 
 

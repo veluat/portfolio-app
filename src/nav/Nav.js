@@ -10,8 +10,6 @@ export const Nav = () => {
                 <a href="">Projects</a>
                 <a href="">Remote work</a>
                 <a href="">Contacts</a>
-            </div>
-            <div className={s.btnCV}>
                 <a className={s.resume} href="">Download resume</a>
             </div>
         </div>

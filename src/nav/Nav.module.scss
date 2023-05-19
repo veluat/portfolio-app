@@ -8,25 +8,11 @@
   display: flex;
   @media screen and (min-width: 640px) {
     align-items: center;
+    justify-content: center;
     gap: 2rem;
   }
 
   .link {
-    a {
-      @include headerNav();
-
-      &:hover {
-        background: $aColor;
-        color: $backgroundColor;
-      }
-    }
-  }
-
-  .btnCV {
-    a {
-      @include headerNav();
-    }
-
     .resume {
       font-weight: 700;
       background-color: $primaryColor;
@@ -34,9 +20,18 @@
       border: 0;
 
       &:hover {
-        transform: scale(1.2);
         background: $aColor;
       }
+    }
+    a {
+      @include headerNav();
+
+      &:hover {
+        background: $aColor;
+        color: $backgroundColor;
+      }
+
+
     }
   }
 }

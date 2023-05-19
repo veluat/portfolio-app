@@ -7,6 +7,7 @@
   border-radius: 0.5rem;
   border: 1px solid $borderColor;
   width: 100%;
+
   @media screen and (min-width: 768px) {
     padding: 1.25rem
   }
@@ -34,22 +35,20 @@
     }
 
     .projectButton {
+      @include btnProperties();
+      color: $aColor;
+      border: $backgroundColor 1px solid;
+      border-radius: 0.25rem;
       background-color: $backgroundColor;
-      color: $primaryColor;
 
       &:hover {
-        background: $primaryColor;
+        background: $aColor;
         color: $backgroundColor;
-        transform: scale(1.2);
-        border: 2px solid $backgroundColor;
       }
-
-      @include btnProperties();
     }
   }
 
   .projectText {
     margin-top: 1rem;
-
   }
 }

@@ -1,8 +1,9 @@
+@import './../../../common/styles/sass/variables';
+
 .projectTitle {
   position: relative;
   text-align: center;
   overflow: hidden;
-  padding-bottom: 3.5rem;
 
   h2 {
     position: relative;
@@ -36,6 +37,9 @@
     z-index: 10;
     position: relative;
     transform: translate(0, -400%);
+    @media screen and (max-width: 768px) {
+      transform: translate(0, -200%);
+    }
 
     .projectSlider {
       background-color: rgba(114, 226, 174, 1);
@@ -66,8 +70,12 @@
     top: -0.5rem;
     position: absolute;
     pointer-events: none;
-    @media screen and (max-width: 768px) {
-      display: none;
+    @media screen and (max-width: 952px) {
+      //display: none;
+      transform: translate(-50%, 90%) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+      font-size: 2rem;
+      color: $primaryColor;
+      opacity: 0.2;
     }
   }
 }

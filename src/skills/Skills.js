@@ -62,7 +62,7 @@ export const Skills = () => {
                                description={'80%'} style={{width: '80%'}}/>
                     </div>
                     <div className={s.skillGrid}>
-                        <Skill title={'HTML5/CSS'} src={html5} alt={"HTML/CSS"}
+                        <Skill title={'HTML5/ CSS'} src={html5} alt={"HTML/CSS"}
                                description={'90%'} style={{width: '90%'}}/>
                     </div>
                     <div className={s.skillGrid}>
