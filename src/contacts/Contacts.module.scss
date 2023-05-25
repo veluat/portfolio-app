@@ -41,9 +41,9 @@
             position: relative;
             transform: translate(0, 0);
 
-            .slider {
-              @include slider();
-            }
+            //.slider {
+            //  @include slider();
+            //}
           }
 
           .contactBlocks {

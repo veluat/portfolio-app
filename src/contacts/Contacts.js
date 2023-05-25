@@ -3,7 +3,7 @@ import s from './Contacts.module.scss';
 import {Title} from "../common/components/title/Title";
 import phone from "../assets/images/phone.png";
 import email from "../assets/images/email.png";
-import address from "../assets/images/address5.png";
+import address from "../assets/images/address.png";
 
 export const Contacts = () => {
     return (
@@ -18,7 +18,7 @@ export const Contacts = () => {
                                 non praesentium qui facere.
                             </p>
                             <span className={s.emptySpan}>
-                                <span className={s.slider}/>
+                               {/* <span className={s.slider}/>*/}
                         </span>
                             <div className={s.contactBlocks}>
                                 <div className={s.contactBlock}>

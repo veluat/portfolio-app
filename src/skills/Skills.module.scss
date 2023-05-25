@@ -16,11 +16,16 @@
       gap: 1.75rem;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       margin-top: 1rem;
-
+      @media screen and (max-width: 865px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      @media screen and (max-width: 664px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      @media screen and (max-width: 332px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
       .skillGrid {
-        @media screen and (max-width: 664px) {
-          grid-column: span 2/span 2;
-        }
       }
     }
   }
