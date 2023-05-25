@@ -1,7 +1,9 @@
 import React from "react";
 import s from './Contacts.module.scss';
 import {Title} from "../common/components/title/Title";
-import email from "../assets/images/phone.png";
+import phone from "../assets/images/phone.png";
+import email from "../assets/images/email.png";
+import address from "../assets/images/address5.png";
 
 export const Contacts = () => {
     return (
@@ -15,11 +17,13 @@ export const Contacts = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis, iusto harum possimus
                                 non praesentium qui facere.
                             </p>
-                            <span className={s.emptySpan}></span>
+                            <span className={s.emptySpan}>
+                                <span className={s.slider}/>
+                        </span>
                             <div className={s.contactBlocks}>
                                 <div className={s.contactBlock}>
                                 <span className={s.icon}>
-                                    <svg className={s.svg}></svg>
+                                    <img className={s.svg} src={phone} alt={''}></img>
                                 </span>
                                     <div className={s.contactTitle}>
                                         <h3>Contact on phone</h3>
@@ -28,7 +32,7 @@ export const Contacts = () => {
                                 </div>
                                 <div className={s.contactBlock}>
                                 <span className={s.icon}>
-                                    <svg className={s.svg}></svg>
+                                    <img className={s.svg} src={email} alt={''}></img>
                                 </span>
                                     <div className={s.contactTitle}>
                                         <h3>Contact on mail</h3>
@@ -37,7 +41,7 @@ export const Contacts = () => {
                                 </div>
                                 <div className={s.contactBlock}>
                                 <span className={s.icon}>
-                                    <svg className={s.svg}></svg>
+                                    <img className={s.svg} src={address} alt={''}></img>
                                 </span>
                                     <div className={s.contactTitle}>
                                         <h3>Contact address</h3>
@@ -73,5 +77,6 @@ export const Contacts = () => {
                 </div>
             </div>
         </div>
-    );
+    )
+        ;
 }
