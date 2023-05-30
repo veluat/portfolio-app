@@ -10,10 +10,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 6em;
+  @include marginBottom();
 
   .container {
     @include container();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     @media (max-width: 1499px) {
       justify-content: center;
       align-items: center;
@@ -87,6 +91,7 @@
       }
     }
   }
+
 }
 
 @keyframes avaAnimation {

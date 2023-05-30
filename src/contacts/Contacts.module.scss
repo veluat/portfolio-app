@@ -109,7 +109,6 @@
         opacity: 1;
         transform: none;
 
-
         @media screen and (min-width: 1024px) {
           grid-column: span 5/span 5;
         }
@@ -193,14 +192,12 @@
             margin-top: calc(1rem * calc(1));
             margin-bottom: calc(1rem * 0);
             padding: 0.625rem 1.25rem;
-            @include btnProperties;
+            @include btnProperties();
 
             &:hover {
               background: $aColor;
               color: $backgroundColor;
             }
-
-            @include btnProperties();
           }
         }
       }

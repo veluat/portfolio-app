@@ -4,7 +4,7 @@
 .projectsBlock {
   background-color: $backgroundColor;
   backdrop-filter: blur(16px);
-  margin-bottom: 6em;
+  @include marginBottom();
 
   .projectsContainer {
     flex-direction: column;

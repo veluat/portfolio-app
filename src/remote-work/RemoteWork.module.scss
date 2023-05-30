@@ -5,7 +5,7 @@
   background-color: $backgroundColor;
   backdrop-filter: blur(16px);
   width: 100%;
-  margin-bottom: 6em;
+  @include marginBottom();
 
   .workFromHomeContainer {
     flex-direction: column;
@@ -24,13 +24,12 @@
         background-color: $primaryColor;
         color: black;
         padding-top: 2em;
+        @include btnProperties();
 
         &:hover {
           background: $aColor;
           color: $backgroundColor;
         }
-
-        @include btnProperties();
       }
     }
   }
