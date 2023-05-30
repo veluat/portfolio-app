@@ -7,14 +7,11 @@
   border-radius: 0.5rem;
   border: 1px solid $borderColor;
   width: 100%;
+  padding: 1.25rem;
 
   &:hover {
     transform: translate(0, -5%);
     border-color: $primaryColor;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding: 1.25rem
   }
 
   .projectImg {
