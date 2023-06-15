@@ -4,6 +4,7 @@ import {Project} from './project/Project';
 import {Title} from '../common/components/title/Title';
 import todoImage from './../assets/images/todolist.jpg';
 import socialImage from './../assets/images/social-network.jpg';
+import Fade from 'react-reveal/Fade';
 
 export const Projects = () => {
     const todolist = {
@@ -15,6 +16,7 @@ export const Projects = () => {
     return (
         <div className={s.projectsBlock}>
             <Title text={'My Projects'} shadowText={'PORTFOLIO'}/>
+            <Fade bottom>
             <div className={s.projectsContainer}>
                 <div className={s.projects}>
                     <div className={s.projectGrid}>
@@ -27,6 +29,7 @@ export const Projects = () => {
                     </div>
                 </div>
             </div>
+            </Fade>
         </div>
     );
 }

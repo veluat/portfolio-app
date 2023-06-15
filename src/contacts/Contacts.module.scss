@@ -157,7 +157,7 @@
               overflow: visible;
 
               &:focus {
-                border-color: $primaryColor;
+                border: 1px solid $primaryColor;
                 outline: none;
               }
             }
@@ -180,7 +180,7 @@
               overflow: auto;
 
               &:focus {
-                border-color: $primaryColor;
+                border: 1px solid $primaryColor;
                 outline: none;
               }
             }

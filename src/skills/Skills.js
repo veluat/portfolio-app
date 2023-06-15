@@ -19,6 +19,7 @@ export const Skills = () => {
     return (
         <div className={s.skillsBlock}>
             <Title text={'My Skills'} shadowText={'WHAT I KNOW'}/>
+
             <div className={s.skillsContainer}>
                 <div className={s.skills}>
                     <div className={s.skillGrid}>
