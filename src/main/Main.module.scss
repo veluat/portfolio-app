@@ -26,7 +26,7 @@
 
     .textContainer {
       .nameBlock {
-        animation: textAnimation 3s ease-in-out 1;
+        //animation: textAnimation 3s ease-in-out 1;
         display: block;
         text-align: start;
         color: $aColor;
@@ -43,12 +43,23 @@
           margin: 0.75rem 0;
         }
 
-        .spanPrimary {
-          color: $primaryColor;
+        span {
+          @media (max-width: 640px) {
+            display: block;
+          }
+          &:nth-child(2) {
+            color: $primaryColor;
+
+          }
         }
+
+        //.spanPrimary {
+        //  color: $primaryColor;
+        //}
       }
 
       .description {
+        //animation: textAnimation 3s ease-in-out 1;
         margin-bottom: 0;
         line-height: 1.5;
         opacity: 1;
@@ -74,6 +85,11 @@
       }
       @media (max-width: 767px) {
         width: 80%;
+      }
+      &:hover {
+        transform: translate(0, -5%);
+        transition: 0.3s;
+        border-color: $primaryColor;
       }
 
       .avatar {
@@ -103,11 +119,11 @@
   }
 }
 
-@keyframes textAnimation {
-  0% {
-    transform: translateY(-500px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
+//@keyframes textAnimation {
+//  0% {
+//    transform: translateY(-600px);
+//  }
+//  100% {
+//    transform: translateY(0);
+//  }
+//}

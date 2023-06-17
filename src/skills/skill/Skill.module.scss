@@ -11,6 +11,7 @@
 
   &:hover {
     transform: translate(0, -5%);
+    transition: 0.3s;
     border-color: $primaryColor;
   }
 

@@ -6,7 +6,6 @@ import email from "../assets/images/email.png";
 import address from "../assets/images/address.png";
 import Fade from 'react-reveal/Fade';
 
-
 export const Contacts = () => {
     return (
         <div className={s.contacts}>
