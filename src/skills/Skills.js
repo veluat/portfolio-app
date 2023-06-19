@@ -17,7 +17,7 @@ import formik from './../assets/images/formik.png'
 
 export const Skills = () => {
     return (
-        <div className={s.skillsBlock}>
+        <div id="skills" className={s.skillsBlock}>
             <Title text={'My Skills'} shadowText={'WHAT I KNOW'}/>
                 <div className={s.skillsContainer}>
                     <div className={s.skills}>

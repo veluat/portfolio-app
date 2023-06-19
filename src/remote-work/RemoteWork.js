@@ -4,7 +4,7 @@ import {Title} from "../common/components/title/Title";
 
 export const RemoteWork = () => {
     return (
-        <div className={s.workFromHomeBlock}>
+        <div id="remoteWork" className={s.workFromHomeBlock}>
             <Title text={'Remote work possible'} shadowText={'Freelance'}/>
             <div className={s.workFromHomeContainer}>
                 <div className={s.content}>
