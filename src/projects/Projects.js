@@ -14,7 +14,7 @@ export const Projects = () => {
         backgroundImage: 'url(' + socialImage + ')',
     };
     return (
-        <div className={s.projectsBlock}>
+        <div id="projects" className={s.projectsBlock}>
             <Title text={'My Projects'} shadowText={'PORTFOLIO'}/>
             <Fade bottom>
             <div className={s.projectsContainer}>
