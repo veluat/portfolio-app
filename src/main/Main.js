@@ -3,6 +3,10 @@ import s from './Main.module.scss';
 import avatar from "../assets/images/myPhotoBlWt.png";
 import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
+import telegram from "../assets/images/telegram.png";
+import github from "../assets/images/github.png";
+import linkedin from "../assets/images/linkedin.png";
+import instagram from "../assets/images/instagram.png";
 
 export const Main = () => {
     return (
@@ -22,12 +26,31 @@ export const Main = () => {
                                 eraseDelay={2000}
                                 typingDelay={100}
                             />
-                            {/*<span className={s.spanPrimary}>Julia Popova</span>*/}
                         </h1>
-                       <p className={s.description}>I am a frontend developer, and I'm very passionate and dedicated
+                        <p className={s.description}>I am a frontend developer, and I'm very passionate and dedicated
                             to my work.
                             <br/>
                             I have acquired the skills and knowledge.</p>
+                        <div className={s.contactsIcons}>
+                            <span className={s.emptySpan}></span>
+                            <div className={s.boxContainer}>
+                                <div className={s.box}>
+                                    <img className={s.icon} src={telegram} alt={''}></img>
+                                </div>
+                                <div className={s.box}>
+                                    <img className={s.icon} src={github} alt={''}></img>
+                                </div>
+                                <div className={s.box}>
+                                    <img className={s.icon} src={linkedin} alt={''}></img>
+                                </div>
+                                <div className={s.box}>
+                                    <img className={s.icon} src={instagram} alt={''}></img>
+                                </div>
+                            </div>
+                        </div>
+                        <button className={s.getInTouch}>
+                            <span>Hire me</span>
+                        </button>
                     </div>
                 </div>
             </Fade>

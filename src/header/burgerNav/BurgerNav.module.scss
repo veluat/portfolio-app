@@ -2,37 +2,56 @@
 @import 'src/common/styles/sass/variables';
 
 .burgerNav {
-  width: 300px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: nowrap;
-  display: flex;
+  width: 100%;
+  height: 100%;
 
-  /*@media screen and (min-width: 640px) {
+  .burgerNavItems {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    right: 50px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: stretch;
-    justify-content: left;
-    gap: 2rem;
-  }*/
+    flex-wrap: nowrap;
+    transform: translate(0, -220px);
+    transition: 0.7s;
+
+    a {
+      @include headerNav();
+      background-color: rgba(15, 23, 42, 1);
+
+      &:hover {
+        background-color: $aColor;
+        color: $backgroundColor;
+      }
+    }
+
+    .active {
+      background-color: $aColor;
+      color: $backgroundColor;
+    }
+  }
+
+  .show {
+    transform: translate(0, 0);
+  }
+
+  .burgerBtn {
+    width: 30px;
+    height: 30px;
+    background-color: $primaryColor;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: $borderColor 1px solid;
+    border-radius: 0.25rem;
+  }
+
   @media screen and (min-width: 795px) {
     display: none;
   }
-
-
-  a {
-    @include headerNav();
-
-    .active {
-      background: $aColor;
-      color: $backgroundColor;
-    }
-
-    &:hover {
-      background: $aColor;
-      color: $backgroundColor;
-    }
-  }
-
-
 }
 

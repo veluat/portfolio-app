@@ -8,11 +8,7 @@
   flex-wrap: nowrap;
   display: flex;
   flex-direction: row;
-  //@media screen and (min-width: 640px) {
-  //  align-items: center;
-  //  justify-content: center;
-  //  gap: 2rem;
-  //}
+
   @media screen and (max-width: 795px) {
     display: none;
   }
@@ -30,35 +26,14 @@
       color: $backgroundColor;
     }
   }
+
   .resume {
     border: 1px solid $primaryColor;
-  }
 
-  //.link {
-  //  a {
-  //    @include headerNav();
-  //
-  //    .active {
-  //      background: $aColor;
-  //      color: $backgroundColor;
-  //    }
-  //    &:hover {
-  //      background: $aColor;
-  //      color: $backgroundColor;
-  //    }
-  //  }
-  //  .resume {
-  //    //font-weight: 700;
-  //    //background-color: $primaryColor;
-  //    //color: black;
-  //    border: 1px solid $primaryColor;
-  //
-  //    &:hover {
-  //      background: $aColor;
-  //    }
-  //  }
-  //
-  //
-  //}
+    &:hover {
+      border: $borderColor 1px solid;
+      border-radius: 0.25rem;
+    }
+  }
 }
 

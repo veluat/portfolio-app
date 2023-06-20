@@ -21,7 +21,6 @@ export const Contacts = () => {
                                     non praesentium qui facere.
                                 </p>
                                 <span className={s.emptySpan}>
-                               {/* <span className={s.slider}/>*/}
                         </span>
                                 <div className={s.contactBlocks}>
                                     <div className={s.contactBlock}>

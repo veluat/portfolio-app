@@ -9,7 +9,7 @@ export const RemoteWork = () => {
             <div className={s.workFromHomeContainer}>
                 <div className={s.content}>
                     <button className={s.getInTouch}>
-                        <span>Get in Touch</span>
+                        <span>Hire me</span>
                     </button>
                 </div>
             </div>
