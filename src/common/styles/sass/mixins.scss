@@ -22,10 +22,13 @@
   }
 }
 
-@mixin marginBottom() {
+@mixin margin() {
   margin-bottom: 6em;
+  padding-top: 8rem;
   @media screen and (max-width: 952px) {
     margin-bottom: 2em;
+    padding-top: 6rem;
+
   }
 }
 
@@ -61,7 +64,7 @@
 @mixin headerNav() {
   color: $aColor;
   padding: 0.375rem 0.5rem;
-  margin-right: 1.5rem;
+  margin-left: 1.5rem;
   display: inline-block;
   text-decoration: none;
   font-family: Radio Canada, sans-serif;

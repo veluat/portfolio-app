@@ -5,39 +5,7 @@
   width: 100%;
   height: 100%;
 
-  .burgerNavItems {
-    position: absolute;
-    top: 20px;
-    left: 50px;
-    right: 50px;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: nowrap;
-    transform: translate(0, -220px);
-    transition: 0.7s;
 
-    a {
-      @include headerNav();
-      background-color: rgba(15, 23, 42, 1);
-
-      &:hover {
-        background-color: $aColor;
-        color: $backgroundColor;
-      }
-    }
-
-    .active {
-      background-color: $aColor;
-      color: $backgroundColor;
-    }
-  }
-
-  .show {
-    transform: translate(0, 0);
-  }
 
   .burgerBtn {
     width: 30px;
@@ -50,7 +18,7 @@
     border-radius: 0.25rem;
   }
 
-  @media screen and (min-width: 795px) {
+  @media screen and (min-width: 815px) {
     display: none;
   }
 }

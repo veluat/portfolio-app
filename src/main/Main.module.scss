@@ -4,14 +4,15 @@
 .mainBlock {
   width: 100%;
   height: 100%;
-  padding: 120px 0;
+  padding-top: 160px;
+  padding-bottom: 120px;
+  ///padding: 180px 0;
   background-color: $backgroundColor;
   backdrop-filter: blur(16px);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  @include marginBottom();
-
+  @include margin();
   .container {
     @include container();
     display: flex;

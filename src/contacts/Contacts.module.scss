@@ -4,7 +4,8 @@
 .contacts {
   background-color: $backgroundColor;
   backdrop-filter: blur(16px);
-
+  @include margin();
+margin-bottom: 0;
   .container {
     @include container();
 

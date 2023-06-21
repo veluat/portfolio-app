@@ -1,22 +1,39 @@
 @import 'src/common/styles/sass/variables';
 @import 'src/common/styles/sass/mixins';
 
-.header {
-  min-height: 80px;
-  background-color: $backgroundColor;
-  backdrop-filter: blur(16px);
+.headerWrapper {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
-  flex-wrap: nowrap;
-  opacity: 0.9;
-  position: fixed;
-  z-index: 9999;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  position: sticky;
+  z-index: 3;
   left: 0;
   right: 0;
-  @include marginBottom();
+  top: 0;
 
-  @media screen and (max-width: 795px) {
-    justify-content: flex-start;
+  .border {
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: rgba(255, 255, 255, 0.2);
+    //@media screen and (max-width: 796px) {
+    //  display: none;
+    //}
+  }
+  .header {
+    min-height: 80px;
+    width: 100%;
+    background-color: $backgroundColor;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    @media screen and (max-width: 814px) {
+      justify-content: flex-start;
+    }
   }
 }

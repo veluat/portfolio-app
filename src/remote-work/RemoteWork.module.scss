@@ -5,7 +5,7 @@
   background-color: $backgroundColor;
   backdrop-filter: blur(16px);
   width: 100%;
-  @include marginBottom();
+  @include margin();
 
   .workFromHomeContainer {
     flex-direction: column;
