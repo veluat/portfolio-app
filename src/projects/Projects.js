@@ -20,12 +20,12 @@ export const Projects = () => {
                 <div className={s.projectsContainer}>
                     <div className={s.projects}>
                         <div className={s.projectGrid}>
-                            <Project style={todolist} projectTitle={'To-do list'}
-                                     projectDescription={'Lorem ipsum dolor sit amet elit suscipit orci.'}/>
+                            <Project style={todolist} projectTitle={'TO-DO list'}
+                                     projectDescription={`Create, edit and delete TO-DO lists, manage tasks that can be customized for you. Used universal components, React, Redux Toolkit, ReduxThunk, Axios, TS, Formik, Material UI, Axios, ReduxThunk`}/>
                         </div>
                         <div className={s.projectGrid}>
                             <Project style={socialNetwork} projectTitle={'Social network'}
-                                     projectDescription={'Lorem ipsum dolor sit amet elit suscipit orci.'}/>
+                                     projectDescription={`A social network that implements adding and deleting friends, authorization, sending messages etc. Used class and functional components, React, Redux, ReduxThunk, Axios, Redux-Form and other libraries`}/>
                         </div>
                     </div>
                 </div>

@@ -16,9 +16,9 @@ export const Contacts = () => {
                         <div className={s.contactsContainer}>
                             <div className={s.contactInfo}>
                                 <h3>Contact Information</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis, iusto harum
-                                    possimus
-                                    non praesentium qui facere.
+                                <p>I am based in Minsk, Belarus.
+                                    You can leave your questions and suggestions.
+                                    I will gladly review them.
                                 </p>
                                 <span className={s.emptySpan}>
                         </span>

@@ -21,17 +21,23 @@ export const Main = () => {
                         <h1 className={s.nameBlock}>
                             <span>Hi, I am </span>
                             <ReactTypingEffect
-                                text={["Julia Popova", "Frontend",  "Developer"]}
+                                text={["Julia Popova", "Frontend Developer"]}
                                 speed={100}
                                 eraseSpeed={40}
-                                eraseDelay={1500}
+                                eraseDelay={1200}
                                 typingDelay={100}
                             />
                         </h1>
                         <p className={s.description}>I am a frontend developer, and I'm very passionate and dedicated
                             to my work.
                             <br/>
-                            I have acquired the skills and knowledge.</p>
+                            I have acquired the skills and knowledge in creating SPA
+                            <br/>
+                            using React, Redux/Redux Toolkit, TypeScript.
+                            <br/>
+                            I would like to find full-time employment or project work in a company
+                            <br/>
+                            with a modern approach to development and a collaborative team.</p>
                         <div className={s.contactsIcons}>
                             <span className={s.emptySpan}></span>
                             <div className={s.boxContainer}>

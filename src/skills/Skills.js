@@ -34,7 +34,7 @@ export const Skills = () => {
                                description={'85%'} style={{width: '85%'}}/>
                     </div>
                     <div className={s.skillGrid}>
-                        <Skill title={'Redux'} src={redux} alt={"Redux"}
+                        <Skill title={'Redux/RTK'} src={redux} alt={"Redux"}
                                description={'75%'} style={{width: '75%'}}/>
                     </div>
                     <div className={s.skillGrid}>
