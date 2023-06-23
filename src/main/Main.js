@@ -7,6 +7,7 @@ import telegram from "../assets/images/telegram.png";
 import github from "../assets/images/github.png";
 import linkedin from "../assets/images/linkedin.png";
 import instagram from "../assets/images/instagram.png";
+import {Link} from "react-scroll";
 
 export const Main = () => {
     return (
@@ -20,10 +21,10 @@ export const Main = () => {
                         <h1 className={s.nameBlock}>
                             <span>Hi, I am </span>
                             <ReactTypingEffect
-                                text={["Julia Popova", "Frontend Developer"]}
+                                text={["Julia Popova", "Frontend",  "Developer"]}
                                 speed={100}
-                                eraseSpeed={50}
-                                eraseDelay={2000}
+                                eraseSpeed={40}
+                                eraseDelay={1500}
                                 typingDelay={100}
                             />
                         </h1>
@@ -52,6 +53,11 @@ export const Main = () => {
                             <span>Hire me</span>
                         </button>
                     </div>
+                </div>
+                <div className={s.scroll}>
+                    <Link to="skills" spy={true} smooth={true} offset={0} duration={500}>
+                        Scroll down
+                    </Link>
                 </div>
             </Fade>
         </div>

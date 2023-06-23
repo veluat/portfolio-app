@@ -24,10 +24,11 @@
 
 @mixin margin() {
   margin-bottom: 6em;
-  padding-top: 8rem;
+  //padding-top: 100px;
+  padding-top: 10em;
   @media screen and (max-width: 952px) {
     margin-bottom: 2em;
-    padding-top: 6rem;
+    padding-top: 6em;
 
   }
 }

@@ -13,6 +13,30 @@
   justify-content: space-between;
   align-items: flex-start;
   @include margin();
+
+  .scroll {
+    opacity: 1;
+    transform: none;
+    text-align: center;
+    width: 100%;
+    bottom: 25px;
+    top: auto;
+    left: 0;
+    position: absolute;
+
+    a {
+      @include headerNav();
+      margin-left: 0;
+      color: $textColor;
+      animation: blink 1.5s infinite;
+      animation-direction: alternate-reverse;
+      &:hover {
+        border-color: $primaryColor;
+        animation: none;
+      }
+    }
+  }
+
   .container {
     @include container();
     display: flex;
@@ -156,6 +180,9 @@
       @media (max-width: 1568px) {
         width: 30rem;
       }
+      @media (max-width: 1499px) {
+        width: 25rem;
+      }
       @media (max-width: 767px) {
         width: 80%;
       }
@@ -190,5 +217,14 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
   }
 }

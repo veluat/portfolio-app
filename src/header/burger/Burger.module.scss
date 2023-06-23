@@ -1,0 +1,47 @@
+@import 'src/common/styles/sass/mixins';
+@import 'src/common/styles/sass/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: default;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: $backgroundBlockColor;
+  border-radius: 0.5rem;
+  border: 1px solid $borderColor;
+  width: 45px;
+  height: 45px;
+
+  .block {
+    width: 25px;
+    height: 2px;
+    background-color: $primaryColor;
+  }
+
+  .close1 {
+    width: 30px;
+    height: 2px;
+    background-color: $primaryColor;
+    text-align: center;
+    transform: rotate(46deg) translate(4px, 3px);
+    justify-content: stretch;
+    align-items: stretch;
+
+  }
+  .close2 {
+    width: 30px;
+    height: 2px;
+    background-color: $primaryColor;
+    text-align: center;
+    transform: rotate(-46deg) translate(4px, -3px);
+    justify-content: stretch;
+    align-items: stretch;
+
+  }
+}
+

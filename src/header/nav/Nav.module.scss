@@ -11,6 +11,23 @@
     display: none;
   }
 
+  .navPadding {
+
+    .resume {
+      border: 1px solid $primaryColor;
+
+      &:hover {
+        border: $borderColor 1px solid;
+        border-radius: 0.25rem;
+      }
+    }
+
+    .active {
+      background-color: $aColor;
+      color: $backgroundColor;
+    }
+  }
+
   a {
     @include headerNav();
 
@@ -24,7 +41,5 @@
       color: $backgroundColor;
     }
   }
-
-
 }
 
