@@ -21,7 +21,7 @@ export const Projects = () => {
                     <div className={s.projects}>
                         <div className={s.projectGrid}>
                             <Project style={todolist} projectTitle={'TO-DO list'}
-                                     projectDescription={`Create, edit and delete TO-DO lists, manage tasks that can be customized for you. Used universal components, React, Redux Toolkit, ReduxThunk, Axios, TS, Formik, Material UI, Axios, ReduxThunk`}/>
+                                     projectDescription={`Create, edit and delete TO-DO lists, manage tasks that can be customized for you. Used universal components, React, Redux Toolkit, ReduxThunk, Axios, TS, Formik, Material UI, Axios, ReduxThunk and other`}/>
                         </div>
                         <div className={s.projectGrid}>
                             <Project style={socialNetwork} projectTitle={'Social network'}

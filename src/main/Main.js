@@ -3,11 +3,9 @@ import s from './Main.module.scss';
 import avatar from "../assets/images/myPhotoBlWt.png";
 import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
-import telegram from "../assets/images/telegram.png";
-import github from "../assets/images/github.png";
-import linkedin from "../assets/images/linkedin.png";
-import instagram from "../assets/images/instagram.png";
+
 import {Link} from "react-scroll";
+import {SocialNetBlock} from "../common/components/socialNetBlock/SocialNetBlock";
 
 export const Main = () => {
     return (
@@ -40,20 +38,7 @@ export const Main = () => {
                             with a modern approach to development and a collaborative team.</p>
                         <div className={s.contactsIcons}>
                             <span className={s.emptySpan}></span>
-                            <div className={s.boxContainer}>
-                                <div className={s.box}>
-                                    <img className={s.icon} src={telegram} alt={''}></img>
-                                </div>
-                                <div className={s.box}>
-                                    <img className={s.icon} src={github} alt={''}></img>
-                                </div>
-                                <div className={s.box}>
-                                    <img className={s.icon} src={linkedin} alt={''}></img>
-                                </div>
-                                <div className={s.box}>
-                                    <img className={s.icon} src={instagram} alt={''}></img>
-                                </div>
-                            </div>
+                            <SocialNetBlock/>
                         </div>
                         <button className={s.getInTouch}>
                             <span>Hire me</span>

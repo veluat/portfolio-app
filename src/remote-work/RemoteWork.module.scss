@@ -22,7 +22,7 @@
 
       .getInTouch {
         background-color: $primaryColor;
-        color: black;
+        color: $backgroundColor;
         padding-top: 2em;
         @include btnProperties();
 

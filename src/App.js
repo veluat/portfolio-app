@@ -13,11 +13,11 @@ export const App = () => {
         <div className="App">
             <Header/>
             <Main/>
-            <Skills/>
-            <Projects/>
-            <RemoteWork/>
-            <Contacts/>
-            <Footer/>
+                <Skills/>
+                <Projects/>
+                <RemoteWork/>
+                <Contacts/>
+                <Footer/>
         </div>
     );
 }

@@ -24,7 +24,6 @@
 
 @mixin margin() {
   margin-bottom: 6em;
-  //padding-top: 100px;
   padding-top: 10em;
   @media screen and (max-width: 952px) {
     margin-bottom: 2em;
@@ -79,6 +78,4 @@
   border-radius: 0.25rem;
   background-color: $backgroundBlockColor;
   cursor: default;
-  //margin-bottom: 2em;
-
 }

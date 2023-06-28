@@ -14,6 +14,8 @@ import materialUI from './../assets/images/materialui.svg'
 import unitTest from './../assets/images/unit.png'
 import restAPI from './../assets/images/restAPI.svg'
 import formik from './../assets/images/formik.png'
+import {Link} from "react-scroll";
+import {Header} from "../header/Header";
 
 export const Skills = () => {
     return (
@@ -62,7 +64,7 @@ export const Skills = () => {
                                description={'80%'} style={{width: '80%'}}/>
                     </div>
                     <div className={s.skillGrid}>
-                        <Skill title={'HTML5/ CSS'} src={html5} alt={"HTML/CSS"}
+                        <Skill title={'HTML/ CSS'} src={html5} alt={"HTML/CSS"}
                                description={'90%'} style={{width: '90%'}}/>
                     </div>
                     <div className={s.skillGrid}>

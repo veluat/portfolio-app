@@ -1,28 +1,12 @@
 import React from "react";
 import s from './Footer.module.scss';
-import github from './../assets/images/github.png'
-import telegram from './../assets/images/telegram.png'
-import linkedin from './../assets/images/linkedin.png'
-import instagram from './../assets/images/instagram.png'
+import {SocialNetBlock} from "../common/components/socialNetBlock/SocialNetBlock";
 
 export const Footer = () => {
     return (
         <div className={s.footer}>
             <div className={s.footerContainer}>
-                <div className={s.boxContainer}>
-                    <div className={s.box}>
-                        <img className={s.icon} src={telegram} alt={''}></img>
-                    </div>
-                    <div className={s.box}>
-                        <img className={s.icon} src={github} alt={''}></img>
-                    </div>
-                    <div className={s.box}>
-                        <img className={s.icon} src={linkedin} alt={''}></img>
-                    </div>
-                    <div className={s.box}>
-                        <img className={s.icon} src={instagram} alt={''}></img>
-                    </div>
-                </div>
+                <SocialNetBlock/>
                 <p className={s.name}>Julia Popova</p>
             </div>
             <div className={s.copyrightBlock}>
