@@ -21,15 +21,7 @@
       justify-content: space-between;
 
       .getInTouch {
-        background-color: $primaryColor;
-        color: $backgroundColor;
-        padding-top: 2em;
         @include btnProperties();
-
-        &:hover {
-          background: $aColor;
-          color: $backgroundColor;
-        }
       }
     }
   }

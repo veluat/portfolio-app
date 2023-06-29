@@ -184,17 +184,8 @@
           }
 
           .submitBtn {
-            background-color: $primaryColor;
-            color: $backgroundColor;
-            margin-top: calc(1rem * calc(1));
-            margin-bottom: calc(1rem * 0);
-            padding: 0.625rem 1.25rem;
             @include btnProperties();
-
-            &:hover {
-              background: $aColor;
-              color: $backgroundColor;
-            }
+            margin-top: calc(1rem * calc(1));
           }
         }
       }

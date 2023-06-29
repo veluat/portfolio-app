@@ -59,6 +59,12 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.25em;
+  background-color: $primaryColor;
+  color: $backgroundColor;
+  &:hover {
+    background: $aColor;
+    color: $backgroundColor;
+  }
 }
 
 @mixin headerNav() {
