@@ -2,7 +2,7 @@ import s from "./SocialNetBlock.module.scss";
 import telegram from "../../../assets/images/telegram.png";
 import github from "../../../assets/images/github.png";
 import linkedin from "../../../assets/images/linkedin.png";
-import instagram from "../../../assets/images/instagram.png";
+import codewars from "../../../assets/images/codewars.png";
 import React from "react";
 
 export const SocialNetBlock = ({marginTop}) => {
@@ -19,7 +19,7 @@ export const SocialNetBlock = ({marginTop}) => {
                 <img className={s.icon} src={linkedin} alt={''}></img>
             </div>
             <div className={s.box}>
-                <img className={s.icon} src={instagram} alt={''}></img>
+                <img className={s.icon} src={codewars} alt={''}></img>
             </div>
         </div>
     )
