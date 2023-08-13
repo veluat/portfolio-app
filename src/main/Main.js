@@ -33,9 +33,9 @@ export const Main = () => {
                             <br/>
                             using React, Redux/Redux Toolkit, TypeScript.
                             <br/>
-                            I would like to find full-time employment or project work in a company
+                            I would like to find full-time employment or project work.
                             <br/>
-                            with a modern approach to development and a collaborative team.</p>
+                            Open for your suggestions.</p>
                         <div className={s.contactsIcons}>
                             <span className={s.emptySpan}></span>
                             <SocialNetBlock/>
