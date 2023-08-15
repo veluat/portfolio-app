@@ -5,8 +5,8 @@ export const Project = (props) => {
     return (
         <div className={s.project}>
             <div className={s.projectImg} style={props.style}>
-                <button className={s.projectButton}>
-                    <span>Try me</span>
+                <button className={props.projectButton !== 'Coming soon' ? s.projectButton : s.disabled}>
+                    <span>{props.projectButton}</span>
                 </button>
             </div>
             <div className={s.projectText}>

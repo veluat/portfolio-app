@@ -29,7 +29,7 @@ export const Contacts = () => {
                                 </span>
                                         <div className={s.contactTitle}>
                                             <h3>Contact on phone</h3>
-                                            <p>+375(29)123-45-67</p>
+                                            <p>+375 (29) 397-95-60</p>
                                         </div>
                                     </div>
                                     <div className={s.contactBlock}>
@@ -38,7 +38,7 @@ export const Contacts = () => {
                                 </span>
                                         <div className={s.contactTitle}>
                                             <h3>Contact on email</h3>
-                                            <p>julia@demo</p>
+                                            <p>developer.popova@gmail.com</p>
                                         </div>
                                     </div>
                                     <div className={s.contactBlock}>

@@ -40,6 +40,14 @@
     .projectButton {
       @include btnProperties();
     }
+
+    .disabled {
+      @include btnProperties();
+
+      &:hover {
+        background-color: $primaryColor;
+      }
+    }
   }
 
   .projectText {

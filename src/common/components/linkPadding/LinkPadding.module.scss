@@ -1,7 +1,6 @@
 @import 'src/common/styles/sass/mixins';
 @import 'src/common/styles/sass/variables';
 
-
 .burgerNavPadding {
   position: absolute;
   top: 20px;
@@ -31,14 +30,11 @@
       background-color: $aColor;
       color: $backgroundColor;
     }
-
-
   }
 }
 
 .show {
   transform: translate(0, 0);
-
 }
 
 

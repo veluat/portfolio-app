@@ -1,7 +1,6 @@
 import React from "react";
 import s from './Footer.module.scss';
 import {SocialNetBlock} from "../common/components/socialNetBlock/SocialNetBlock";
-import {Link} from "react-scroll";
 import {LinkPadding} from "../common/components/linkPadding/LinkPadding";
 
 export const Footer = () => {

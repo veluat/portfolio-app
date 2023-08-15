@@ -12,6 +12,5 @@ export const Header = () => {
             </div>
             <span className={s.border}></span>
         </div>
-
     );
 }

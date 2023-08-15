@@ -2,8 +2,9 @@ import React from "react";
 import s from './Projects.module.scss';
 import {Project} from './project/Project';
 import {Title} from '../common/components/title/Title';
-import todoImage from './../assets/images/todolist.jpg';
-import socialImage from './../assets/images/social-network.jpg';
+import todoImage from './../assets/images/todolist.jpeg';
+import socialImage from './../assets/images/socialNetwork.jpg';
+import cardsImage from './../assets/images/learning-cards.jpg';
 import Fade from 'react-reveal/Fade';
 
 export const Projects = () => {
@@ -13,6 +14,9 @@ export const Projects = () => {
     const socialNetwork = {
         backgroundImage: 'url(' + socialImage + ')',
     };
+    const learningCards = {
+        backgroundImage: 'url(' + cardsImage + ')',
+    };
     return (
         <div id="projects" className={s.projectsBlock}>
             <Title text={'My Projects'} shadowText={'PORTFOLIO'}/>
@@ -20,12 +24,19 @@ export const Projects = () => {
                 <div className={s.projectsContainer}>
                     <div className={s.projects}>
                         <div className={s.projectGrid}>
-                            <Project style={todolist} projectTitle={'TO-DO list'}
-                                     projectDescription={`Create, edit and delete yours TO-DO lists, manage tasks that can be customized for you. React project with Redux Toolkit, TypeScript, Material UI, Axios, formik`}/>
+                            <Project style={todolist} projectTitle={'TO-DO LIST'}
+                                     projectDescription={`Create, edit and delete yours To-do lists, manage tasks that can be customized for you. React project with Redux Toolkit, TS, MUI, React Router Dom, Axios, Formik`}
+                                     projectButton={'Demo'}/>
                         </div>
                         <div className={s.projectGrid}>
-                            <Project style={socialNetwork} projectTitle={'Social network'}
-                                     projectDescription={`A social network that implements adding and deleting friends, authorization, sending messages etc. React project with Redux, Axios, TypeScript, React Hook Form`}/>
+                            <Project style={socialNetwork} projectTitle={'SOCIAL NETWORK'}
+                                     projectDescription={`A social network that implements adding and deleting friends, authorization, sending messages etc. React project with Redux, Axios, TS, React Hook Form`}
+                                     projectButton={'Demo'}/>
+                        </div>
+                        <div className={s.projectGrid}>
+                            <Project style={learningCards} projectTitle={'LEARNING CARDS'}
+                                     projectDescription={`Flashcard learning app to help you learn new topics. React project with Redux Toolkit, Axios, TS, React Hook Form, Yup, React Router Dom, Git, Ant design`}
+                                     projectButton={'Coming soon'}/>
                         </div>
                     </div>
                 </div>
