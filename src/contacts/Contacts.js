@@ -28,7 +28,7 @@ export const Contacts = () => {
                                     <img className={s.svg} src={phone} alt={''}></img>
                                 </span>
                                         <div className={s.contactTitle}>
-                                            <h3>Contact on phone</h3>
+                                            <h3>Contact by phone</h3>
                                             <p>+375 (29) 397-95-60</p>
                                         </div>
                                     </div>
@@ -37,8 +37,8 @@ export const Contacts = () => {
                                     <img className={s.svg} src={email} alt={''}></img>
                                 </span>
                                         <div className={s.contactTitle}>
-                                            <h3>Contact on email</h3>
-                                            <p>developer.popova@gmail.com</p>
+                                            <h3>Contact by email</h3>
+                                            <p>j.popova.dev@gmail.com</p>
                                         </div>
                                     </div>
                                     <div className={s.contactBlock}>

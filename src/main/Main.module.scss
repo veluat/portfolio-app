@@ -103,10 +103,14 @@
         }
 
         span {
+          @media (max-width: 1499px) {
+            display: block;
+          }
 
           @media (max-width: 640px) {
-            display: block;
-            font-size: 33px;
+            font-size: 24px;
+            margin: 0.15rem 0;
+
           }
 
           &:nth-child(2) {

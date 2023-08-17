@@ -31,7 +31,7 @@ export const Main = () => {
                             <br/>
                             with knowledge in user interface, testing, and debugging processes.
                             <br/>
-                            I would like to find full-time employment or project work.
+                            I'm looking for full-time employment or project work.
                             <br/>
                             I'm very passionate and dedicated to my work.
                             <br/>
