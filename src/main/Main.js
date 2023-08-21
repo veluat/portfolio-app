@@ -43,12 +43,13 @@ export const Main = () => {
                         <button className={s.getInTouch}>
                             <LinkPadding section={"Hire me"} path={"contacts"}/>
                         </button>
+                        <div className={s.scroll}>
+                            <Link to="skills" spy={true} smooth={true} offset={0} duration={500}>
+                                Scroll down
+                            </Link>
+                        </div>
                     </div>
-                </div>
-                <div className={s.scroll}>
-                    <Link to="skills" spy={true} smooth={true} offset={0} duration={500}>
-                        Scroll down
-                    </Link>
+
                 </div>
             </Fade>
         </div>

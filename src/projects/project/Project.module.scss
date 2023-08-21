@@ -39,6 +39,8 @@
 
     .projectButton {
       @include btnProperties();
+      cursor: pointer;
+      text-decoration: none;
     }
 
     .disabled {

@@ -14,12 +14,12 @@ import materialUI from './../assets/images/materialui.svg'
 import unitTest from './../assets/images/unit.png'
 import restAPI from './../assets/images/restAPI.png'
 import formik from './../assets/images/formik.png'
-import angular from './../assets/images/angular.svg'
 import postman from './../assets/images/postman.svg'
 import scc3 from './../assets/images/css3.svg'
 import antDesign from './../assets/images/ant-design.svg'
-import reactNative from './../assets/images/react-nativ.svg'
 import nodeJS from './../assets/images/node.svg'
+import jest from './../assets/images/jest.svg'
+import axios from './../assets/images/axios.png'
 
 export const Skills = () => {
 
@@ -40,11 +40,14 @@ export const Skills = () => {
                     <div className={s.skillGrid}>
                         <Skill title={'Redux'} src={redux} alt={"Redux"}/>
                     </div>
-                    <div className={s.skillGrid}>
+                    {/*<div className={s.skillGrid}>
                         <Skill title={'React Native'} src={reactNative} alt={"React Native"}/>
-                    </div>
+                    </div>*/}
                     <div className={s.skillGrid}>
                         <Skill title={'Node.js'} src={nodeJS} alt={"Node.js"}/>
+                    </div>
+                    <div className={s.skillGrid}>
+                        <Skill title={'Jest'} src={jest} alt={"Jest"}/>
                     </div>
                     <div className={s.skillGrid}>
                         <Skill title={'Unit Test'} src={unitTest} alt={"Unit test"}/>
@@ -54,6 +57,9 @@ export const Skills = () => {
                     </div>
                     <div className={s.skillGrid}>
                         <Skill title={'Postman'} src={postman} alt={"Postman"}/>
+                    </div>
+                    <div className={s.skillGrid}>
+                        <Skill title={'Axios'} src={axios} alt={"Axios"}/>
                     </div>
                     <div className={s.skillGrid}>
                         <Skill title={'RestApi'} src={restAPI} alt={"RestApi"}/>
@@ -79,9 +85,9 @@ export const Skills = () => {
                     <div className={s.skillGrid}>
                         <Skill title={'SASS'} src={sass} alt={"SASS"}/>
                     </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'Angular'} src={angular} alt={"Angular"}/>
-                    </div>
+                    {/*<div className={s.skillGrid}>*/}
+                    {/*    <Skill title={'Angular'} src={angular} alt={"Angular"}/>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </div>

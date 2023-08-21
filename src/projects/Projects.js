@@ -26,12 +26,12 @@ export const Projects = () => {
                         <div className={s.projectGrid}>
                             <Project style={todolist} projectTitle={'TO-DO LIST'}
                                      projectDescription={`Create, edit and delete yours To-do lists, manage tasks that can be customized for you. React project with Redux Toolkit, TS, MUI, React Router Dom, Axios, Formik`}
-                                     projectButton={'Demo'}/>
+                                     projectButton={'Demo'} link={'https://veluat.github.io/task-manager'}/>
                         </div>
                         <div className={s.projectGrid}>
                             <Project style={socialNetwork} projectTitle={'SOCIAL NETWORK'}
                                      projectDescription={`A social network that implements adding and deleting friends, authorization, sending messages etc. React project with Redux, Axios, TS, React Hook Form`}
-                                     projectButton={'Demo'}/>
+                                     projectButton={'Demo'} link={'https://veluat.github.io/social-network'}/>
                         </div>
                         <div className={s.projectGrid}>
                             <Project style={learningCards} projectTitle={'LEARNING CARDS'}
