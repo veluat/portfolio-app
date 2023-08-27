@@ -20,6 +20,8 @@ import antDesign from './../assets/images/ant-design.svg'
 import nodeJS from './../assets/images/node.svg'
 import jest from './../assets/images/jest.svg'
 import axios from './../assets/images/axios.png'
+import radixUI from './../assets/images/radix-ui.png'
+import styledComponents from './../assets/images/styled.png'
 
 export const Skills = () => {
 
@@ -75,6 +77,12 @@ export const Skills = () => {
                     </div>
                     <div className={s.skillGrid}>
                         <Skill title={'Ant Design'} src={antDesign} alt={"Ant Design"}/>
+                    </div>
+                    <div className={s.skillGrid}>
+                        <Skill title={'Styled'} src={styledComponents} alt={"Styled Components"}/>
+                    </div>
+                    <div className={s.skillGrid}>
+                        <Skill title={'Radix UI'} src={radixUI} alt={"Radix UI"}/>
                     </div>
                     <div className={s.skillGrid}>
                         <Skill title={'HTML'} src={html5} alt={"HTML"}/>
