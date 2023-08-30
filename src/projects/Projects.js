@@ -35,7 +35,7 @@ export const Projects = () => {
                         </div>
                         <div className={s.projectGrid}>
                             <Project style={learningCards} projectTitle={'LEARNING CARDS'}
-                                     projectDescription={`Flashcard learning app to help you learn new topics. React project with Redux Toolkit, Axios, TS, React Hook Form, Yup, React Router Dom, Git, Ant design`}
+                                     projectDescription={`Flashcard learning app to help you learn new topics. React project with Redux Toolkit, Axios, TS, React Hook Form, Zod, React Router Dom, Git, Radix UI`}
                                      projectButton={'Coming soon'}/>
                         </div>
                     </div>
