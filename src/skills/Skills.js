@@ -22,6 +22,7 @@ import jest from './../assets/images/jest.svg'
 import axios from './../assets/images/axios.png'
 import radixUI from './../assets/images/radix-ui.png'
 import styledComponents from './../assets/images/styled.png'
+import reactHookForm from './../assets/images/react-hook-form.png'
 
 export const Skills = () => {
 
@@ -71,6 +72,9 @@ export const Skills = () => {
                     </div>
                     <div className={s.skillGrid}>
                         <Skill title={'Formik'} src={formik} alt={"Formik"}/>
+                    </div>
+                    <div className={s.skillGrid}>
+                        <Skill title={'React Hook Form'} src={reactHookForm} alt={"React-Hook-Form"}/>
                     </div>
                     <div className={s.skillGrid}>
                         <Skill title={'MaterialUI'} src={materialUI} alt={"MaterialUI"}/>

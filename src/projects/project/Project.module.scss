@@ -39,7 +39,7 @@
 
     .projectButton {
       @include btnProperties();
-      cursor: pointer;
+      cursor: default;
       text-decoration: none;
     }
 
