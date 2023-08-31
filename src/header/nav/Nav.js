@@ -1,6 +1,7 @@
 import React from "react";
 import s from './Nav.module.scss';
 import {LinkPadding} from "../../common/components/linkPadding/LinkPadding";
+import cv from './../../assets/cv/cv-Julia-Popova.pdf'
 
 export const Nav = () => {
     return (
@@ -11,7 +12,7 @@ export const Nav = () => {
                 <LinkPadding section={"Projects"} path={"projects"} activeClass={s.active}/>
                 <LinkPadding section={"Remote work"} path={"remoteWork"} activeClass={s.active}/>
                 <LinkPadding section={"Contacts"} path={"contacts"} activeClass={s.active}/>
-                <LinkPadding section={"Download resume"} path={"resume"} className={s.resume}/>
+                <a className={s.resume} href={cv} target={'_blank'} rel="noreferrer">Download resume</a>
             </div>
         </div>
     )

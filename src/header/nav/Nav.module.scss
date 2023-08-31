@@ -14,7 +14,11 @@
   .navPadding {
 
     .resume {
+      width: max-content;
+      cursor: default;
+      text-decoration: none;
       border: 1px solid $primaryColor;
+
 
       &:hover {
         border: $borderColor 1px solid;
