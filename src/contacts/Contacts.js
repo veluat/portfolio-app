@@ -42,7 +42,9 @@ export const Contacts = () => {
         },
         onSubmit: values => {
             setLoading(true)
-            axios.post('https://localhost:3010/sendMessage', values)
+            axios.post('https://localhost:3010/sendMessage', values, {headers: {
+                    'Content-Type': 'application/json'
+                }})
                 .then(res => {
                     setMyMessages('Thanks for your interest! I will contact you as soon as it possible')
                     setError('')
