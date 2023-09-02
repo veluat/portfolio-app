@@ -74,7 +74,7 @@ export const Skills = () => {
                         <Skill title={'Formik'} src={formik} alt={"Formik"}/>
                     </div>
                     <div className={s.skillGrid}>
-                        <Skill title={'React Hook Form'} src={reactHookForm} alt={"React-Hook-Form"}/>
+                        <Skill title={'Hook Form'} src={reactHookForm} alt={"React-Hook-Form"}/>
                     </div>
                     <div className={s.skillGrid}>
                         <Skill title={'MaterialUI'} src={materialUI} alt={"MaterialUI"}/>
@@ -83,7 +83,7 @@ export const Skills = () => {
                         <Skill title={'Ant Design'} src={antDesign} alt={"Ant Design"}/>
                     </div>
                     <div className={s.skillGrid}>
-                        <Skill title={'Styled'} src={styledComponents} alt={"Styled Components"}/>
+                        <Skill title={'Styled </>'} src={styledComponents} alt={"Styled Components"}/>
                     </div>
                     <div className={s.skillGrid}>
                         <Skill title={'Radix UI'} src={radixUI} alt={"Radix UI"}/>
