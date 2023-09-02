@@ -205,6 +205,9 @@
           }
 
           .responseSuccess {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: rgba(34, 197, 94, 1);
             font-size: 14px;
             line-height: 1.8;
@@ -212,9 +215,19 @@
             background-color: rgba(34, 197, 94, 0.05);
             margin-top: calc(1rem * calc(1));
             margin-bottom: calc(1rem * 0);
+
+            .successClose {
+              color: rgba(239, 68, 68, 1);
+              font-size: 20px;
+              padding: 0 0 15px 12px;
+              cursor: pointer;
+            }
           }
 
           .responseError {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: rgba(239, 68, 68, 1);
             font-size: 14px;
             line-height: 1.8;
@@ -222,6 +235,13 @@
             background-color: rgba(239, 68, 68, 0.05);
             margin-top: calc(1rem * calc(1));
             margin-bottom: calc(1rem * 0);
+
+            .errorClose {
+              color: rgba(239, 68, 68, 1);
+              font-size: 20px;
+              padding: 0 0 15px 12px;
+              cursor: pointer;
+            }
           }
         }
       }

@@ -50,7 +50,7 @@ export const Contacts = () => {
                 .then(res => {
                     setMyMessages('Thanks for your interest! I will contact you as soon as it possible')
                     setError('')
-                    formik.resetForm();
+                    formik.resetForm()
                 })
                 .catch(error => {
                     setError('Something is wrong while sending the message!')
@@ -60,7 +60,10 @@ export const Contacts = () => {
                 })
         },
     })
-
+    const myMessageClose = () => {
+        setError('')
+        setMyMessages('')
+    }
     return (
         <div id="contacts" className={s.contacts}>
             <Title text={'Contacts'} shadowText={'Contact Me'}/>
@@ -146,8 +149,14 @@ export const Contacts = () => {
                                     </div>
                                 </div>
                                 <span>
-                                        {error && <div className={s.responseError}>{error}</div>}
-                                    {myMessages && <div className={s.responseSuccess}>{myMessages}</div>}
+                                        {error && <div className={s.responseError}>{error}
+                                            <div className={s.errorClose} onClick={myMessageClose}>x</div>
+                                        </div>}
+                                    {myMessages &&
+                                        <div className={s.responseSuccess}>{myMessages}
+                                            <div className={s.successClose} onClick={myMessageClose}>x</div>
+                                        </div>
+                                    }
                                     </span>
 
                                 {
