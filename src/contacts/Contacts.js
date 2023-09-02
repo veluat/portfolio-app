@@ -42,7 +42,7 @@ export const Contacts = () => {
         },
         onSubmit: values => {
             setLoading(true)
-            axios.post('https://localhost:3010/sendMessage', values, {headers: {
+            axios.post('https://taupe-halva-4ef5ed.netlify.app/.netlify/functions/api/sendMessage', values, {headers: {
                     'Content-Type': 'application/json'
                 }})
                 .then(res => {
