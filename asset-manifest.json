@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.5d7d6b1b.css",
-    "main.js": "/portfolio/static/js/main.1d2b604b.js",
+    "main.js": "/portfolio/static/js/main.40528a85.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/socialNetwork.jpg": "/portfolio/static/media/socialNetwork.f7838ea095ebc77876b9.jpg",
     "static/media/cv-Julia-Popova.pdf": "/portfolio/static/media/cv-Julia-Popova.3f2a6c3a95e607c6a3fe.pdf",
@@ -30,11 +30,11 @@
     "static/media/css3.svg": "/portfolio/static/media/css3.77472e73fcba3ed5bc9eea29c300745b.svg",
     "static/media/materialui.svg": "/portfolio/static/media/materialui.9a7fa21fef461d272ba8151574584e84.svg",
     "main.5d7d6b1b.css.map": "/portfolio/static/css/main.5d7d6b1b.css.map",
-    "main.1d2b604b.js.map": "/portfolio/static/js/main.1d2b604b.js.map",
+    "main.40528a85.js.map": "/portfolio/static/js/main.40528a85.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5d7d6b1b.css",
-    "static/js/main.1d2b604b.js"
+    "static/js/main.40528a85.js"
   ]
 }
