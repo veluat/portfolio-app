@@ -42,9 +42,11 @@ export const Contacts = () => {
         },
         onSubmit: values => {
             setLoading(true)
-            axios.post('https://taupe-halva-4ef5ed.netlify.app/.netlify/functions/api/sendMessage', values, {headers: {
+            axios.post('https://taupe-halva-4ef5ed.netlify.app/.netlify/functions/api/sendMessage', values, {
+                headers: {
                     'Content-Type': 'application/json'
-                }})
+                }
+            })
                 .then(res => {
                     setMyMessages('Thanks for your interest! I will contact you as soon as it possible')
                     setError('')
