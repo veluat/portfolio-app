@@ -12,7 +12,7 @@ export const Nav = () => {
                 <LinkPadding section={"Projects"} path={"projects"} activeClass={s.active}/>
                 <LinkPadding section={"Remote work"} path={"remoteWork"} activeClass={s.active}/>
                 <LinkPadding section={"Contacts"} path={"contacts"} activeClass={s.active}/>
-                <a className={s.resume} href={cv} download={"cv-Julia-Popova.pdf"} >Download resume</a>
+                <a className={s.resume} href={cv} download={"resume-Julia-Popova.pdf"}>Download resume</a>
             </div>
         </div>
     )
