@@ -17,7 +17,7 @@ export const Main = () => {
                     </div>
                     <div className={s.textContainer}>
                         <h1 className={s.nameBlock}>
-                            <span>Hi, I am </span>
+                            <span>I am </span>
                             <ReactTypingEffect
                                 text={["Julia Popova", "Frontend Developer"]}
                                 speed={100}
@@ -26,7 +26,7 @@ export const Main = () => {
                                 typingDelay={100}
                             />
                         </h1>
-                        <p className={s.description}>I'm frontend developer with experience in creating SPA using React,
+                        <p className={s.description}>Frontend developer with experience 1 yr+ in creating SPA using React,
                             Redux, TS
                             <br/>
                             with knowledge in user interface, testing, and debugging processes.
