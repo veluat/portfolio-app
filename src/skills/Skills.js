@@ -27,7 +27,7 @@ import reactHookForm from './../assets/images/react-hook-form.png'
 export const Skills = () => {
 
     return (
-        <div id="skills" className={s.skillsBlock}>
+        <section id="skills" className={s.skillsBlock}>
             <Title text={'My Skills'} shadowText={'WHAT I KNOW'}/>
             <div className={s.skillsContainer}>
                 <div className={s.skills}>
@@ -43,9 +43,6 @@ export const Skills = () => {
                     <div className={s.skillGrid}>
                         <Skill title={'Redux'} src={redux} alt={"Redux"}/>
                     </div>
-                    {/*<div className={s.skillGrid}>
-                        <Skill title={'React Native'} src={reactNative} alt={"React Native"}/>
-                    </div>*/}
                     <div className={s.skillGrid}>
                         <Skill title={'Node.js'} src={nodeJS} alt={"Node.js"}/>
                     </div>
@@ -97,11 +94,8 @@ export const Skills = () => {
                     <div className={s.skillGrid}>
                         <Skill title={'SASS'} src={sass} alt={"SASS"}/>
                     </div>
-                    {/*<div className={s.skillGrid}>*/}
-                    {/*    <Skill title={'Angular'} src={angular} alt={"Angular"}/>*/}
-                    {/*</div>*/}
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

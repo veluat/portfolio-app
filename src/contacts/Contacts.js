@@ -65,7 +65,7 @@ export const Contacts = () => {
         setMyMessages('')
     }
     return (
-        <div id="contacts" className={s.contacts}>
+        <section id="contacts" className={s.contacts}>
             <Title text={'Contacts'} shadowText={'Contact Me'}/>
             <Fade bottom>
                 <div className={s.container}>
@@ -169,6 +169,6 @@ export const Contacts = () => {
                     </div>
                 </div>
             </Fade>
-        </div>
+        </section>
     )
 }

@@ -13,21 +13,34 @@ export const BurgerNav = () => {
         setActive(false)
     }
     return (
-        <div className={s.burgerNav}>
-            <div onClick={onClickHandler} className={finallyClass}>
-                <LinkPadding section={"Home"} path={"home"} onClickHandlerProps={onClickHandler} activeClass={s.active}
-                             setActive={setActive} active={active}/>
-                <LinkPadding section={"Skills"} path={"skills"} onClickHandlerProps={onClickHandler}
-                             activeClass={s.active} setActive={setActive} active={active}/>
-                <LinkPadding section={"Projects"} path={"projects"} onClickHandlerProps={onClickHandler}
-                             activeClass={s.active} setActive={setActive} active={active}/>
-                <LinkPadding section={"Remote work"} path={"remoteWork"} onClickHandlerProps={onClickHandler}
-                             activeClass={s.active} setActive={setActive} active={active}/>
-                <LinkPadding section={"Contacts"} path={"contacts"} onClickHandlerProps={onClickHandler}
-                             activeClass={s.active} setActive={setActive} active={active}/>
-                <LinkPadding section={"Download resume"} path={"resume"}/>
-            </div>
+        <nav className={s.burgerNav}>
+            <ul onClick={onClickHandler} className={finallyClass}>
+                <li>
+                    <LinkPadding section={"Home"} path={"home"} onClickHandlerProps={onClickHandler}
+                                 activeClass={s.active}
+                                 setActive={setActive} active={active}/>
+                </li>
+                <li>
+                    <LinkPadding section={"Skills"} path={"skills"} onClickHandlerProps={onClickHandler}
+                                 activeClass={s.active} setActive={setActive} active={active}/>
+                </li>
+                <li>
+                    <LinkPadding section={"Projects"} path={"projects"} onClickHandlerProps={onClickHandler}
+                                 activeClass={s.active} setActive={setActive} active={active}/>
+                </li>
+                <li>
+                    <LinkPadding section={"Remote work"} path={"remoteWork"} onClickHandlerProps={onClickHandler}
+                                 activeClass={s.active} setActive={setActive} active={active}/>
+                </li>
+                <li>
+                    <LinkPadding section={"Contacts"} path={"contacts"} onClickHandlerProps={onClickHandler}
+                                 activeClass={s.active} setActive={setActive} active={active}/>
+                </li>
+                <li>
+                    <LinkPadding section={"Download resume"} path={"resume"}/>
+                </li>
+            </ul>
             <Burger setActive={setActive} active={active}/>
-        </div>
+        </nav>
     );
 }

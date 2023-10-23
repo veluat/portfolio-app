@@ -5,7 +5,7 @@ import {LinkPadding} from "../common/components/linkPadding/LinkPadding";
 
 export const RemoteWork = () => {
     return (
-        <div id="remoteWork" className={s.workFromHomeBlock}>
+        <section id="remoteWork" className={s.workFromHomeBlock}>
             <Title text={'Remote work possible'} shadowText={'Freelance'}/>
             <div className={s.workFromHomeContainer}>
                 <div className={s.content}>
@@ -14,6 +14,6 @@ export const RemoteWork = () => {
                     </button>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

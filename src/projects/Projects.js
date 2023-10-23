@@ -18,7 +18,7 @@ export const Projects = () => {
         backgroundImage: 'url(' + cardsImage + ')',
     };
     return (
-        <div id="projects" className={s.projectsBlock}>
+        <section id="projects" className={s.projectsBlock}>
             <Title text={'My Projects'} shadowText={'PORTFOLIO'}/>
             <Fade bottom>
                 <div className={s.projectsContainer}>
@@ -41,6 +41,6 @@ export const Projects = () => {
                     </div>
                 </div>
             </Fade>
-        </div>
+        </section>
     );
 }

@@ -5,12 +5,12 @@ import {BurgerNav} from "./burgerNav/BurgerNav";
 
 export const Header = () => {
     return (
-        <div className={s.headerWrapper}>
-            <div className={s.header}>
+        <header className={s.headerWrapper}>
+            <div className={s.nav}>
                 <Nav/>
                 <BurgerNav/>
             </div>
-            <span className={s.border}></span>
-        </div>
+            <span className={s.line}></span>
+        </header>
     );
 }

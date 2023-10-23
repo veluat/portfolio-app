@@ -9,7 +9,7 @@ import {LinkPadding} from "../common/components/linkPadding/LinkPadding";
 
 export const Main = () => {
     return (
-        <div id="home" className={s.mainBlock}>
+        <section id="home" className={s.mainBlock}>
             <Fade top>
                 <div className={s.container}>
                     <div className={s.photo}>
@@ -52,6 +52,6 @@ export const Main = () => {
 
                 </div>
             </Fade>
-        </div>
+        </section>
     );
 }
