@@ -2,16 +2,16 @@
 @import 'src/common/styles/sass/variables';
 
 .nav {
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: nowrap;
-  display: flex;
-  flex-direction: row;
+
   @media screen and (max-width: 814px) {
     display: none;
   }
 
   .navPadding {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
 
     .resume {
       width: max-content;

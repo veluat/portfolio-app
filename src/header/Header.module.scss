@@ -13,14 +13,14 @@
   right: 0;
   top: 0;
 
-  .border {
+  .line {
     width: 100%;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-color: rgba(255, 255, 255, 0.2);
   }
 
-  .header {
+  .nav {
     min-height: 80px;
     width: 100%;
     background-color: $backgroundColor;
@@ -28,7 +28,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-wrap: nowrap;
 
     @media screen and (max-width: 814px) {
       justify-content: flex-start;
