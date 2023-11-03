@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.84808aea.css",
-    "main.js": "/portfolio/static/js/main.38196b4f.js",
+    "main.js": "/portfolio/static/js/main.1788a385.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/socialNetwork.jpg": "/portfolio/static/media/socialNetwork.f7838ea095ebc77876b9.jpg",
     "static/media/myPhotoBlWt.png": "/portfolio/static/media/myPhotoBlWt.3cad800d8a2d185c7185.png",
     "static/media/resume-Julia-Popova.pdf": "/portfolio/static/media/resume-Julia-Popova.bcbb96e43f1afd4745b7.pdf",
+    "static/media/art.jpg": "/portfolio/static/media/art.1d096ac99b221c2dee88.jpg",
     "static/media/taxi-services.jpg": "/portfolio/static/media/taxi-services.6ddb2ffd2ff52f91488a.jpg",
     "static/media/learning-cards.jpg": "/portfolio/static/media/learning-cards.89276aeadb016c2d2c00.jpg",
     "static/media/restAPI.png": "/portfolio/static/media/restAPI.f4432679114747d6fcda.png",
@@ -31,11 +32,11 @@
     "static/media/css3.svg": "/portfolio/static/media/css3.77472e73fcba3ed5bc9eea29c300745b.svg",
     "static/media/materialui.svg": "/portfolio/static/media/materialui.9a7fa21fef461d272ba8151574584e84.svg",
     "main.84808aea.css.map": "/portfolio/static/css/main.84808aea.css.map",
-    "main.38196b4f.js.map": "/portfolio/static/js/main.38196b4f.js.map",
+    "main.1788a385.js.map": "/portfolio/static/js/main.1788a385.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.84808aea.css",
-    "static/js/main.38196b4f.js"
+    "static/js/main.1788a385.js"
   ]
 }
