@@ -51,7 +51,7 @@ export const Projects = () => {
                         <div className={s.projectGrid}>
                             <Project style={learningCards} projectTitle={'LEARNING CARDS'}
                                      projectDescription={`Flashcard learning app to help you learn new topics. React project with Redux Toolkit, Axios, TS, React Hook Form, Zod, React Router Dom, Git, Radix UI`}
-                                     projectButton={'Demo'} link={'https://cards-two-self.vercel.app/sign-in'}/>
+                                     projectButton={'Demo'} link={'https://cards-two-self.vercel.app'}/>
                         </div>
                         <div className={s.projectGrid}>
                             <Project style={creativeArt} projectTitle={'CREATIVE ART'}
