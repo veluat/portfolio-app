@@ -5,6 +5,7 @@ import {Title} from '../common/components/title/Title';
 import todoImage from './../assets/images/todolist.jpeg';
 import socialImage from './../assets/images/socialNetwork.jpg';
 import cardsImage from './../assets/images/learning-cards.jpg';
+import taxiImage from './../assets/images/taxi-services.jpg';
 import Fade from 'react-reveal/Fade';
 
 export const Projects = () => {
@@ -17,6 +18,10 @@ export const Projects = () => {
     const learningCards = {
         backgroundImage: 'url(' + cardsImage + ')',
     };
+    const taxiServices = {
+        backgroundImage: 'url(' + taxiImage + ')',
+    };
+
     return (
         <section id="projects" className={s.projectsBlock}>
             <Title text={'My Projects'} shadowText={'PORTFOLIO'}/>
@@ -32,6 +37,9 @@ export const Projects = () => {
                             <Project style={socialNetwork} projectTitle={'SOCIAL NETWORK'}
                                      projectDescription={`A social network that implements adding and deleting friends, authorization, sending messages etc. React project with Redux, Axios, TS, React Hook Form`}
                                      projectButton={'Demo'} link={'https://veluat.github.io/social-network'}/>
+                        </div>
+                        <div className={s.projectGrid}>
+                            <Project style={taxiServices} projectTitle='TAXI SERVICES' projectDescription={`Example of a business website. Images and text are created by AI. The design was developed by me. Used React, CSS, JavaScript, React Router Dom`} projectButton={'Demo'} link={'https://example-of-a-business-website.netlify.app/'}/>
                         </div>
                         <div className={s.projectGrid}>
                             <Project style={learningCards} projectTitle={'LEARNING CARDS'}
