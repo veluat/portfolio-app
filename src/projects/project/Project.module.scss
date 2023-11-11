@@ -54,5 +54,8 @@
 
   .projectText {
     margin-top: 1rem;
+    p::selection {
+      user-select: none;
+    }
   }
 }

@@ -129,6 +129,9 @@
         opacity: 1;
         transform: none;
         font-size: 18px;
+        &::selection {
+          user-select: none;
+        }
 
         @media (max-width: 1499px) {
           text-align: center;
