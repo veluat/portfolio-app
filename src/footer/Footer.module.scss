@@ -19,6 +19,7 @@
       display: block;
       word-break: break-word;
       text-align: center;
+      padding-top: 10px;
     }
   }
 
@@ -35,6 +36,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 10px;
     }
 
     .name {
@@ -47,6 +49,7 @@
         color: $primaryColor;
         cursor: pointer;
       }
+
     }
   }
 }
