@@ -55,8 +55,9 @@ export const Projects = () => {
                         </div>
                         <div className={s.projectGrid}>
                             <Project style={creativeArt} projectTitle={'CREATIVE ART'}
-                                     projectDescription={`A web development project for a simple and secure platform for purchasing and exchanging digital ART and NFTs. React project with TS, Styled Components`}
-                                     projectButton={'Coming soon'}/>
+                                     projectDescription={`A web development project for purchasing and exchanging digital ART and NFTs. React project with TS, Styled Components, Pixel Perfect`}
+                                     projectButton={'Demo'}
+                                     link={'https://veluat.github.io/creative-art-layout/'}/>
                         </div>
                     </div>
                 </div>

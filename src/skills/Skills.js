@@ -21,6 +21,7 @@ import nodeJS from './../assets/images/node.svg'
 import jest from './../assets/images/jest.svg'
 import axios from './../assets/images/axios.png'
 import radixUI from './../assets/images/radix-ui.png'
+import pixel from './../assets/images/perfect-pixel.png'
 import styledComponents from './../assets/images/styled.png'
 import reactHookForm from './../assets/images/react-hook-form.png'
 
@@ -93,6 +94,9 @@ export const Skills = () => {
                     </div>
                     <div className={s.skillGrid}>
                         <Skill title={'SASS'} src={sass} alt={"SASS"}/>
+                    </div>
+                    <div className={s.skillGrid}>
+                        <Skill title={'Pixel Perfect'} src={pixel} alt={"Pixel Perfect"}/>
                     </div>
                 </div>
             </div>
