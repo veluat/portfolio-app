@@ -10,7 +10,6 @@
   padding: 1.25rem;
 
   &:hover {
-    transform: translate(0, -5%);
     transition: 0.3s;
     border-color: $primaryColor;
   }
@@ -54,6 +53,7 @@
 
   .projectText {
     margin-top: 1rem;
+    text-align: center;
     p::selection {
       user-select: none;
     }

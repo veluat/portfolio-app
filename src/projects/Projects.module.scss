@@ -6,7 +6,7 @@
   backdrop-filter: blur(16px);
   @include margin();
 
-  .projectsContainer {
+  /*.projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
     @include container();
@@ -50,7 +50,7 @@
       .projectGrid {
       }
     }
-  }
+  }*/
 }
 
 
