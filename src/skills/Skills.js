@@ -81,9 +81,6 @@ export const Skills = () => {
                         <Skill title={'Ant Design'} src={antDesign} alt={"Ant Design"}/>
                     </div>
                     <div className={s.skillGrid}>
-                        <Skill title={'Styled </>'} src={styledComponents} alt={"Styled Components"}/>
-                    </div>
-                    <div className={s.skillGrid}>
                         <Skill title={'Radix UI'} src={radixUI} alt={"Radix UI"}/>
                     </div>
                     <div className={s.skillGrid}>
@@ -94,6 +91,9 @@ export const Skills = () => {
                     </div>
                     <div className={s.skillGrid}>
                         <Skill title={'SASS'} src={sass} alt={"SASS"}/>
+                    </div>
+                    <div className={s.skillGrid}>
+                        <Skill title={'Styled </>'} src={styledComponents} alt={"Styled Components"}/>
                     </div>
                     <div className={s.skillGrid}>
                         <Skill title={'Pixel Perfect'} src={pixel} alt={"Pixel Perfect"}/>

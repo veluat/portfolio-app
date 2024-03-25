@@ -1,7 +1,7 @@
 @import 'variables';
 
 @mixin slider() {
-  background-color: rgba(114, 226, 174, 1);
+  background-color: $primaryColor;
   border-radius: 9999px;
   display: inline-block;
   position: absolute;
