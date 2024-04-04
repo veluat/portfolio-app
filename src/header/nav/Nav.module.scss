@@ -14,15 +14,14 @@
     list-style-type: none;
 
     .resume {
-      width: max-content;
-      cursor: pointer;
-      text-decoration: none;
-      border: 1px solid $primaryColor;
-
+      @include headerNav();
+      color: $backgroundColor;
+      background-color: $primaryColor;
+      font-weight: 700;
 
       &:hover {
-        border: $borderColor 1px solid;
-        border-radius: 0.25rem;
+        background-color: $aColor;
+        font-weight: 700;
       }
     }
 
@@ -47,3 +46,11 @@
   }
 }
 
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.3;
+  }
+}

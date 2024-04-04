@@ -22,12 +22,10 @@
   }
 }
 
-@mixin margin() {
-  margin-bottom: 6em;
-  padding-top: 10em;
+@mixin padding() {
+  padding-top: 7rem;
   @media screen and (max-width: 952px) {
-    margin-bottom: 2em;
-    padding-top: 6em;
+    padding-top: 6rem;
   }
 }
 
@@ -60,6 +58,7 @@
   letter-spacing: 0.25em;
   background-color: $primaryColor;
   color: $backgroundColor;
+
   &:hover {
     background: $aColor;
     color: $backgroundColor;

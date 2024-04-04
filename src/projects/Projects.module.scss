@@ -4,53 +4,7 @@
 .projectsBlock {
   background-color: $backgroundColor;
   backdrop-filter: blur(16px);
-  @include margin();
-
-  /*.projectsContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-    @include container();
-
-    .projects {
-      gap: 2.5rem;
-      grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-      display: grid;
-      margin-top: 1rem;
-
-      @media screen and (max-width: 1435px) {
-        gap: 1.5rem;
-      }
-
-      @media screen and (max-width: 1395px) {
-        gap: 1rem;
-      }
-
-      @media screen and (max-width: 1375px) {
-        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-        gap: 2.5rem;
-      }
-
-      @media screen and (max-width: 1234px) {
-        gap: 1.5rem;
-      }
-
-      @media screen and (max-width: 1194px) {
-        gap: 1rem;
-      }
-
-      @media screen and (max-width: 1174px) {
-        grid-template-columns: repeat(2, minmax(30%, 1fr));
-        gap: 2.5rem;
-      }
-      @media screen and (max-width: 820px) {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        justify-content: center;
-      }
-
-      .projectGrid {
-      }
-    }
-  }*/
+  @include padding();
 }
 
 
