@@ -1,0 +1,29 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.TabMenu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0 3rem;
+
+  .btn {
+    @include btnProperties();
+    font-weight: 500;
+    background-color: rgba(114, 226, 174, 0.1);
+    color: $primaryColor;
+    border-color: $borderColor;
+
+    &:hover {
+      transition-duration: 0.5s;
+      font-weight: 700;
+    }
+  }
+
+  .active {
+    background-color: $aColor;
+    color: $backgroundColor;
+    font-weight: 700;
+  }
+}

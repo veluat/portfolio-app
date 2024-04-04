@@ -2,7 +2,8 @@ import React from "react";
 import s from './Skill.module.scss';
 import Fade from 'react-reveal/Fade';
 
-export const Skill = ({src, alt, title}) => {
+export const Skill = ({src, alt, title
+                      }) => {
     return (
         <div className={s.skill}>
             <Fade bottom>

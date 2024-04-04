@@ -1,0 +1,70 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.servicesWrapper {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.25rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid $borderColor;
+
+  &:hover {
+    transform: translate(0, -5%);
+    transition: 0.3s;
+    border-color: $primaryColor;
+  }
+
+  @media screen and (max-width: 1169px) {
+  flex-direction: column;
+  text-align: center;
+    gap: 0.25rem;
+  }
+
+  .servicesTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      color: $primaryColor;
+      background-color: rgba(114, 226, 174, 0.1);
+      padding: 1.25rem;
+      font-size: 36px;
+      line-height: 1.2;
+      border-radius: 9999px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 5rem;
+      height: 5rem;
+      margin-bottom: 1.5rem;
+
+      svg {
+        display: block;
+        vertical-align: middle;
+      }
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.5;
+      font-family: Radio Canada, sans-serif;
+      word-break: break-word;
+      color: $aColor;
+      margin: 0 0 .75rem;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+    font-family: Radio Canada, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: $textColor;
+  }
+}

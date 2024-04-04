@@ -1,103 +1,110 @@
-import React from "react";
+import React, {useEffect, useMemo, useState} from "react";
 import s from './Skills.module.scss';
 import {Skill} from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
-import javascript from './../assets/images/javascript.svg'
-import ts from './../assets/images/ts.svg'
-import react from './../assets/images/react.svg'
-import redux from './../assets/images/redux.svg'
-import git from './../assets/images/git.svg'
-import html5 from './../assets/images/html5.svg'
-import sass from './../assets/images/sass.svg'
-import storybook from './../assets/images/storybook.svg'
-import materialUI from './../assets/images/materialui.svg'
-import unitTest from './../assets/images/unit.png'
-import restAPI from './../assets/images/restAPI.png'
-import formik from './../assets/images/formik.png'
-import postman from './../assets/images/postman.svg'
-import scc3 from './../assets/images/css3.svg'
-import antDesign from './../assets/images/ant-design.svg'
-import nodeJS from './../assets/images/node.svg'
-import jest from './../assets/images/jest.svg'
-import axios from './../assets/images/axios.png'
-import radixUI from './../assets/images/radix-ui.png'
-import pixel from './../assets/images/perfect-pixel.png'
-import styledComponents from './../assets/images/styled.png'
-import reactHookForm from './../assets/images/react-hook-form.png'
+import {SkillsData} from "./skills-data/SkillsData";
+import {TabMenu} from "../common/components/tabMenu/TabMenu";
+import {SkillsDescriptions} from "./skills-descriptions/SkillsDescriptions";
 
 export const Skills = () => {
+    const [currentFilterType, setCurrentFilterType] = useState('all');
+    const [displayedSkills, setDisplayedSkills] = useState([]);
+    const [showMore, setShowMore] = useState(true);
+    const skillsPerPage = 6;
+
+    const filteredSkills = useMemo(() => {
+        if (currentFilterType === 'stack') {
+            return SkillsData.skill.filter(skill => skill.type === 'stack');
+        } else if (currentFilterType === 'tools') {
+            return SkillsData.skill.filter(skill => skill.type === 'tools');
+        } else if (currentFilterType === 'styling') {
+            return SkillsData.skill.filter(skill => skill.type === 'styling');
+        } else {
+            return SkillsData.skill;
+        }
+    }, [currentFilterType]);
+
+    const totalSkills = filteredSkills.length;
+
+    useEffect(() => {
+        const initialSkills = filteredSkills.slice(0, skillsPerPage);
+        setDisplayedSkills(initialSkills);
+    }, [filteredSkills, skillsPerPage]);
+
+    const handleClickMore = () => {
+        const currentlyDisplayed = displayedSkills.length;
+        const nextBatchEndIndex = currentlyDisplayed + skillsPerPage;
+        const newDisplayedSkills = filteredSkills.slice(0, nextBatchEndIndex);
+        setDisplayedSkills(newDisplayedSkills);
+
+        if (nextBatchEndIndex >= totalSkills) {
+            setShowMore(false);
+        }
+    };
+
+    function changeFilterType(type) {
+        setCurrentFilterType(type);
+        setShowMore(true);
+    }
+
+    const handleClickLess = () => {
+        setDisplayedSkills(filteredSkills.slice(0, skillsPerPage));
+        setShowMore(true);
+    };
 
     return (
         <section id="skills" className={s.skillsBlock}>
+
             <Title text={'My Skills'} shadowText={'WHAT I KNOW'}/>
-            <div className={s.skillsContainer}>
-                <div className={s.skills}>
-                    <div className={s.skillGrid}>
-                        <Skill title={'JavaScript'} src={javascript} alt={"JS"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'TypeScript'} src={ts} alt={"TS"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'React'} src={react} alt={"React"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'Redux'} src={redux} alt={"Redux"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'Node.js'} src={nodeJS} alt={"Node.js"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'Jest'} src={jest} alt={"Jest"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'Unit Test'} src={unitTest} alt={"Unit test"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'Storybook'} src={storybook} alt={"Storybook"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'Postman'} src={postman} alt={"Postman"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'Axios'} src={axios} alt={"Axios"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'RestApi'} src={restAPI} alt={"RestApi"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'Git'} src={git} alt={"Git"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'Formik'} src={formik} alt={"Formik"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'Hook Form'} src={reactHookForm} alt={"React-Hook-Form"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'MaterialUI'} src={materialUI} alt={"MaterialUI"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'Ant Design'} src={antDesign} alt={"Ant Design"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'Radix UI'} src={radixUI} alt={"Radix UI"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'HTML'} src={html5} alt={"HTML"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'CSS3'} src={scc3} alt={"CSS3"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'SASS'} src={sass} alt={"SASS"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'Styled </>'} src={styledComponents} alt={"Styled Components"}/>
-                    </div>
-                    <div className={s.skillGrid}>
-                        <Skill title={'Pixel Perfect'} src={pixel} alt={"Pixel Perfect"}/>
-                    </div>
+
+            <div className={s.descriptions}>
+                {SkillsData.description.map(elem => {
+                    return (
+                        <SkillsDescriptions key={elem.id}
+                                            sprId={elem.sprId}
+                                            title={elem.title}
+                                            description={elem.description}
+                                            width={elem.width}
+                                            height={elem.height}
+                                            viewBox={elem.viewBox}
+                        />
+                    )
+                })}
+                )
+            </div>
+
+            <TabMenu menuItems={SkillsData.skillsFilter}
+                     changeFilterType={changeFilterType}
+                     active={currentFilterType}
+            />
+
+            <div id="skillsItems" className={s.skillsContainer}>
+                <div className={s.skillsWrap}>
+                    {displayedSkills.map(skill => (
+                        <div key={skill.id}>
+                            <Skill
+                                title={skill.title}
+                                src={skill.srcPath}
+                                alt={skill.altName}
+                            />
+                        </div>
+                    ))}
+                </div>
+                <div>
+                    {!showMore && displayedSkills.length === totalSkills ?
+                        (<div className={s.centred}>
+                                <button onClick={handleClickLess} className={s.moreButton}>
+                                    Collapse
+                                </button>
+                            </div>
+                        )
+                        : (
+                            <div className={s.centred}>
+                                <button onClick={handleClickMore} className={s.moreButton}>
+                                    Load More
+                                </button>
+                            </div>
+                        )}
                 </div>
             </div>
         </section>
