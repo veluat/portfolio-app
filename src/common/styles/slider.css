@@ -54,3 +54,10 @@
 .alice-carousel__next-btn-item span::after {
     font-size: 26px;
 }
+
+@media screen and (max-width: 768px) {
+    .alice-carousel__prev-btn-item,
+    .alice-carousel__next-btn-item {
+        display: none;
+    }
+}

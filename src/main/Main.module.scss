@@ -6,10 +6,8 @@
   height: 100%;
   background-color: $backgroundColor;
   backdrop-filter: blur(16px);
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
   @include padding();
+  padding-top: calc(7rem + 50px);
 
   .container {
     @include container();
@@ -18,13 +16,20 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    @media (max-width: 1499px) {
+    @media (max-width: 1400px) {
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
     }
 
     .textContainer {
+      max-width: 550px;
+      width: 100%;
+      @media (max-width: 1400px) {
+        max-width: 500px;
+      }
+
       .getInTouch {
         @include btnProperties();
         margin-top: 1.75rem;
@@ -37,7 +42,7 @@
         width: 100%;
         margin: 1.75rem 0;
 
-        @media (max-width: 1499px) {
+        @media (max-width: 1400px) {
           display: none;
         }
 
@@ -63,26 +68,25 @@
         justify-content: space-between;
         align-items: flex-start;
 
-        @media (max-width: 1499px) {
+        @media (max-width: 1400px) {
           justify-content: center;
           align-items: center;
         }
 
         .emptySpan {
-          background-color: rgba(114, 226, 174, 0.2);
-          border-radius: 9999px;
-          overflow: hidden;
-          width: 36.5%;
-          height: 0.375rem;
-          display: inline-block;
-          z-index: 10;
-          position: relative;
+         @include bgSpan();
+          width: 236px;
           transform: translate(0, 0);
           margin: 1.75rem 0;
 
-          @media (max-width: 848px) {
-            width: 236px;
+          @media (max-width: 1400px) {
+            margin-top: 0;
           }
+
+          .slider {
+            @include slider();
+          }
+
         }
       }
 
@@ -97,14 +101,14 @@
         word-break: break-word;
         font-size: 2em;
 
-        @media (max-width: 1499px) {
+        @media (max-width: 1400px) {
           text-align: center;
           font-size: 36px;
           margin: 0.75rem 0;
         }
 
         span {
-          @media (max-width: 1499px) {
+          @media (max-width: 1400px) {
             display: block;
           }
 
@@ -131,7 +135,7 @@
           user-select: none;
         }
 
-        @media (max-width: 1499px) {
+        @media (max-width: 1400px) {
           text-align: center;
           font-size: 22px;
           margin: 0.75rem 0;
@@ -151,7 +155,7 @@
         width: 30rem;
       }
 
-      @media (max-width: 1499px) {
+    @media (max-width: 1400px) {
         width: 25rem;
       }
 
@@ -197,5 +201,14 @@
   }
   to {
     opacity: 0;
+  }
+}
+
+@keyframes titleSliderAnimation {
+  0% {
+    transform: translateX(246px);
+  }
+  100% {
+    transform: translateX(-10px);
   }
 }

@@ -1,7 +1,7 @@
 import {Link} from "react-scroll";
 import React from "react";
 
-export const LinkPadding = ({path, className, activeClass, section, onClickHandlerProps, setActive, active}) => {
+export const LinkPadding = ({path, className, activeClass, section, onClickHandlerProps}) => {
 
     return (
         <Link onClick={onClickHandlerProps} activeClass={activeClass} to={path} spy={true} smooth={true} offset={0}

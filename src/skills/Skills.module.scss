@@ -35,7 +35,6 @@
     flex-direction: column;
     justify-content: center;
     @include container();
-    width: 60%;
 
     .centred {
       display: flex;

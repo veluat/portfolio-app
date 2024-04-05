@@ -1,6 +1,6 @@
 import React from "react";
 import s from './Main.module.scss';
-import avatar from "../assets/images/myPhotoBlWt.png";
+import avatar from "../assets/images/myPhoto.png";
 import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
 import {Link} from "react-scroll";
@@ -26,18 +26,15 @@ export const Main = () => {
                                 typingDelay={100}
                             />
                         </h1>
-                        <p className={s.description}>Frontend developer with experience 1 yr+ in creating SPA using React,
-                            Redux, TS
-                            <br/>
-                            with knowledge in user interface, testing, and debugging processes.
-                            <br/>
-                            I'm looking for full-time employment or project work.
-                            <br/>
-                            I'm very passionate and dedicated to my work.
+                        <p className={s.description}>Frontend developer with experience 1 yr+ in creating SPA using
+                            React, Redux, Typescript, JS/ES6+ with knowledge in user interface, testing, and debugging
+                            processes.
                             <br/>
                             Open for your job offers.</p>
                         <div className={s.contactsIcons}>
-                            <span className={s.emptySpan}></span>
+                            <span className={s.emptySpan}>
+                                <span className={s.slider}></span>
+                            </span>
                             <SocialNetBlock/>
                         </div>
                         <button className={s.getInTouch}>
@@ -49,7 +46,6 @@ export const Main = () => {
                             </Link>
                         </div>
                     </div>
-
                 </div>
             </Fade>
         </section>

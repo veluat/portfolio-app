@@ -22,6 +22,7 @@
     background-color: $backgroundColor;
     height: 100vh;
     gap: 2em;
+    list-style-type: none;
 
     .active {
       background-color: $aColor;

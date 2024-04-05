@@ -1,5 +1,16 @@
 @import 'variables';
 
+@mixin bgSpan() {
+  background-color: rgba(114, 226, 174, 0.2);
+  border-radius: 9999px;
+  overflow: hidden;
+  width: 8rem;
+  height: 0.375rem;
+  display: inline-block;
+  z-index: 10;
+  position: relative;
+}
+
 @mixin slider() {
   background-color: $primaryColor;
   border-radius: 9999px;
@@ -23,9 +34,14 @@
 }
 
 @mixin padding() {
-  padding-top: 7rem;
+  padding: 7rem 0;
+  max-width: 1512px;
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+
   @media screen and (max-width: 952px) {
-    padding-top: 6rem;
+    padding: 6rem 0 0;
   }
 }
 
