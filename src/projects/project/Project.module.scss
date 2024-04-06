@@ -45,6 +45,8 @@
 
     .disabled {
       @include btnProperties();
+      cursor: not-allowed;
+      text-decoration: none;
 
       &:hover {
         background-color: $primaryColor;

@@ -2,6 +2,10 @@
 @import 'src/common/styles/sass/mixins';
 
 .mainBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   background-color: $backgroundColor;
@@ -74,7 +78,7 @@
         }
 
         .emptySpan {
-         @include bgSpan();
+          @include bgSpan();
           width: 236px;
           transform: translate(0, 0);
           margin: 1.75rem 0;
@@ -155,7 +159,7 @@
         width: 30rem;
       }
 
-    @media (max-width: 1400px) {
+      @media (max-width: 1400px) {
         width: 25rem;
       }
 

@@ -26,9 +26,7 @@ export const Main = () => {
                                 typingDelay={100}
                             />
                         </h1>
-                        <p className={s.description}>Frontend developer with experience 1 yr+ in creating SPA using
-                            React, Redux, Typescript, JS/ES6+ with knowledge in user interface, testing, and debugging
-                            processes.
+                        <p className={s.description}>Frontend developer with experience 1 yr+ in creating SPA using React, Redux, Typescript, JS/ES6+ with knowledge in user interface, testing, and debugging processes.
                             <br/>
                             Open for your job offers.</p>
                         <div className={s.contactsIcons}>

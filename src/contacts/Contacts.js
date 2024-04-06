@@ -58,7 +58,7 @@ export const Contacts = () => {
                 .finally(() => {
                     setLoading(false)
                 })
-        },
+        }
     })
     const myMessageClose = () => {
         setError('')

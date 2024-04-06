@@ -3,6 +3,7 @@ import socialImage from "./../../assets/images/projects/socialNetwork-1.jpg";
 import cardsImage from "./../../assets/images/projects/learning-cards-1.jpg";
 import taxiImage from "./../../assets/images/projects/taxi-services-1.jpg";
 import art from "./../../assets/images/projects/art-1.jpg";
+import weather from "./../../assets/images/projects/weather.jpg";
 
 export const ProjectData = [
     {
@@ -49,5 +50,14 @@ export const ProjectData = [
         },
         buttonType: 'Demo',
         link: 'https://veluat.github.io/creative-art-layout'
+    },
+    {
+        title: 'WEATHER',
+        description: 'SPA to display the weather in the specified city. React project with Redux-Toolkit, Axios, React router dom',
+        bg: {
+            backgroundImage: 'url(' + weather + ')',
+        },
+        buttonType: 'Coming soon',
+        link: '#'
     }
 ]
