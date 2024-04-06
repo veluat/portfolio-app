@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Nav.module.scss';
 import {LinkPadding} from "../../common/components/linkPadding/LinkPadding";
-import resume from '../../assets/resume/resume-Julia-Popova.pdf'
+import resume from '../../assets/resume/Julia-Popova-resume.pdf'
 
 export const Nav = () => {
     return (
