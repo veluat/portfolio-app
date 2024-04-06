@@ -1,8 +1,8 @@
-import todoImage from "./../../assets/images/todolist-1.jpeg";
-import socialImage from "./../../assets/images/socialNetwork-1.jpg";
-import cardsImage from "./../../assets/images/learning-cards-1.jpg";
-import taxiImage from "./../../assets/images/taxi-services-1.jpg";
-import art from "./../../assets/images/art-1.jpg";
+import todoImage from "./../../assets/images/projects/todolist-1.jpeg";
+import socialImage from "./../../assets/images/projects/socialNetwork-1.jpg";
+import cardsImage from "./../../assets/images/projects/learning-cards-1.jpg";
+import taxiImage from "./../../assets/images/projects/taxi-services-1.jpg";
+import art from "./../../assets/images/projects/art-1.jpg";
 
 export const ProjectData = [
     {

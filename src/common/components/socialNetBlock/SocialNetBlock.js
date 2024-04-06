@@ -1,8 +1,8 @@
 import s from "./SocialNetBlock.module.scss";
-import telegram from "../../../assets/images/telegram.png";
-import github from "../../../assets/images/github.png";
-import linkedin from "../../../assets/images/linkedin.png";
-import codewars from "../../../assets/images/codewars.png";
+import telegram from "../../../assets/images/social/telegram.png";
+import github from "../../../assets/images/social/github.png";
+import linkedin from "../../../assets/images/social/linkedin.png";
+import codewars from "../../../assets/images/social/codewars.png";
 import React from "react";
 
 export const SocialNetBlock = () => {
