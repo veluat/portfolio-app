@@ -35,6 +35,7 @@ import pnpm from './../../assets/images/skills/pnpm.png'
 import prettier from './../../assets/images/skills/prettier.png'
 import ESLint from './../../assets/images/skills/eslint.png'
 import bootstrap from './../../assets/images/skills/bootstrap.png'
+import vercel from './../../assets/images/skills/vercel.png'
 
 export const SkillsData = {
     skill: [
@@ -228,11 +229,10 @@ export const SkillsData = {
             altName: 'Pixel Perfect',
             type: 'tools'
         },
-        {
-            id: 'heroku',
-            title: 'Heroku',
-            srcPath: heroku,
-            altName: 'Heroku',
+        {   id: 'vercel',
+            title: 'Vercel',
+            srcPath: vercel,
+            altName: 'Vercel',
             type: 'tools'
         },
         {
@@ -240,6 +240,13 @@ export const SkillsData = {
             title: 'Netlify',
             srcPath: netlify,
             altName: 'Netlify',
+            type: 'tools'
+        },
+        {
+            id: 'heroku',
+            title: 'Heroku',
+            srcPath: heroku,
+            altName: 'Heroku',
             type: 'tools'
         },
         {
