@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.977aef06.css",
-    "main.js": "/portfolio/static/js/main.973b070a.js",
+    "main.js": "/portfolio/static/js/main.cc76e5d2.js",
     "static/js/488.9e51c7c4.chunk.js": "/portfolio/static/js/488.9e51c7c4.chunk.js",
     "static/media/Julia-Popova-resume.pdf": "/portfolio/static/media/Julia-Popova-resume.3cccb81e67d41cddad98.pdf",
     "static/media/weather.jpg": "/portfolio/static/media/weather.d97f69a49c209af4beb6.jpg",
@@ -47,11 +47,11 @@
     "static/media/materialui.svg": "/portfolio/static/media/materialui.9a7fa21fef461d272ba8151574584e84.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.c4595f140b8a6b0e634947d37152d0ff.svg",
     "main.977aef06.css.map": "/portfolio/static/css/main.977aef06.css.map",
-    "main.973b070a.js.map": "/portfolio/static/js/main.973b070a.js.map",
+    "main.cc76e5d2.js.map": "/portfolio/static/js/main.cc76e5d2.js.map",
     "488.9e51c7c4.chunk.js.map": "/portfolio/static/js/488.9e51c7c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.977aef06.css",
-    "static/js/main.973b070a.js"
+    "static/js/main.cc76e5d2.js"
   ]
 }
