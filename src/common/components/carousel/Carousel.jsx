@@ -19,7 +19,6 @@ const items = ProjectData.map((item, index) => {
 })
 
 export const Carousel = () => {
-
     return (
         <div className={s.slider}>
             <AliceCarousel
