@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e7d17478.css",
-    "main.js": "/portfolio/static/js/main.ee02c5dd.js",
-    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "main.css": "/portfolio/static/css/main.977aef06.css",
+    "main.js": "/portfolio/static/js/main.87be58ae.js",
+    "static/js/488.9e51c7c4.chunk.js": "/portfolio/static/js/488.9e51c7c4.chunk.js",
     "static/media/Julia-Popova-resume.pdf": "/portfolio/static/media/Julia-Popova-resume.3cccb81e67d41cddad98.pdf",
     "static/media/weather.jpg": "/portfolio/static/media/weather.d97f69a49c209af4beb6.jpg",
     "static/media/art-1.jpg": "/portfolio/static/media/art-1.f7a6b27a805f6e961f5f.jpg",
@@ -46,12 +46,12 @@
     "static/media/figma.svg": "/portfolio/static/media/figma.c8fdc0393f5e671b7907c1aa01ef2144.svg",
     "static/media/materialui.svg": "/portfolio/static/media/materialui.9a7fa21fef461d272ba8151574584e84.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.c4595f140b8a6b0e634947d37152d0ff.svg",
-    "main.e7d17478.css.map": "/portfolio/static/css/main.e7d17478.css.map",
-    "main.ee02c5dd.js.map": "/portfolio/static/js/main.ee02c5dd.js.map",
-    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.977aef06.css.map": "/portfolio/static/css/main.977aef06.css.map",
+    "main.87be58ae.js.map": "/portfolio/static/js/main.87be58ae.js.map",
+    "488.9e51c7c4.chunk.js.map": "/portfolio/static/js/488.9e51c7c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7d17478.css",
-    "static/js/main.ee02c5dd.js"
+    "static/css/main.977aef06.css",
+    "static/js/main.87be58ae.js"
   ]
 }
