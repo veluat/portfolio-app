@@ -2,7 +2,7 @@
 @import 'src/common/styles/sass/variables';
 
 .nav {
-
+  margin-right: 2rem;
   @media screen and (max-width: 814px) {
     display: none;
   }

@@ -2,8 +2,7 @@
 @import 'src/common/styles/sass/mixins';
 
 .skillsBlock {
-  background-color: $backgroundColor;
-  backdrop-filter: blur(16px);
+
   @include padding();
 
   .descriptions {
@@ -35,6 +34,8 @@
     flex-direction: column;
     justify-content: center;
     @include container();
+    background-color: rgba(166, 164, 164, 0);
+    backdrop-filter: none;
 
     .centred {
       display: flex;

@@ -6,6 +6,7 @@ import ReactTypingEffect from 'react-typing-effect';
 import {Link} from "react-scroll";
 import {SocialNetBlock} from "../common/components/socialNetBlock/SocialNetBlock";
 import {LinkPadding} from "../common/components/linkPadding/LinkPadding";
+import Tilt from 'react-parallax-tilt';
 
 export const Main = () => {
     return (
@@ -13,20 +14,26 @@ export const Main = () => {
             <Fade top>
                 <div className={s.container}>
                     <div className={s.photo}>
-                        <img className={s.avatar} src={avatar} alt=""/>
+                        <Tilt glareEnable={true} glareMaxOpacity={0.6} glareColor="#ffffff" glarePosition="bottom" glareBorderRadius="20px">
+                            <img className={s.ava} src={avatar} alt="Popova"/>
+                        </Tilt>
                     </div>
+
                     <div className={s.textContainer}>
                         <h1 className={s.nameBlock}>
+                            <p>Frontend Web Developer</p>
                             <span>I am </span>
                             <ReactTypingEffect
-                                text={["Julia Popova", "Frontend Developer"]}
-                                speed={100}
-                                eraseSpeed={40}
+                                text={["Julia Popova", "Frontend Developer", "Web Developer"]}
+                                speed={10}
+                                eraseSpeed={0}
                                 eraseDelay={1200}
                                 typingDelay={100}
                             />
                         </h1>
-                        <p className={s.description}>Frontend developer with experience 1 yr+ in creating SPA using React, Redux, Typescript, JS/ES6+ with knowledge in user interface, testing, and debugging processes.
+                        <p className={s.description}>Frontend developer with experience 1 yr+ in creating SPA using
+                            React, Redux, Typescript, JS/ES6+ with knowledge in user interface, testing, and debugging
+                            processes.
                             <br/>
                             Open for your job offers.</p>
                         <div className={s.contactsIcons}>

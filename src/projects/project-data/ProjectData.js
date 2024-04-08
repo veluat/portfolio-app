@@ -1,9 +1,9 @@
-import todoImage from "./../../assets/images/projects/todolist-1.jpeg";
-import socialImage from "./../../assets/images/projects/socialNetwork-1.jpg";
-import cardsImage from "./../../assets/images/projects/learning-cards-1.jpg";
-import taxiImage from "./../../assets/images/projects/taxi-services-1.jpg";
-import art from "./../../assets/images/projects/art-1.jpg";
-import weather from "./../../assets/images/projects/weather.jpg";
+import todoImage from "./../../assets/images/projects/todolist.webp";
+import socialImage from "./../../assets/images/projects/socialNetwork.webp";
+import cardsImage from "./../../assets/images/projects/learning-cards.webp";
+import taxiImage from "./../../assets/images/projects/taxi-services.webp";
+import art from "./../../assets/images/projects/art-1.webp";
+import weather from "./../../assets/images/projects/weather.webp";
 
 export const ProjectData = [
     {
@@ -53,7 +53,7 @@ export const ProjectData = [
     },
     {
         title: 'WEATHER',
-        description: 'SPA to display the weather in the specified city. React project with Redux-Toolkit, Axios, React router dom',
+        description: 'SPA allows users to view the weather information of a specific city. React project with Redux-Toolkit, Axios, React router dom',
         bg: {
             backgroundImage: 'url(' + weather + ')',
         },

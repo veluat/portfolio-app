@@ -27,6 +27,8 @@
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     color: rgb(255, 255, 255);
+    background-color: #0F172AFF;
+    backdrop-filter: blur(16px);
 }
 
 .alice-carousel__prev-btn-item:hover,

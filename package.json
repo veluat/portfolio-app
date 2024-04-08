@@ -15,6 +15,7 @@
     "react": "^18.2.0",
     "react-alice-carousel": "^2.9.1",
     "react-dom": "^18.2.0",
+    "react-parallax-tilt": "^1.7.220",
     "react-reveal": "^1.2.2",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
@@ -47,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
