@@ -1,0 +1,22 @@
+@import 'src/common/styles/sass/variables';
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 250px;
+  padding-left: 2rem;
+  cursor: pointer;
+
+  span {
+    color: $aColor;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 0;
+
+    @media screen and (max-width: 814px) {
+      display: none;
+    }
+  }
+}

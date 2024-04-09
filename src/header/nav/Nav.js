@@ -1,27 +1,20 @@
 import React from "react";
 import s from './Nav.module.scss';
-import {LinkPadding} from "../../common/components/linkPadding/LinkPadding";
+import {NavLink} from "../../common/components/navLink/NavLink";
 import resume from '../../assets/resume/Julia-Popova-resume.pdf'
+import {HeaderData} from "../header-data/Header-Data";
 
 export const Nav = () => {
     return (
         <nav className={s.nav}>
-            <ul className={s.navPadding}>
-                <li>
-                    <LinkPadding section={"Home"} path={"home"} activeClass={s.active}/>
-                </li>
-                <li>
-                    <LinkPadding section={"Skills"} path={"skills"} activeClass={s.active}/>
-                </li>
-                <li>
-                    <LinkPadding section={"Projects"} path={"projects"} activeClass={s.active}/>
-                </li>
-                <li>
-                    <LinkPadding section={"Remote work"} path={"remoteWork"} activeClass={s.active}/>
-                </li>
-                <li>
-                    <LinkPadding section={"Contacts"} path={"contacts"} activeClass={s.active}/>
-                </li>
+            <ul className={s.navLink}>
+                {HeaderData.map(el => {
+                    return (
+                        <li>
+                            <NavLink section={el.section} path={el.path} activeClass={s.active}/>
+                        </li>
+                    )
+                })}
                 <li>
                     <a className={s.resume} href={resume} download={"resume-Julia-Popova.pdf"}>Download resume</a>
                 </li>
