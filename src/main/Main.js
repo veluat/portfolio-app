@@ -4,8 +4,8 @@ import avatar from "../assets/images/myPhoto.png";
 import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
 import {Link} from "react-scroll";
-import {SocialNetBlock} from "../common/components/socialNetBlock/SocialNetBlock";
-import {LinkPadding} from "../common/components/linkPadding/LinkPadding";
+import {SocialBlock} from "../common/components/socialBlock/SocialBlock";
+import {NavLink} from "../common/components/navLink/NavLink";
 import Tilt from 'react-parallax-tilt';
 
 export const Main = () => {
@@ -25,9 +25,9 @@ export const Main = () => {
                             <span>I am </span>
                             <ReactTypingEffect
                                 text={["Julia Popova", "Frontend Developer", "Web Developer"]}
-                                speed={10}
-                                eraseSpeed={0}
-                                eraseDelay={1200}
+                                speed={100}
+                                eraseSpeed={40}
+                                eraseDelay={1000}
                                 typingDelay={100}
                             />
                         </h1>
@@ -40,10 +40,10 @@ export const Main = () => {
                             <span className={s.emptySpan}>
                                 <span className={s.slider}></span>
                             </span>
-                            <SocialNetBlock/>
+                            <SocialBlock/>
                         </div>
                         <button className={s.getInTouch}>
-                            <LinkPadding section={"Hire me"} path={"contacts"}/>
+                            <NavLink section={"Hire me"} path={"contacts"}/>
                         </button>
                         <div className={s.scroll}>
                             <Link to="skills" spy={true} smooth={true} offset={0} duration={500}>

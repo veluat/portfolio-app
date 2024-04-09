@@ -1,7 +1,7 @@
 import React from "react";
 import s from './RemoteWork.module.scss';
 import {Title} from "../common/components/title/Title";
-import {LinkPadding} from "../common/components/linkPadding/LinkPadding";
+import {NavLink} from "../common/components/navLink/NavLink";
 
 export const RemoteWork = () => {
     return (
@@ -10,7 +10,7 @@ export const RemoteWork = () => {
             <div className={s.workFromHomeContainer}>
                 <div className={s.content}>
                     <button className={s.getInTouch}>
-                        <LinkPadding section={"Hire me"} path={"contacts"}/>
+                        <NavLink section={"Hire me"} path={"contacts"}/>
                     </button>
                 </div>
             </div>

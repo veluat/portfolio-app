@@ -5,6 +5,10 @@
   background-color: $backgroundColor;
   backdrop-filter: blur(16px);
   @include padding();
+
+  @media screen and (max-width: 952px) {
+    padding: 6rem 0 0;
+  }
 }
 
 

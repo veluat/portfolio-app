@@ -34,14 +34,14 @@
 }
 
 @mixin padding() {
-  padding: 7rem 0;
+  padding: 7rem 2rem 0;
   max-width: 1512px;
   width: 100%;
   min-height: 100%;
   margin: 0 auto;
 
   @media screen and (max-width: 952px) {
-    padding: 6rem 0 0;
+    padding: 6rem 1rem 0;
   }
 }
 

@@ -5,10 +5,11 @@ import {Project} from "../../../projects/project/Project";
 import s from "./Carousel.module.scss"
 import './../../styles/slider.css'
 import {ProjectData} from "../../../projects/project-data/ProjectData";
+import {DirectionBtn} from "../directionBtn/DirectionBtn";
 
 const items = ProjectData.map((item, index) => {
     return (
-        <div key={index} className="item">
+        <div key={index}>
             <Project style={item.bg}
                      projectTitle={item.title}
                      projectDescription={item.description}
@@ -29,6 +30,8 @@ export const Carousel = () => {
                 autoPlayInterval={2500}
                 animationDuration={1200}
                 keyboardNavigation
+                renderPrevButton={() => <DirectionBtn id='left'/>}
+                renderNextButton={() => <DirectionBtn id='right'/>}
             />
         </div>
     )

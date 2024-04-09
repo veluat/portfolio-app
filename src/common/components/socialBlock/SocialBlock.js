@@ -1,10 +1,10 @@
-import s from "./SocialNetBlock.module.scss";
+import s from "./SocialBlock.module.scss";
 import telegram from "./../../../assets/images/social/telegram.png";
 import github from "./../../../assets/images/social/github.png";
 import linkedin from "./../../../assets/images/social/linkedin.png";
 import codewars from "./../../../assets/images/social/codewars.png";
 
-export const SocialNetBlock = () => {
+export const SocialBlock = () => {
     return (
         <div className={s.boxContainer}>
             <div className={s.box}>
