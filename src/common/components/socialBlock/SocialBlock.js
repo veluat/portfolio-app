@@ -1,32 +1,48 @@
 import s from "./SocialBlock.module.scss";
-import telegram from "./../../../assets/images/social/telegram.png";
-import github from "./../../../assets/images/social/github.png";
-import linkedin from "./../../../assets/images/social/linkedin.png";
-import codewars from "./../../../assets/images/social/codewars.png";
+import iconSprite from "../../../assets/sprite/sprite.svg";
+import React from "react";
+
+const socials = [
+    {
+        id: 'telegram-1',
+        sprId: 'telegram',
+        href: "https://t.me/veluat"
+    },
+    {
+        id: 'gitHub-2',
+        sprId: 'gitHub',
+        href: "https://github.com/veluat"
+    },
+    {
+        id: 'linkedIn-3',
+        sprId: 'linkedIn',
+        href: "https://www.linkedin.com/in/julia-popova-developer"
+    },
+    {
+        id: 'codewars-4',
+        sprId: 'codewars',
+        href: "https://www.codewars.com/users/veluat"
+    }
+]
 
 export const SocialBlock = () => {
     return (
         <div className={s.boxContainer}>
-            <div className={s.box}>
-                <a href="https://t.me/veluat" target="_blank" rel="noreferrer">
-                    <img className={s.icon} src={telegram} alt='telegram'></img>
-                </a>
-            </div>
-            <div className={s.box}>
-                <a href="https://github.com/veluat" target="_blank" rel="noreferrer">
-                    <img className={s.icon} src={github} alt='github'></img>
-                </a>
-            </div>
-            <div className={s.box}>
-                <a href="https://www.linkedin.com/in/julia-popova-developer/" target="_blank" rel="noreferrer">
-                    <img className={s.icon} src={linkedin} alt='linkedin'></img>
-                </a>
-            </div>
-            <div className={s.box}>
-                <a href="https://www.codewars.com/users/veluat" target="_blank" rel="noreferrer">
-                    <img className={s.icon} src={codewars} alt='codewars'></img>
-                </a>
-            </div>
+            {socials.map(el => {
+                return (
+                    <div key={el.id} className={s.box}>
+                        <a key={el.id} className={s.icon} href={el.href} target="_blank" rel="noreferrer">
+                            <svg key={el.id} fill="#FAFAFAFF"
+                                 width='30px'
+                                 height='30px'
+                                 viewBox='0 0 200 200'
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <use xlinkHref={`${iconSprite}#${el.sprId}`}/>
+                            </svg>
+                        </a>
+                    </div>
+                )
+            })}
         </div>
     )
 }
