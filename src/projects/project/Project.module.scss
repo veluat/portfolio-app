@@ -2,39 +2,27 @@
 @import 'src/common/styles/sass/mixins';
 
 .project {
-  transform: none;
   background-color: $backgroundBlockColor;
   border-radius: 0.5rem;
   border: 1px solid $borderColor;
   width: 100%;
   padding: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 
   &:hover {
-    transition: 0.3s;
+    transition: $transition;
     border-color: $primaryColor;
     cursor: grab;
   }
 
-  .projectImg {
-    height: 300px;
+  .btnFlex {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #a6a4a4;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: '';
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0.54;
-    }
+    justify-content: space-around;
+    width: 100%;
 
     .projectButton {
       @include btnProperties();
@@ -43,9 +31,7 @@
     }
 
     .disabled {
-      @include btnProperties();
       cursor: not-allowed;
-      text-decoration: none;
 
       &:hover {
         background-color: $primaryColor;
@@ -53,12 +39,22 @@
     }
   }
 
-  .projectText {
-    margin-top: 1rem;
-    text-align: center;
+  .projectImg {
+    height: 300px;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid $borderColor;
+    background-color: rgba(114, 226, 174, 0.1);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 
     p::selection {
       user-select: none;
     }
+  }
+
+  .projectText {
+    text-align: center;
   }
 }

@@ -1,9 +1,9 @@
-import todoImage from "./../../assets/images/projects/todolist.webp";
-import socialImage from "./../../assets/images/projects/socialNetwork.webp";
-import cardsImage from "./../../assets/images/projects/learning-cards.webp";
-import taxiImage from "./../../assets/images/projects/taxi-services.webp";
-import art from "./../../assets/images/projects/art-1.webp";
-import weather from "./../../assets/images/projects/weather.webp";
+import todoImage from "./../../assets/images/projects/todo.svg";
+import socialImage from "./../../assets/images/projects/network.svg";
+import cardsImage from "./../../assets/images/projects/cards.svg";
+import taxiImage from "./../../assets/images/projects/taxi.svg";
+import art from "./../../assets/images/projects/art.svg";
+import weather from "./../../assets/images/projects/weather.svg";
 
 export const ProjectData = [
     {
@@ -12,8 +12,11 @@ export const ProjectData = [
         bg: {
             backgroundImage: 'url(' + todoImage + ')',
         },
-        buttonType: 'Demo',
-        link: 'https://veluat.github.io/task-manager'
+        sprId: 'todo-list',
+        demoBtn: 'Demo',
+        demoLink: 'https://veluat.github.io/task-manager',
+        codeLink: 'https://github.com/veluat/task-manager',
+        codeBtn: 'Code'
     },
     {
         title: 'SOCIAL NETWORK',
@@ -21,26 +24,35 @@ export const ProjectData = [
         bg: {
             backgroundImage: 'url(' + socialImage + ')',
         },
-        buttonType: 'Demo',
-        link: 'https://veluat.github.io/social-network'
+        sprId: 'network',
+        demoBtn: 'Demo',
+        demoLink: 'https://veluat.github.io/social-network',
+        codeLink: 'https://github.com/veluat/social-network',
+        codeBtn: 'Code'
     },
     {
         title: 'TAXI SERVICES',
         description: 'Example of a business website. Images and text are created by AI. The design was developed by me. Used React, CSS, JavaScript, React Router Dom',
         bg: {
-            backgroundImage: 'url(' + cardsImage + ')',
+            backgroundImage: 'url(' + taxiImage + ')',
         },
-        buttonType: 'Demo',
-        link: 'https://example-of-a-business-website.netlify.app'
+        sprId: 'taxi',
+        demoBtn: 'Demo',
+        demoLink: 'https://example-of-a-business-website.netlify.app',
+        codeLink: 'https://github.com/veluat/taxi-services',
+        codeBtn: 'Code'
     },
     {
         title: 'LEARNING CARDS',
         description: 'Flashcard learning app to help you learn new topics. React project with Redux Toolkit, Axios, TS, React Hook Form, Zod, React Router Dom, Git, Radix UI',
         bg: {
-            backgroundImage: 'url(' + taxiImage + ')',
+            backgroundImage: 'url(' + cardsImage + ')',
         },
-        buttonType: 'Demo',
-        link: 'https://cards-two-self.vercel.app'
+        sprId: 'cards',
+        demoBtn: 'Demo',
+        demoLink: 'https://cards-two-self.vercel.app',
+        codeLink: 'https://github.com/veluat/cards',
+        codeBtn: 'Code'
     },
     {
         title: 'CREATIVE ART',
@@ -48,8 +60,11 @@ export const ProjectData = [
         bg: {
             backgroundImage: 'url(' + art + ')',
         },
-        buttonType: 'Demo',
-        link: 'https://veluat.github.io/creative-art-layout'
+        sprId: 'creative-art',
+        demoBtn: 'Demo',
+        demoLink: 'https://veluat.github.io/creative-art-layout',
+        codeLink: 'https://github.com/veluat/creative-art-layout',
+        codeBtn: 'Code'
     },
     {
         title: 'WEATHER',
@@ -57,7 +72,10 @@ export const ProjectData = [
         bg: {
             backgroundImage: 'url(' + weather + ')',
         },
-        buttonType: 'Coming soon',
-        link: '#'
+        sprId: 'weather',
+        demoBtn: 'Coming soon',
+        demoLink: '#',
+        codeLink: '#',
+        codeBtn: 'Code'
     }
 ]
