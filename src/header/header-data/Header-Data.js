@@ -1,23 +1,23 @@
 export const HeaderData = [
     {
         section: "Home",
-        path: "home"
+        path: "home",
     },
     {
         section: "Skills",
-        path: "skills"
+        path: "skills",
     },
     {
         section: "Projects",
-        path: "projects"
+        path: "projects",
     },
     {
         section: "Remote work",
-        path: "remoteWork"
+        path: "remoteWork",
     },
     {
         section: "Contacts",
-        path: "contacts"
+        path: "contacts",
     },
 ]
 

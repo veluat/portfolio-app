@@ -3,7 +3,7 @@
 
 .nav {
   margin-right: 2rem;
-  @media screen and (max-width: 814px) {
+  @media screen and (max-width: 1065px) {
     display: none;
   }
 
@@ -22,6 +22,7 @@
       &:hover {
         background-color: $aColor;
         font-weight: 700;
+        transition: .2s ease-in-out;
       }
     }
 
@@ -42,6 +43,7 @@
     &:hover {
       background: $aColor;
       color: $backgroundColor;
+      transition: .2s ease-in-out;
     }
   }
 }

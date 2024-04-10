@@ -2,7 +2,7 @@ import React from "react";
 import s from './Header.module.scss';
 import {Nav} from "./nav/Nav";
 import {BurgerNav} from "./burgerNav/BurgerNav";
-import {Logo} from "../common/logo/Logo";
+import {Logo} from "../common/components/logo/Logo";
 
 export const Header = () => {
     return (

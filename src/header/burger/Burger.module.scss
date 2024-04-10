@@ -11,11 +11,8 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: $backgroundBlockColor;
-  border-radius: 0.5rem;
-  border: 1px solid $borderColor;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
 
   .block {
     width: 25px;
@@ -29,6 +26,7 @@
     background-color: $primaryColor;
     text-align: center;
     transform: rotate(46deg) translate(4px, 3px);
+    transition: $transition;
     justify-content: stretch;
     align-items: stretch;
 
@@ -40,6 +38,7 @@
     background-color: $primaryColor;
     text-align: center;
     transform: rotate(-46deg) translate(4px, -3px);
+    transition: $transition;
     justify-content: stretch;
     align-items: stretch;
   }

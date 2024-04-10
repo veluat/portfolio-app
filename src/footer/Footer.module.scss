@@ -21,38 +21,18 @@
       display: block;
       word-break: break-word;
       text-align: center;
-      padding-top: 10px;
+      padding-top: 1rem;
     }
   }
 
   .footerContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     @include container();
-    margin-top: 2em;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
     border-top: $borderColor 1px solid;
-
-    @media screen and (max-width: 508px) {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .name {
-      font-weight: 500;
-      font-size: 22px;
-      margin-bottom: 0;
-      color: $aColor;
-
-      &:hover {
-        color: $primaryColor;
-        cursor: pointer;
-      }
-
-    }
   }
 }
 

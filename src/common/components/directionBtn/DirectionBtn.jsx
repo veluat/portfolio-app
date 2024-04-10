@@ -1,14 +1,13 @@
 import React from 'react';
-import iconSprite from "../../../assets/sprite/sprite.svg";
+import {Icon} from "../icon/Icon";
 
-export const DirectionBtn = ({id}) => {
+export const DirectionBtn = ({id, width, height}) => {
     return (
-        <svg fill="#000000FF"
-             width='50'
-             height='50'
-             viewBox='0 0 64.000000 64.000000'
-             xmlns="http://www.w3.org/2000/svg">
-            <use xlinkHref={`${iconSprite}#${id}`}/>
-        </svg>
+        <Icon sprId={id}
+              fill="#000000FF"
+              width={width || '50'}
+              height={height || '50'}
+              viewBox='0 0 64 64'
+        />
     )
 }

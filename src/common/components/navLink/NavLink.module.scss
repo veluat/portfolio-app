@@ -29,6 +29,7 @@
     &:hover {
       background-color: $aColor;
       color: $backgroundColor;
+      transition: $transition;
     }
   }
 }

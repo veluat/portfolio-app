@@ -11,14 +11,16 @@ import Tilt from 'react-parallax-tilt';
 export const Main = () => {
     return (
         <section id="home" className={s.mainBlock}>
-            <Fade top>
-                <div className={s.container}>
+            <div className={s.container}>
+                <Fade left>
                     <div className={s.photo}>
-                        <Tilt glareEnable={true} glareMaxOpacity={0.6} glareColor="#ffffff" glarePosition="bottom" glareBorderRadius="20px">
+                        <Tilt glareEnable={true} glareMaxOpacity={0.6} glareColor="#ffffff" glarePosition="bottom"
+                              glareBorderRadius="20px">
                             <img className={s.ava} src={avatar} alt="Popova"/>
                         </Tilt>
                     </div>
-
+                </Fade>
+                <Fade right>
                     <div className={s.textContainer}>
                         <h1 className={s.nameBlock}>
                             <p>Frontend Web Developer</p>
@@ -51,8 +53,8 @@ export const Main = () => {
                             </Link>
                         </div>
                     </div>
-                </div>
-            </Fade>
+                </Fade>
+            </div>
         </section>
     );
 }

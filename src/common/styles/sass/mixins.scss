@@ -24,15 +24,6 @@
   animation-direction: alternate-reverse;
 }
 
-@keyframes titleSliderAnimation {
-  0% {
-    transform: translateX(130px);
-  }
-  100% {
-    transform: translateX(-10px);
-  }
-}
-
 @mixin padding() {
   padding: 7rem 2rem 0;
   max-width: 1512px;
@@ -48,6 +39,7 @@
 @mixin container() {
   background-color: $backgroundColor;
   backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   height: 100%;
   width: 100%;
   margin: 0 auto;
@@ -78,6 +70,7 @@
   &:hover {
     background: $aColor;
     color: $backgroundColor;
+    transition: $transition;
   }
 }
 
@@ -98,4 +91,13 @@
   border-radius: 0.25rem;
   background-color: $backgroundBlockColor;
   cursor: pointer;
+}
+
+@keyframes titleSliderAnimation {
+  0% {
+    transform: translateX(130px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
 }

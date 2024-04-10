@@ -13,8 +13,10 @@ const items = ProjectData.map((item, index) => {
             <Project style={item.bg}
                      projectTitle={item.title}
                      projectDescription={item.description}
-                     projectButton={item.buttonType}
-                     link={item.link}/>
+                     demoBtn={item.demoBtn}
+                     codeBtn={item.codeBtn}
+                     demoLink={item.demoLink}
+                     codeLink={item.codeLink}/>
         </div>
     )
 })

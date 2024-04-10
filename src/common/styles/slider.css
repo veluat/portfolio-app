@@ -1,3 +1,13 @@
+/*.alice-carousel__wrapper:hover {*/
+/*    transition: .2s ease-in-out;*/
+/*    border-color: rgba(114, 226, 174, 1);*/
+/*    cursor: grab;*/
+/*}*/
+
+/*.alice-carousel:hover {*/
+/*    filter: grayscale(100%);*/
+/*}*/
+
 .alice-carousel__dots {
     margin-top: 2rem;
 }
@@ -31,6 +41,7 @@
 .alice-carousel__prev-btn:hover,
 .alice-carousel__next-btn:hover {
     background-color: #FAFAFAFF;
+    transition: .2s ease-in-out;
 }
 
 .alice-carousel__prev-btn {

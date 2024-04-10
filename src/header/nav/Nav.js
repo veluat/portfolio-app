@@ -11,7 +11,7 @@ export const Nav = () => {
                 {HeaderData.map(el => {
                     return (
                         <li>
-                            <NavLink section={el.section} path={el.path} activeClass={s.active}/>
+                            <NavLink init={el.init} section={el.section} path={el.path} activeClass={s.active}/>
                         </li>
                     )
                 })}
