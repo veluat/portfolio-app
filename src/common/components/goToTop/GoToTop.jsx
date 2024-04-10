@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import {DirectionBtn} from "../components/directionBtn/DirectionBtn";
+import {DirectionBtn} from "../directionBtn/DirectionBtn";
 import s from './GoToTop.module.scss'
 import {animateScroll as scroll} from "react-scroll";
+import Fade from "react-reveal/Fade";
 
 export const GoToTop = () => {
     const [showBtn, setShowBtn] = useState(false)
@@ -17,11 +18,16 @@ export const GoToTop = () => {
 
     return (
         <>
-            {showBtn && (<div className={s.wrapper} onClick={() => {
-                scroll.scrollToTop()
-            }}>
-                <DirectionBtn id='top'/>
-            </div>)}
+            <Fade right>
+                {showBtn && (
+                    <div className={s.wrapper}
+                         onClick={() => {
+                             scroll.scrollToTop()
+                         }}>
+                        <DirectionBtn id='top'/>
+                    </div>
+                )}
+            </Fade>
         </>
     )
 }
