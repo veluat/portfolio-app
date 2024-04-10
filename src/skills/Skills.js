@@ -1,16 +1,19 @@
-import React, {useEffect, useMemo, useState} from "react";
+import React, {useEffect, useMemo, useRef, useState} from "react";
 import s from './Skills.module.scss';
 import {Skill} from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
 import {SkillsData} from "./skills-data/SkillsData";
-import {TabMenu} from "../common/components/tabMenu/TabMenu";
+import {TabMenu} from "./tabMenu/TabMenu";
 import {SkillsDescriptions} from "./skills-descriptions/SkillsDescriptions";
+import {AnimatePresence, motion} from "framer-motion"
+import Fade from 'react-reveal/Fade';
 
 export const Skills = () => {
     const [currentFilterType, setCurrentFilterType] = useState('all');
-    const [displayedSkills, setDisplayedSkills] = useState([]);
+    const [displayedSkills, setDisplayedSkills] = useState(SkillsData.skill);
     const [showMore, setShowMore] = useState(true);
-    const skillsPerPage = 6;
+    const skillsPerPage = 3;
+    const skillsItemsRef = useRef(null);
 
     const filteredSkills = useMemo(() => {
         if (currentFilterType === 'stack') {
@@ -48,13 +51,18 @@ export const Skills = () => {
     }
 
     const handleClickLess = () => {
-        setDisplayedSkills(filteredSkills.slice(0, skillsPerPage));
-        setShowMore(true);
+        setDisplayedSkills(filteredSkills.slice(0, skillsPerPage))
+        setShowMore(true)
+        if (skillsItemsRef.current) {
+            skillsItemsRef.current.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            })
+        }
     };
 
     return (
         <section id="skills" className={s.skillsBlock}>
-
             <Title text={'My Skills'} shadowText={'WHAT I KNOW'}/>
 
             <div className={s.descriptions}>
@@ -72,39 +80,51 @@ export const Skills = () => {
                 })}
                 )
             </div>
+            <div id="skillsItems"
+                 ref={skillsItemsRef}>
+                <TabMenu
+                    menuItems={SkillsData.skillsFilter}
+                    changeFilterType={changeFilterType}
+                    active={currentFilterType}
+                />
+            </div>
 
-            <TabMenu menuItems={SkillsData.skillsFilter}
-                     changeFilterType={changeFilterType}
-                     active={currentFilterType}
-            />
 
-            <div id="skillsItems" className={s.skillsContainer}>
+            <div className={s.skillsContainer}>
+
                 <div className={s.skillsWrap}>
-                    {displayedSkills.map(skill => (
-                        <div key={skill.id}>
-                            <Skill
-                                title={skill.title}
-                                src={skill.srcPath}
-                                alt={skill.altName}
-                            />
-                        </div>
-                    ))}
+                    <AnimatePresence initial={false} wait>
+                        {displayedSkills.map((skill) => {
+                            return (<Fade top>
+                                    <motion.div
+                                        initial={{opacity: 0}}
+                                        animate={{opacity: 1}}
+                                        exit={{opacity: 0}}
+                                        transition={{duration: 1}}
+                                        key={skill.id}
+                                    >
+
+                                        <Skill title={skill.title}
+                                               src={skill.srcPath}
+                                               alt={skill.altName}
+                                               key={skill.id}
+                                        />
+                                    </motion.div>
+                                </Fade>
+
+                            )
+                        })}
+                    </AnimatePresence>
                 </div>
-                <div>
+
+                <div className={s.centred}>
                     {!showMore && displayedSkills.length === totalSkills ?
-                        (<div className={s.centred}>
-                                <button onClick={handleClickLess} className={s.moreButton}>
-                                    Collapse
-                                </button>
-                            </div>
-                        )
-                        : (
-                            <div className={s.centred}>
-                                <button onClick={handleClickMore} className={s.moreButton}>
-                                    Load More
-                                </button>
-                            </div>
-                        )}
+                        (<button onClick={handleClickLess} className={s.moreButton}>
+                            Collapse
+                        </button>)
+                        : (<button onClick={handleClickMore} className={s.moreButton}>
+                            Load More
+                        </button>)}
                 </div>
             </div>
         </section>

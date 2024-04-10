@@ -2,7 +2,6 @@
 @import 'src/common/styles/sass/mixins';
 
 .skillsBlock {
-
   @include padding();
 
   .descriptions {
@@ -31,45 +30,31 @@
   }
 
   .skillsContainer {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    @include container();
-    background-color: rgba(166, 164, 164, 0);
-    backdrop-filter: none;
+    align-items: center;
+    gap: 2rem;
 
     .centred {
       display: flex;
       justify-content: center;
-      padding-top: 3rem;
+      max-width: 756px;
+      width: 100%;
 
       .moreButton {
         @include btnProperties();
-
       }
     }
 
     .skillsWrap {
-      display: grid;
+      display: flex;
       justify-content: center;
-      gap: 1.75rem;
-      grid-template-columns: repeat(6, minmax(0, 1fr));
-      margin-top: 1rem;
-
-      @media screen and (max-width: 1760px) {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-
-      @media screen and (max-width: 1169px) {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-
-      @media screen and (max-width: 873px) {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      @media screen and (max-width: 577px) {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-      }
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      max-width: 756px;
+      width: 100%;
     }
   }
 }

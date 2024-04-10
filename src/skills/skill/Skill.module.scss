@@ -1,57 +1,32 @@
 @import 'src/common/styles/sass/variables';
 
 .skill {
-  width: 100%;
-  opacity: 1;
-  transform: none;
-  background-color: $backgroundBlockColor;
-  border-radius: 0.5rem;
-  border: 1px solid $borderColor;
-  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  &:hover {
-    transform: translate(0, -5%);
-    transition: 0.3s;
-    border-color: $primaryColor;
-  }
+  gap: 1rem;
+  width: 130px;
+  height: 130px;
+  background-color: $backgroundBlockColor;
+  border-radius: 0.5rem;
+  border: 1px solid $borderColor;
 
   h3 {
     margin: 0;
   }
 
-  .progress {
+  .iconWrap {
     display: flex;
     align-items: center;
     justify-content: center;
 
     .icon {
-      width: 65%;
+      width: 50px;
       padding: 3px;
-      margin-bottom: 1em;
       background-color: $aColor;
       border-radius: 0.5rem;
-
-      &:hover {
-        animation: 1.2s ease-in-out 0s normal none infinite running shake-animation;
-      }
     }
-  }
-
-}
-
-@keyframes shake-animation {
-  0%, 50%, 100% {
-    transform: rotate(0deg);
-  }
-  10%, 30% {
-    transform: rotate(-10deg);
-  }
-  20%, 40% {
-    transform: rotate(10deg);
   }
 }
 

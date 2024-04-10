@@ -10,15 +10,9 @@
   border-radius: 0.5rem;
   border: 1px solid $borderColor;
 
-  &:hover {
-    transform: translate(0, -5%);
-    transition: 0.3s;
-    border-color: $primaryColor;
-  }
-
   @media screen and (max-width: 1169px) {
-  flex-direction: column;
-  text-align: center;
+    flex-direction: column;
+    text-align: center;
     gap: 0.25rem;
   }
 
@@ -31,6 +25,7 @@
       color: $primaryColor;
       background-color: rgba(114, 226, 174, 0.1);
       padding: 1.25rem;
+      border: 1px solid $borderColor;
       font-size: 36px;
       line-height: 1.2;
       border-radius: 9999px;
