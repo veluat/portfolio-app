@@ -1,13 +1,12 @@
 import React from "react";
 import s from './Contacts.module.scss';
 import {Title} from "../common/components/title/Title";
-import phone from "../assets/images/contacts/phone.png";
-import email from "../assets/images/contacts/email.png";
-import address from "../assets/images/contacts/address.png";
 import Fade from 'react-reveal/Fade';
 import axios from "axios";
 import {useFormik} from "formik";
 import {Loader} from "../common/components/loader/loader";
+import {ContactsData} from "./contacts-data/ContactsData";
+import {Icon} from "../common/components/icon/Icon";
 
 export const Contacts = () => {
 
@@ -66,50 +65,46 @@ export const Contacts = () => {
     }
     return (
         <section id="contacts" className={s.contacts}>
-            <Title text={'Contacts'} shadowText={'Contact Me'}/>
-            <Fade bottom>
-                <div className={s.container}>
-                    <div className={s.grid}>
+            <Title text='Contacts' shadowText='Contact Me'/>
+
+            <div className={s.container}>
+                <div className={s.grid}>
+                    <Fade left>
                         <div className={s.contactsContainer}>
+
                             <div className={s.contactInfo}>
-                                <h3>Contact Information</h3>
-                                <p>I am based in Minsk, Belarus.
-                                    You can leave your questions and suggestions.
-                                    I will gladly review them.
-                                </p>
-                                <span className={s.emptySpan}>
-                        </span>
-                                <div className={s.contactBlocks}>
-                                    <div className={s.contactBlock}>
-                                <span className={s.icon}>
-                                    <img className={s.svg} src={phone} alt={''}></img>
-                                </span>
-                                        <div className={s.contactTitle}>
-                                            <h3>Contact by phone</h3>
-                                            <p>+375 (29) 397-95-60</p>
-                                        </div>
-                                    </div>
-                                    <div className={s.contactBlock}>
-                                <span className={s.icon}>
-                                    <img className={s.svg} src={email} alt={''}></img>
-                                </span>
-                                        <div className={s.contactTitle}>
-                                            <h3>Contact by email</h3>
-                                            <p>j.popova.dev@gmail.com</p>
-                                        </div>
-                                    </div>
-                                    <div className={s.contactBlock}>
-                                <span className={s.icon}>
-                                    <img className={s.svg} src={address} alt={''}></img>
-                                </span>
-                                        <div className={s.contactTitle}>
-                                            <h3>My location</h3>
-                                            <p>Minsk, Belarus</p>
-                                        </div>
-                                    </div>
+                                <h3>{ContactsData.title}</h3>
+                                <p>{ContactsData.description}</p>
+
+                                <span className={s.emptySpan}></span>
+
+                                <div className={s.contactsWrapper}>
+                                    {ContactsData.info.map(el => {
+                                        return (
+                                            <div className={s.contactBlock}>
+
+                                                <span key={el.id} className={s.icon}>
+                                                    <Icon sprId={el.sprId}
+                                                          fill={'#72E2AEFF'}
+                                                          width='40px'
+                                                          viewBox={'0 0 200 200'}
+                                                          height='40px'
+                                                    />
+                                                </span>
+
+                                                <div className={s.contactTitle}>
+                                                    <h3>{el.title}</h3>
+                                                    <p>{el.value}</p>
+                                                </div>
+                                            </div>
+                                        )
+                                    })}
                                 </div>
                             </div>
                         </div>
+                    </Fade>
+
+                    <Fade right>
                         <div className={s.mailContainer}>
                             <form className={s.form} onSubmit={formik.handleSubmit}>
                                 <div className={s.space}>
@@ -123,7 +118,7 @@ export const Contacts = () => {
                                 </div>
                                 <div className={s.space}>
                                     <label htmlFor={"email"}>Email</label>
-                                    <input type='text' disabled={loading} className={s.input}
+                                    <input style={{backgroundColor: '#0F172A7F'}} type='text' disabled={loading} className={s.input}
                                            placeholder={'Enter your email...'}
                                            {...formik.getFieldProps('email')}/>
                                     <div className={s.error}>
@@ -166,9 +161,10 @@ export const Contacts = () => {
                                 }
                             </form>
                         </div>
-                    </div>
+                    </Fade>
                 </div>
-            </Fade>
+            </div>
+
         </section>
     )
 }
