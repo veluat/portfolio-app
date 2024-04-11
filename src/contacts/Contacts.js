@@ -1,4 +1,5 @@
 import React from "react";
+import emailjs from '@emailjs/browser';
 import s from './Contacts.module.scss';
 import {Title} from "../common/components/title/Title";
 import Fade from 'react-reveal/Fade';
@@ -39,9 +40,10 @@ export const Contacts = () => {
             }
             return errors
         },
+
         onSubmit: values => {
             setLoading(true)
-            axios.post('https://gmail-nodejs.netlify.app/functions/api/sendMessage', values, {
+            axios.post('https://gmail-nodejs.netlify/functions/sendMessage', values, {
                 headers: {
                     'Content-Type': 'application/json'
                 }
