@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import s from './BurgerNav.module.scss';
 import {Burger} from "../burger/Burger";
 import {NavLink} from "../../common/components/navLink/NavLink";
+import resume from '../../assets/resume/Julia-Popova-resume.pdf'
 
 export const BurgerNav = () => {
     const [active, setActive] = useState(false);
@@ -37,7 +38,7 @@ export const BurgerNav = () => {
                              activeClass={s.active} setActive={setActive} active={active}/>
                 </li>
                 <li>
-                    <NavLink section={"Download resume"} path={"resume"}/>
+                    <a className={s.resume} href={resume} download={"resume-Julia-Popova.pdf"}>Download resume</a>
                 </li>
             </ul>
             <Burger setActive={setActive} active={active}/>
