@@ -1,19 +1,22 @@
-import React from "react";
-import emailjs from '@emailjs/browser';
+import React, {useRef} from "react";
 import s from './Contacts.module.scss';
 import {Title} from "../common/components/title/Title";
 import Fade from 'react-reveal/Fade';
-import axios from "axios";
 import {useFormik} from "formik";
 import {Loader} from "../common/components/loader/loader";
 import {ContactsData} from "./contacts-data/ContactsData";
 import {Icon} from "../common/components/icon/Icon";
+import emailjs from "@emailjs/browser";
 
 export const Contacts = () => {
-
+    const formRef = useRef(null)
     const [loading, setLoading] = React.useState(false)
     const [myMessages, setMyMessages] = React.useState('')
     const [error, setError] = React.useState('')
+
+    const emailServiceId = process.env.REACT_APP_EMAIL_SERVICE_ID;
+    const emailTemplateId = process.env.REACT_APP_EMAIL_TEMPLATE_ID;
+    const emailPublicKey = process.env.REACT_APP_EMAIL_PUBLIC_KEY;
 
     const formik = useFormik({
         initialValues: {
@@ -43,11 +46,7 @@ export const Contacts = () => {
 
         onSubmit: values => {
             setLoading(true)
-            axios.post('https://gmail-nodejs.netlify/functions/sendMessage', values, {
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
+            emailjs.sendForm(emailServiceId, emailTemplateId,  formRef.current, emailPublicKey)
                 .then(res => {
                     setMyMessages('Thanks for your interest! I will contact you as soon as it possible')
                     setError('')
@@ -87,7 +86,7 @@ export const Contacts = () => {
 
                                                 <span key={el.id} className={s.icon}>
                                                     <Icon sprId={el.sprId}
-                                                          fill={'#72E2AEFF'}
+                                                          fill='#72E2AEFF'
                                                           width='40px'
                                                           viewBox={'0 0 200 200'}
                                                           height='40px'
@@ -108,7 +107,7 @@ export const Contacts = () => {
 
                     <Fade right>
                         <div className={s.mailContainer}>
-                            <form className={s.form} onSubmit={formik.handleSubmit}>
+                            <form ref={formRef} className={s.form} onSubmit={formik.handleSubmit}>
                                 <div className={s.space}>
                                     <label htmlFor={"name"}>Name</label>
                                     <input type='text' disabled={loading} className={s.input}
