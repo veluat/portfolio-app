@@ -3,7 +3,7 @@ import s from './Skills.module.scss';
 import {Skill} from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
 import {SkillsData} from "./skills-data/SkillsData";
-import {TabMenu} from "./tabMenu/TabMenu";
+import {SkillsFilterBtns} from "./skills-filter-btns/SkillsFilterBtns";
 import {SkillsDescriptions} from "./skills-descriptions/SkillsDescriptions";
 import {AnimatePresence, motion} from "framer-motion"
 import Fade from 'react-reveal/Fade';
@@ -50,9 +50,9 @@ export const Skills = () => {
         setShowMore(true);
     }
 
-    const handleClickLess = () => {
-        setDisplayedSkills(filteredSkills.slice(0, skillsPerPage))
-        setShowMore(true)
+    const handleClickCollapse = () => {
+        setDisplayedSkills(filteredSkills.slice(0, skillsPerPage));
+        setShowMore(true);
         if (skillsItemsRef.current) {
             skillsItemsRef.current.scrollIntoView({
                 behavior: "smooth",
@@ -63,9 +63,9 @@ export const Skills = () => {
 
     return (
         <section id="skills" className={s.skillsBlock}>
-            <Title text={'My Skills'} shadowText={'WHAT I KNOW'}/>
+            <Title text='My Skills' shadowText='WHAT I KNOW'/>
 
-            <div className={s.descriptions}>
+            <div className={s.skillsDescriptions}>
                 {SkillsData.description.map(elem => {
                     return (
                         <SkillsDescriptions key={elem.id}
@@ -80,9 +80,9 @@ export const Skills = () => {
                 })}
                 )
             </div>
-            <div id="skillsItems"
-                 ref={skillsItemsRef}>
-                <TabMenu
+
+            <div id="skillsFilterBtns" ref={skillsItemsRef}>
+                <SkillsFilterBtns
                     menuItems={SkillsData.skillsFilter}
                     changeFilterType={changeFilterType}
                     active={currentFilterType}
@@ -90,12 +90,12 @@ export const Skills = () => {
             </div>
 
 
-            <div className={s.skillsContainer}>
-
-                <div className={s.skillsWrap}>
-                    <AnimatePresence initial={false} wait>
+            <div className={s.displayedSkillsContainer}>
+                <div className={s.displayedSkillsWrap}>
+                    <AnimatePresence initial={false}>
                         {displayedSkills.map((skill) => {
-                            return (<Fade top>
+                            return (
+                                <Fade cascade>
                                     <motion.div
                                         initial={{opacity: 0}}
                                         animate={{opacity: 1}}
@@ -103,7 +103,6 @@ export const Skills = () => {
                                         transition={{duration: 1}}
                                         key={skill.id}
                                     >
-
                                         <Skill title={skill.title}
                                                src={skill.srcPath}
                                                alt={skill.altName}
@@ -111,20 +110,22 @@ export const Skills = () => {
                                         />
                                     </motion.div>
                                 </Fade>
-
                             )
                         })}
                     </AnimatePresence>
                 </div>
 
                 <div className={s.centred}>
-                    {!showMore && displayedSkills.length === totalSkills ?
-                        (<button onClick={handleClickLess} className={s.moreButton}>
-                            Collapse
-                        </button>)
-                        : (<button onClick={handleClickMore} className={s.moreButton}>
+                    {showMore && displayedSkills.length < totalSkills && (
+                        <button onClick={handleClickMore} className={s.moreButton}>
                             Load More
-                        </button>)}
+                        </button>
+                    )}
+                    {displayedSkills.length > 4 && (
+                        <button onClick={handleClickCollapse} className={s.moreButton}>
+                            Collapse
+                        </button>
+                    )}
                 </div>
             </div>
         </section>

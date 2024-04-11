@@ -1,7 +1,7 @@
 import React from 'react';
-import s from './TabMenu.module.scss'
+import s from './SkillsFilterBtns.module.scss'
 
-export const TabMenu = ({menuItems, changeFilterType, active}) => {
+export const SkillsFilterBtns = ({menuItems, changeFilterType, active}) => {
     return (
         <div className={s.TabMenu}>
             {menuItems.map((item, index) => (

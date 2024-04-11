@@ -4,7 +4,7 @@
 .skillsBlock {
   @include padding();
 
-  .descriptions {
+  .skillsDescriptions {
     gap: 40px;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -29,7 +29,7 @@
     }
   }
 
-  .skillsContainer {
+  .displayedSkillsContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,15 +39,21 @@
     .centred {
       display: flex;
       justify-content: center;
-      max-width: 756px;
+      gap: 1rem;
+      max-width: 900px;
       width: 100%;
+      @media (max-width: 920px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
       .moreButton {
         @include btnProperties();
       }
     }
 
-    .skillsWrap {
+    .displayedSkillsWrap {
       display: flex;
       justify-content: center;
       align-items: center;
