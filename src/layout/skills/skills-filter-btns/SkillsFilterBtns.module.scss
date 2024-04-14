@@ -1,0 +1,25 @@
+@import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
+
+.TabMenu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0 3rem;
+  background-color: $backgroundColor;
+  backdrop-filter: blur(16px);
+
+  .btn {
+    @include btnProperties();
+    background-color: rgba(114, 226, 174, 0.1);
+    color: $primaryColor;
+    border-color: $borderColor;
+  }
+
+  .active {
+    background-color: $aColor;
+    color: $backgroundColor;
+    font-weight: 700;
+  }
+}

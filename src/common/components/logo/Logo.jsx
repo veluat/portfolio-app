@@ -3,7 +3,7 @@ import {animateScroll as scroll} from 'react-scroll'
 import s from './Logo.module.scss'
 import {Icon} from "../icon/Icon";
 
-export const Logo = () => {
+export const Logo = ({logoTitle}) => {
     return (
         <div className={s.logo} onClick={() => {scroll.scrollToTop()}}>
             <Icon sprId='portfolio'
@@ -12,7 +12,7 @@ export const Logo = () => {
                   height='30'
                   viewBox='0 0 512 512'
             />
-            <span>Julia Popova</span>
+            <span>{logoTitle}</span>
         </div>
     )
 }

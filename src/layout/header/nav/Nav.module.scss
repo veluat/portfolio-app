@@ -1,0 +1,58 @@
+@import '../../../common/styles/sass/mixins';
+@import '../../../common/styles/sass/variables';
+
+.nav {
+  margin-right: 2rem;
+  @media screen and (max-width: 1065px) {
+    display: none;
+  }
+
+  .navLink {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+
+    .resume {
+      @include headerNav();
+      color: $backgroundColor;
+      background-color: $primaryColor;
+      font-weight: 700;
+
+      &:hover {
+        background-color: $aColor;
+        font-weight: 700;
+        transition: .2s ease-in-out;
+      }
+    }
+
+    .active {
+      background-color: $aColor;
+      color: $backgroundColor;
+    }
+  }
+
+  a {
+    @include headerNav();
+
+    .active {
+      background: $aColor;
+      color: $backgroundColor;
+    }
+
+    &:hover {
+      background: $aColor;
+      color: $backgroundColor;
+      transition: .2s ease-in-out;
+    }
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../../common/styles/sass/variables';
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 130px;
+  height: 130px;
+  background-color: $backgroundBlockColor;
+  border-radius: 0.5rem;
+  border: 1px solid $borderColor;
+
+  h3 {
+    margin: 0;
+  }
+
+  .iconWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      width: 50px;
+      padding: 3px;
+      background-color: $aColor;
+      border-radius: 0.5rem;
+    }
+  }
+}
+

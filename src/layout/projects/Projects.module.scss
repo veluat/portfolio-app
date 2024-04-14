@@ -1,0 +1,14 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.projectsBlock {
+  background-color: $backgroundColor;
+  backdrop-filter: blur(16px);
+  @include padding();
+
+  @media screen and (max-width: 952px) {
+    padding-bottom: 0;
+  }
+}
+
+

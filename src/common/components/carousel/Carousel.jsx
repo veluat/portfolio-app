@@ -1,27 +1,11 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import {Project} from "../../../projects/project/Project";
 import s from "./Carousel.module.scss"
 import './../../styles/slider.css'
-import {ProjectData} from "../../../projects/project-data/ProjectData";
-import {DirectionBtn} from "../directionBtn/DirectionBtn";
+import {DirectionBtn} from "../direction-btn/DirectionBtn";
 
-const items = ProjectData.map((item, index) => {
-    return (
-        <div key={index}>
-            <Project style={item.bg}
-                     projectTitle={item.title}
-                     projectDescription={item.description}
-                     demoBtn={item.demoBtn}
-                     codeBtn={item.codeBtn}
-                     demoLink={item.demoLink}
-                     codeLink={item.codeLink}/>
-        </div>
-    )
-})
-
-export const Carousel = () => {
+export const Carousel = ({items}) => {
     return (
         <div className={s.slider}>
             <AliceCarousel

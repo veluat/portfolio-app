@@ -1,0 +1,51 @@
+@import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
+
+.servicesWrapper {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid $borderColor;
+
+  @media screen and (max-width: 1169px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.25rem;
+  }
+
+  .servicesTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      color: $primaryColor;
+      background-color: rgba(114, 226, 174, 0.1);
+      padding: 1.25rem;
+      border: 1px solid $borderColor;
+      font-size: 36px;
+      line-height: 1.2;
+      border-radius: 9999px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 5rem;
+      height: 5rem;
+
+      svg {
+        display: block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  h3 {
+    margin-bottom: .25rem;
+  }
+}
