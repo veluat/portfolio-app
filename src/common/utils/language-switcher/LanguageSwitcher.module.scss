@@ -1,0 +1,34 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.switcherContainer {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  z-index: 9999;
+
+  .switcherBtn {
+    @include btnProperties();
+    background-color: rgba(114, 226, 174, 0.1);
+    color: $primaryColor;
+    width: 100px;
+    transition: width 0.3s ease;
+    transform: translateX(25px);
+    clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+
+    &:hover {
+      background-color: rgba(114, 226, 174, 0.1);
+      color: $primaryColor;
+      border-color: $borderColor;
+      transform: translateX(0);
+    }
+  }
+
+  .active {
+    box-shadow: 10px 0 0 $primaryColor inset;
+  }
+}
