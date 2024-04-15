@@ -1,0 +1,74 @@
+@import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
+
+.modalWrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: $backgroundColor;
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal_content {
+    width: 30%;
+    height: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    transition: $transition;
+    background-color: $backgroundBlockColor;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    border: 1px solid $borderColor;
+
+    .svgCV {
+      background-color: rgba(114, 226, 174, 0.1);
+      width: 160px;
+      height: 160px;
+      border: 1px solid $borderColor;
+      border-radius: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cvBtn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+
+      .resume {
+        @include btnProperties();
+        margin: 0;
+
+        .active {
+          background: $aColor;
+          color: $backgroundColor;
+          transition: $transition;
+        }
+      }
+    }
+
+    .close {
+      @include headerNav();
+      position: absolute;
+      top: 22.5px;
+      right: 2rem;
+
+      &:hover {
+        background: $aColor;
+        color: $backgroundColor;
+        transition: $transition;
+      }
+    }
+  }
+}

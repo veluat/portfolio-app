@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import s from './Nav.module.scss';
 import {NavLink} from "../../../common/components/nav-link/NavLink";
-import resume from '../../../assets/resume/Julia-Popova-resume.pdf'
+import {Modal} from "../../../common/components/modal/Modal";
 
 export const Nav = ({data}) => {
+    const [modalActive, setModalActive] = useState(false);
+    function handlerModalSet(modal) {
+        setModalActive(!modalActive)
+    }
     return (
         <nav className={s.nav}>
             <ul className={s.navLink}>
@@ -15,9 +19,15 @@ export const Nav = ({data}) => {
                     )
                 })}
                 <li>
-                    <a className={s.resume} href={resume} download="resume-Julia-Popova.pdf">{data.resume}</a>
+                    <button className={s.resume} onClick={handlerModalSet}>{data.resume}</button>
                 </li>
             </ul>
+            {modalActive && (
+                <Modal
+                    active={modalActive}
+                    setActive={setModalActive}
+                />
+            )}
         </nav>
     )
 }

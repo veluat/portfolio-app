@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import s from './BurgerNav.module.scss';
 import {Burger} from "../burger/Burger";
 import {NavLink} from "../../../common/components/nav-link/NavLink";
-import resume from '../../../assets/resume/Julia-Popova-resume.pdf'
+import resume from '../../../assets/resume/Julia-Popova-resume(EN).pdf'
 
 export const BurgerNav = ({data}) => {
     const [active, setActive] = useState(false);
