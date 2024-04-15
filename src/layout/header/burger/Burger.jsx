@@ -25,5 +25,5 @@ export const Burger = ({setActive, active}) => {
                 </div>
             }
         </>
-    );
-};
+    )
+}

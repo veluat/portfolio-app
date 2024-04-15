@@ -26,6 +26,7 @@ export const Nav = ({data}) => {
                 <Modal
                     active={modalActive}
                     setActive={setModalActive}
+                    close={data.close}
                 />
             )}
         </nav>

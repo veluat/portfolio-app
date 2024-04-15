@@ -7,9 +7,11 @@ import {Modal} from "../../../common/components/modal/Modal";
 export const BurgerNav = ({data}) => {
     const [active, setActive] = useState(false);
     const [modalActive, setModalActive] = useState(false);
+
     function handlerModalSet(modal) {
         setModalActive(!modalActive)
     }
+
     let finallyClass = (active === true ? `${s.burgerNavPadding} ${s.show}` :
         `${s.burgerNavPadding}`)
 
@@ -37,6 +39,7 @@ export const BurgerNav = ({data}) => {
                 <Modal
                     active={modalActive}
                     setActive={setModalActive}
+                    close={data.close}
                 />
             )}
             <Burger setActive={setActive} active={active}/>

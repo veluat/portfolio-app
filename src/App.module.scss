@@ -1,5 +1,7 @@
-.App {
-    background-color: rgba(15, 23, 42, 1);
+@import './common/styles/sass/variables';
+
+.app {
+    background-color: $backgroundColor;
     backdrop-filter: blur(16px);
     background-size: cover;
     margin: 0;

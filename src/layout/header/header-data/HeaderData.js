@@ -23,7 +23,8 @@ export const HeaderData = {
             }
         ],
         resume: 'Download resume',
-        logoTitle: 'Julia Popova'
+        logoTitle: 'Julia Popova',
+        close: 'Close',
     },
     ru: {
         menuItems: [
@@ -49,6 +50,7 @@ export const HeaderData = {
             }
         ],
         resume: 'Скачать резюме',
-        logoTitle: 'Юлия Попова'
+        logoTitle: 'Юлия Попова',
+        close: 'Закрыть',
     }
 };

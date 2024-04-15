@@ -5,7 +5,7 @@ import ru from './../../../assets/resume/Julia-Popova-resume(RU).pdf'
 import {Icon} from "../icon/Icon";
 
 
-export const Modal = ({active, setActive}) => {
+export const Modal = ({active, setActive, close}) => {
     const closeHandler = () => {
         setActive(false)
     }
@@ -19,7 +19,7 @@ export const Modal = ({active, setActive}) => {
                     <a className={s.resume} href={en} download="Julia-Popova-resume(EN)">Resume(EN)</a>
                     <a className={s.resume} href={ru} download="Julia-Popova-resume(RU).pdf">Резюме(RU)</a>
                 </div>
-                <button className={s.close} onClick={closeHandler}>Close</button>
+                <button className={s.close} onClick={closeHandler}>{close}</button>
             </div>
 
         </div>
