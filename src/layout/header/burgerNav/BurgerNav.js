@@ -2,11 +2,14 @@ import React, {useState} from "react";
 import s from './BurgerNav.module.scss';
 import {Burger} from "../burger/Burger";
 import {NavLink} from "../../../common/components/nav-link/NavLink";
-import resume from '../../../assets/resume/Julia-Popova-resume(EN).pdf'
+import {Modal} from "../../../common/components/modal/Modal";
 
 export const BurgerNav = ({data}) => {
     const [active, setActive] = useState(false);
-
+    const [modalActive, setModalActive] = useState(false);
+    function handlerModalSet(modal) {
+        setModalActive(!modalActive)
+    }
     let finallyClass = (active === true ? `${s.burgerNavPadding} ${s.show}` :
         `${s.burgerNavPadding}`)
 
@@ -27,9 +30,15 @@ export const BurgerNav = ({data}) => {
                     )
                 })}
                 <li>
-                    <a className={s.resume} href={resume} download="resume-Julia-Popova.pdf">{data.resume}</a>
+                    <button className={s.resume} onClick={handlerModalSet}>{data.resume}</button>
                 </li>
             </ul>
+            {modalActive && (
+                <Modal
+                    active={modalActive}
+                    setActive={setModalActive}
+                />
+            )}
             <Burger setActive={setActive} active={active}/>
         </nav>
     );

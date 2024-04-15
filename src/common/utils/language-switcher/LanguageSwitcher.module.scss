@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 15px;
-  z-index: 9999;
+  z-index: 99;
 
   .switcherBtn {
     @include btnProperties();
@@ -26,9 +26,27 @@
       border-color: $borderColor;
       transform: translateX(0);
     }
+
+    @media screen and (max-width: 1065px) {
+      width: 50px;
+      transform: none;
+      clip-path: none;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+  @media screen and (max-width: 1065px) {
+    top: 25px;
+    right: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .active {
     box-shadow: 10px 0 0 $primaryColor inset;
+    @media screen and (max-width: 1065px) {
+      box-shadow: none;
+      border: 1px solid $primaryColor
+    }
   }
 }

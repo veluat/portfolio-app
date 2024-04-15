@@ -29,6 +29,19 @@
       color: $backgroundColor;
     }
 
+    .resume {
+      @include headerNav();
+      color: $backgroundColor;
+      background-color: $primaryColor;
+      font-weight: 700;
+
+      &:hover {
+        background-color: $aColor;
+        font-weight: 700;
+        transition: .2s ease-in-out;
+      }
+    }
+
     a {
       @include headerNav();
       background-color: rgba(15, 23, 42, 1);

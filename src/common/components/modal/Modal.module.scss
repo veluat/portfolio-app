@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   background-color: $backgroundColor;
-  z-index: 10000;
+  z-index: 1000;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,13 +14,16 @@
   align-items: center;
 
   .modal_content {
-    width: 30%;
-    height: 60%;
+    max-width: 500px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 5rem;
     transition: $transition;
     background-color: $backgroundBlockColor;
