@@ -3,6 +3,7 @@ import socialImage from "../../../assets/images/projects/network.svg";
 import cardsImage from "../../../assets/images/projects/cards.svg";
 import taxiImage from "../../../assets/images/projects/taxi.svg";
 import art from "../../../assets/images/projects/art.svg";
+import pizza from "../../../assets/images/projects/pizza.svg";
 import weather from "../../../assets/images/projects/weather.svg";
 import {generateId} from "../../../common/utils/generate-id/generateId";
 
@@ -72,6 +73,19 @@ export const ProjectData = {
                 demoBtn: 'Demo',
                 demoLink: 'https://veluat.github.io/creative-art-layout',
                 codeLink: 'https://github.com/veluat/creative-art-layout',
+                codeBtn: 'Code'
+            },
+            {
+                id: generateId(),
+                title: 'PIZZA-ORDERING',
+                description: 'Pizza Ordering Online Store. React Project with Redux Toolkit, Axios, Lodash.Debounce, TypeScript, React Router Dom, React Content Loader (skeleton), Prettier',
+                bg: {
+                    backgroundImage: 'url(' + pizza + ')',
+                },
+                sprId: 'pizza-ordering',
+                demoBtn: 'Demo',
+                demoLink: 'https://pizza-ordering-vite-app.netlify.app/',
+                codeLink: 'https://github.com/veluat/pizza-ordering-app',
                 codeBtn: 'Code'
             },
             {
@@ -156,6 +170,19 @@ export const ProjectData = {
                 demoBtn: 'Демо',
                 demoLink: 'https://veluat.github.io/creative-art-layout',
                 codeLink: 'https://github.com/veluat/creative-art-layout',
+                codeBtn: 'Код'
+            },
+            {
+                id: generateId(),
+                title: 'ЗАКАЗ ПИЦЦЫ ОНЛАЙН',
+                description: 'Интернет-магазин по заказу пиццы. Проект React с Redux Toolkit, Axios, Lodash.Debounce, TS, React Router Dom, React Content Loader (skeleton), Prettier',
+                bg: {
+                    backgroundImage: 'url(' + pizza + ')',
+                },
+                sprId: 'pizza-ordering',
+                demoBtn: 'Демо',
+                demoLink: 'https://pizza-ordering-vite-app.netlify.app/',
+                codeLink: 'https://github.com/veluat/pizza-ordering-app',
                 codeBtn: 'Код'
             },
             {
