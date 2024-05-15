@@ -83,9 +83,9 @@ export const ProjectData = {
                     backgroundImage: 'url(' + pizza + ')',
                 },
                 sprId: 'pizza-ordering',
-                demoBtn: 'Coming soon',
-                demoLink: '#',
-                codeLink: '#',
+                demoBtn: 'Demo',
+                demoLink: 'https://pizza-ordering-vite-app.netlify.app',
+                codeLink: 'https://github.com/veluat/pizza-ordering-app',
                 codeBtn: 'Code'
             },
             {
@@ -180,9 +180,9 @@ export const ProjectData = {
                     backgroundImage: 'url(' + pizza + ')',
                 },
                 sprId: 'pizza-ordering',
-                demoBtn: 'В разработке',
-                demoLink: '#',
-                codeLink: '#',
+                demoBtn: 'Демо',
+                demoLink: 'https://pizza-ordering-vite-app.netlify.app',
+                codeLink: 'https://github.com/veluat/pizza-ordering-app',
                 codeBtn: 'Код'
             },
             {
