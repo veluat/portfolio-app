@@ -57,9 +57,9 @@ export const ProjectData = {
                     backgroundImage: 'url(' + cardsImage + ')',
                 },
                 sprId: 'cards',
-                demoBtn: 'Demo',
-                demoLink: 'https://cards-two-self.vercel.app',
-                codeLink: 'https://github.com/veluat/cards',
+                demoBtn: 'Coming soon',
+                demoLink: '#',
+                codeLink: '#',
                 codeBtn: 'Code'
             },
             {
@@ -154,9 +154,9 @@ export const ProjectData = {
                     backgroundImage: 'url(' + cardsImage + ')',
                 },
                 sprId: 'cards',
-                demoBtn: 'Демо',
-                demoLink: 'https://cards-two-self.vercel.app',
-                codeLink: 'https://github.com/veluat/cards',
+                demoBtn: 'В разработке',
+                demoLink: '#',
+                codeLink: '#',
                 codeBtn: 'Код'
             },
             {
