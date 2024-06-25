@@ -5,11 +5,38 @@ import taxiImage from "../../../assets/images/projects/taxi.svg";
 import art from "../../../assets/images/projects/art.svg";
 import pizza from "../../../assets/images/projects/pizza.svg";
 import weather from "../../../assets/images/projects/weather.svg";
+import counter from "../../../assets/images/projects/counter.svg";
 import {generateId} from "../../../common/utils/generate-id/generateId";
 
 export const ProjectData = {
     en: {
         project: [
+            {
+                id: generateId(),
+                title: 'DUAL COUNTER',
+                description: 'Counter (2 UI options) - A React project with Redux, TS, Local Storage. The app allows users to set the initial and maximum value of the counter, as well as increase, decrease, reset the counter.',
+                bg: {
+                    backgroundImage: 'url(' + counter + ')',
+                },
+                sprId: 'counter',
+                demoBtn: 'Demo',
+                demoLink: 'https://dual-counter.netlify.app/',
+                codeLink: 'https://github.com/veluat/dual-counter-app',
+                codeBtn: 'Code'
+            },
+            {
+                id: generateId(),
+                title: 'PIZZA-ORDERING',
+                description: 'Pizza Ordering Online Store. React Project with Redux Toolkit, Axios, Lodash.Debounce, TypeScript, React Router Dom, React Content Loader (skeleton), Prettier',
+                bg: {
+                    backgroundImage: 'url(' + pizza + ')',
+                },
+                sprId: 'pizza-ordering',
+                demoBtn: 'Demo',
+                demoLink: 'https://pizza-ordering-layout.netlify.app/',
+                codeLink: 'https://github.com/veluat/pizza-ordering-layout',
+                codeBtn: 'Code'
+            },
             {
                 id: generateId(),
                 title: 'TO-DO LIST',
@@ -19,8 +46,8 @@ export const ProjectData = {
                 },
                 sprId: 'todo-list',
                 demoBtn: 'Demo',
-                demoLink: 'https://veluat.github.io/task-manager',
-                codeLink: 'https://github.com/veluat/task-manager',
+                demoLink: 'https://veluat.github.io/task-manager-app',
+                codeLink: 'https://github.com/veluat/task-manager-app',
                 codeBtn: 'Code'
             },
             {
@@ -32,8 +59,8 @@ export const ProjectData = {
                 },
                 sprId: 'network',
                 demoBtn: 'Demo',
-                demoLink: 'https://veluat.github.io/social-network',
-                codeLink: 'https://github.com/veluat/social-network',
+                demoLink: 'https://veluat.github.io/social-network-app',
+                codeLink: 'https://github.com/veluat/social-network-app',
                 codeBtn: 'Code'
             },
             {
@@ -45,21 +72,8 @@ export const ProjectData = {
                 },
                 sprId: 'taxi',
                 demoBtn: 'Demo',
-                demoLink: 'https://example-of-a-business-website.netlify.app',
-                codeLink: 'https://github.com/veluat/taxi-services',
-                codeBtn: 'Code'
-            },
-            {
-                id: generateId(),
-                title: 'LEARNING CARDS',
-                description: 'Flashcard learning app to help you learn new topics. React project with Redux Toolkit, Axios, TS, React Hook Form, Zod, React Router Dom, Git, Radix UI',
-                bg: {
-                    backgroundImage: 'url(' + cardsImage + ')',
-                },
-                sprId: 'cards',
-                demoBtn: 'Coming soon',
-                demoLink: '#',
-                codeLink: '#',
+                demoLink: 'https://taxi-services-layout.netlify.app/',
+                codeLink: 'https://github.com/veluat/taxi-services-layout',
                 codeBtn: 'Code'
             },
             {
@@ -77,36 +91,62 @@ export const ProjectData = {
             },
             {
                 id: generateId(),
-                title: 'PIZZA-ORDERING',
-                description: 'Pizza Ordering Online Store. React Project with Redux Toolkit, Axios, Lodash.Debounce, TypeScript, React Router Dom, React Content Loader (skeleton), Prettier',
-                bg: {
-                    backgroundImage: 'url(' + pizza + ')',
-                },
-                sprId: 'pizza-ordering',
-                demoBtn: 'Demo',
-                demoLink: 'https://pizza-ordering-vite-app.netlify.app',
-                codeLink: 'https://github.com/veluat/pizza-ordering-app',
-                codeBtn: 'Code'
-            },
-            {
-                id: generateId(),
-                title: 'WEATHER',
+                title: 'WEATHER-MATTER',
                 description: 'SPA allows users to view the weather information of a specific city. React project with Redux-Toolkit, Axios, React router dom',
                 bg: {
                     backgroundImage: 'url(' + weather + ')',
                 },
                 sprId: 'weather',
+                demoBtn: 'Demo',
+                demoLink: 'https://weather-matter.netlify.app/',
+                codeLink: 'https://github.com/veluat/weather-matter-app',
+                codeBtn: 'Code'
+            },
+            {
+                id: generateId(),
+                title: 'LEARNING CARDS',
+                description: 'Flashcard learning app to help you learn new topics. React project with Redux Toolkit, Axios, TS, React Hook Form, Zod, React Router Dom, Git, Radix UI',
+                bg: {
+                    backgroundImage: 'url(' + cardsImage + ')',
+                },
+                sprId: 'cards',
                 demoBtn: 'Coming soon',
                 demoLink: '#',
                 codeLink: '#',
                 codeBtn: 'Code'
-            }
+            },
         ],
         text: 'My Projects',
         shadowText: 'PORTFOLIO'
     },
     ru: {
         project: [
+            {
+                id: generateId(),
+                title: 'СЧЕТЧИК (2 варианта UI)',
+                description: 'Счетчик (2 варианта UI) позволяет устанавливать начальное и максимальное значение, увеличивать, уменьшать и сбрасывать счетчик. Проект React с Redux, TS, localstorage',
+                bg: {
+                    backgroundImage: 'url(' + counter + ')',
+                },
+                sprId: 'counter',
+                demoBtn: 'Демо',
+                demoLink: 'https://dual-counter.netlify.app/',
+                codeLink: 'https://github.com/veluat/dual-counter-app',
+                codeBtn: 'Код'
+            },
+            {
+                id: generateId(),
+                title: 'ЗАКАЗ ПИЦЦЫ ОНЛАЙН',
+                description: 'Интернет-магазин по заказу пиццы. Проект React с Redux Toolkit, Axios, Lodash.Debounce, TS, React Router Dom, React Content Loader (skeleton), Prettier',
+                bg: {
+                    backgroundImage: 'url(' + pizza + ')',
+                },
+                sprId: 'pizza-ordering',
+                demoBtn: 'Демо',
+                demoLink: 'https://pizza-ordering-layout.netlify.app/',
+                codeLink: 'https://github.com/veluat/pizza-ordering-layout',
+                codeBtn: 'Код'
+            },
             {
                 id: generateId(),
                 title: 'ПЛАНЕР',
@@ -116,8 +156,8 @@ export const ProjectData = {
                 },
                 sprId: 'todo-list',
                 demoBtn: 'Демо',
-                demoLink: 'https://veluat.github.io/task-manager',
-                codeLink: 'https://github.com/veluat/task-manager',
+                demoLink: 'https://veluat.github.io/task-manager-app',
+                codeLink: 'https://github.com/veluat/task-manager-app',
                 codeBtn: 'Код'
             },
             {
@@ -129,8 +169,8 @@ export const ProjectData = {
                 },
                 sprId: 'network',
                 demoBtn: 'Демо',
-                demoLink: 'https://veluat.github.io/social-network',
-                codeLink: 'https://github.com/veluat/social-network',
+                demoLink: 'https://veluat.github.io/social-network-app',
+                codeLink: 'https://github.com/veluat/social-network-app',
                 codeBtn: 'Код'
             },
             {
@@ -142,21 +182,8 @@ export const ProjectData = {
                 },
                 sprId: 'taxi',
                 demoBtn: 'Демо',
-                demoLink: 'https://example-of-a-business-website.netlify.app',
-                codeLink: 'https://github.com/veluat/taxi-services',
-                codeBtn: 'Код'
-            },
-            {
-                id: generateId(),
-                title: 'ОБУЧАЮЩИЕ КАРТОЧКИ',
-                description: 'Приложение для обучения с помощью карточек для изучения новых тем. Проект React с Redux Toolkit, Axios, TS, React Hook Form, Zod, React Router Dom, Git, Radix UI',
-                bg: {
-                    backgroundImage: 'url(' + cardsImage + ')',
-                },
-                sprId: 'cards',
-                demoBtn: 'В разработке',
-                demoLink: '#',
-                codeLink: '#',
+                demoLink: 'https://taxi-services-layout.netlify.app/',
+                codeLink: 'https://github.com/veluat/taxi-services-layout',
                 codeBtn: 'Код'
             },
             {
@@ -174,30 +201,30 @@ export const ProjectData = {
             },
             {
                 id: generateId(),
-                title: 'ЗАКАЗ ПИЦЦЫ ОНЛАЙН',
-                description: 'Интернет-магазин по заказу пиццы. Проект React с Redux Toolkit, Axios, Lodash.Debounce, TS, React Router Dom, React Content Loader (skeleton), Prettier',
-                bg: {
-                    backgroundImage: 'url(' + pizza + ')',
-                },
-                sprId: 'pizza-ordering',
-                demoBtn: 'Демо',
-                demoLink: 'https://pizza-ordering-vite-app.netlify.app',
-                codeLink: 'https://github.com/veluat/pizza-ordering-app',
-                codeBtn: 'Код'
-            },
-            {
-                id: generateId(),
-                title: 'ПОГОДА',
+                title: 'ПРОГНОЗ ПОГОДЫ',
                 description: 'Одностраничное приложение позволяет пользователям просматривать информацию о погоде в конкретном городе. Проект React с Redux-Toolkit, Axios, React router dom',
                 bg: {
                     backgroundImage: 'url(' + weather + ')',
                 },
                 sprId: 'weather',
+                demoBtn: 'Демо',
+                demoLink: 'https://weather-matter.netlify.app/',
+                codeLink: 'https://github.com/veluat/weather-matter-app',
+                codeBtn: 'Код'
+            },
+            {
+                id: generateId(),
+                title: 'ОБУЧАЮЩИЕ КАРТОЧКИ',
+                description: 'Приложение для обучения с помощью карточек для изучения новых тем. Проект React с Redux Toolkit, Axios, TS, React Hook Form, Zod, React Router Dom, Git, Radix UI',
+                bg: {
+                    backgroundImage: 'url(' + cardsImage + ')',
+                },
+                sprId: 'cards',
                 demoBtn: 'В разработке',
                 demoLink: '#',
                 codeLink: '#',
                 codeBtn: 'Код'
-            }
+            },
         ],
         text: 'Мои проекты',
         shadowText: 'Портфолио'
