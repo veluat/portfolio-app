@@ -4,7 +4,7 @@ My name is Julia Popova, and I am a skilled front-end developer with over 1 year
 
 I have a strong passion for continuous learning and personal growth, and I am always seeking opportunities to expand my skill set. Currently, I am actively pursuing knowledge in React Native, Angular, Next.js to broaden my expertise and stay up to date with the latest industry trends.
 
-:link: More details about my skills and examples of projects can be found in the [PORTFOLIO](https://veluat.github.io/portfolio/).
+:link: More details about my skills and examples of projects can be found in the [PORTFOLIO](https://veluat.github.io/portfolio-app/).
 ___
 :white_check_mark: The site design is concise and understandable.
 
