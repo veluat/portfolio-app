@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-app/static/css/main.4cf63a95.css",
-    "main.js": "/portfolio-app/static/js/main.8de26018.js",
+    "main.js": "/portfolio-app/static/js/main.4d6bfec9.js",
     "static/js/488.9e51c7c4.chunk.js": "/portfolio-app/static/js/488.9e51c7c4.chunk.js",
     "static/media/Julia-Popova-resume(EN).pdf": "/portfolio-app/static/media/Julia-Popova-resume(EN).3cccb81e67d41cddad98.pdf",
     "static/media/Julia-Popova-resume(RU).pdf": "/portfolio-app/static/media/Julia-Popova-resume(RU).af2ade15c72ce44aaec5.pdf",
@@ -26,6 +26,7 @@
     "static/media/sprite.svg": "/portfolio-app/static/media/sprite.5b895c9f506fb564e0dfa3c1b28deb85.svg",
     "static/media/reduxDevTools.png": "/portfolio-app/static/media/reduxDevTools.2f3271b75259d91a8007.png",
     "static/media/perfect-pixel.png": "/portfolio-app/static/media/perfect-pixel.0d51d6a715cb43622691.png",
+    "static/media/counter.svg": "/portfolio-app/static/media/counter.139dcf9ff4a60c3e31670e6a33cac58a.svg",
     "static/media/radix-ui.png": "/portfolio-app/static/media/radix-ui.e8ec022c8b9f3ccfcff7.png",
     "static/media/heroku.png": "/portfolio-app/static/media/heroku.03eb618f641ecec17991.png",
     "static/media/postman.svg": "/portfolio-app/static/media/postman.01d16411877da165d51b6d5a54bff201.svg",
@@ -49,11 +50,11 @@
     "static/media/materialui.svg": "/portfolio-app/static/media/materialui.9a7fa21fef461d272ba8151574584e84.svg",
     "static/media/npm.svg": "/portfolio-app/static/media/npm.c4595f140b8a6b0e634947d37152d0ff.svg",
     "main.4cf63a95.css.map": "/portfolio-app/static/css/main.4cf63a95.css.map",
-    "main.8de26018.js.map": "/portfolio-app/static/js/main.8de26018.js.map",
+    "main.4d6bfec9.js.map": "/portfolio-app/static/js/main.4d6bfec9.js.map",
     "488.9e51c7c4.chunk.js.map": "/portfolio-app/static/js/488.9e51c7c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4cf63a95.css",
-    "static/js/main.8de26018.js"
+    "static/js/main.4d6bfec9.js"
   ]
 }
