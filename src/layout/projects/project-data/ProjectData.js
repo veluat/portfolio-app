@@ -14,7 +14,7 @@ export const ProjectData = {
             {
                 id: generateId(),
                 title: 'DUAL COUNTER',
-                description: 'Counter (2 UI options) - A React project with Redux, TS, Local Storage. The app allows users to set the initial and maximum value of the counter, as well as increase, decrease, reset the counter.',
+                description: 'A React app allows users to set the initial and max value of the counter, as well as increase, decrease, reset the counter. The project with Redux, TS, Local Storage',
                 bg: {
                     backgroundImage: 'url(' + counter + ')',
                 },
@@ -40,7 +40,7 @@ export const ProjectData = {
             {
                 id: generateId(),
                 title: 'TO-DO LIST',
-                description: 'Create, edit and delete yours To-do lists, manage tasks that can be customized for you. React project with Redux Toolkit, TS, MUI, React Router Dom, Axios, Formik',
+                description: 'Create, edit and delete yours To-do lists, manage your tasks. React project with Redux Toolkit, TS, MUI, React Router Dom, Axios, Formik',
                 bg: {
                     backgroundImage: 'url(' + todoImage + ')',
                 },
@@ -124,7 +124,7 @@ export const ProjectData = {
             {
                 id: generateId(),
                 title: 'СЧЕТЧИК (2 варианта UI)',
-                description: 'Счетчик (2 варианта UI) позволяет устанавливать начальное и максимальное значение, увеличивать, уменьшать и сбрасывать счетчик. Проект React с Redux, TS, localstorage',
+                description: '2 UI Счетчик позволяет устанавливать начальное и максимальное значение, увеличивать, уменьшать и сбрасывать счетчик. Проект React с Redux, TS, localstorage',
                 bg: {
                     backgroundImage: 'url(' + counter + ')',
                 },
@@ -150,7 +150,7 @@ export const ProjectData = {
             {
                 id: generateId(),
                 title: 'ПЛАНЕР',
-                description: 'Создавайте, редактируйте и удаляйте свои списки дел, управляйте задачами, которые настраиваются. Проект React с Redux Toolkit, TS, MUI, React Router Dom, Axios, Formik',
+                description: 'Создавайте, редактируйте и удаляйте свои списки дел, управляйте задачами, которые настраиваются. Проект React с Redux Toolkit, TS, MUI, React Router, Axios, Formik',
                 bg: {
                     backgroundImage: 'url(' + todoImage + ')',
                 },
