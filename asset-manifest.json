@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-app/static/css/main.4cf63a95.css",
-    "main.js": "/portfolio-app/static/js/main.4d6bfec9.js",
+    "main.js": "/portfolio-app/static/js/main.2c554f79.js",
     "static/js/488.9e51c7c4.chunk.js": "/portfolio-app/static/js/488.9e51c7c4.chunk.js",
     "static/media/Julia-Popova-resume(EN).pdf": "/portfolio-app/static/media/Julia-Popova-resume(EN).3cccb81e67d41cddad98.pdf",
     "static/media/Julia-Popova-resume(RU).pdf": "/portfolio-app/static/media/Julia-Popova-resume(RU).af2ade15c72ce44aaec5.pdf",
@@ -50,11 +50,11 @@
     "static/media/materialui.svg": "/portfolio-app/static/media/materialui.9a7fa21fef461d272ba8151574584e84.svg",
     "static/media/npm.svg": "/portfolio-app/static/media/npm.c4595f140b8a6b0e634947d37152d0ff.svg",
     "main.4cf63a95.css.map": "/portfolio-app/static/css/main.4cf63a95.css.map",
-    "main.4d6bfec9.js.map": "/portfolio-app/static/js/main.4d6bfec9.js.map",
+    "main.2c554f79.js.map": "/portfolio-app/static/js/main.2c554f79.js.map",
     "488.9e51c7c4.chunk.js.map": "/portfolio-app/static/js/488.9e51c7c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4cf63a95.css",
-    "static/js/main.4d6bfec9.js"
+    "static/js/main.2c554f79.js"
   ]
 }
