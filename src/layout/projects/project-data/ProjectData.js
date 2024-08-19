@@ -6,11 +6,25 @@ import art from "../../../assets/images/projects/art.svg";
 import pizza from "../../../assets/images/projects/pizza.svg";
 import weather from "../../../assets/images/projects/weather.svg";
 import counter from "../../../assets/images/projects/counter.svg";
+import tree from "../../../assets/images/projects/tree.svg";
 import {generateId} from "../../../common/utils/generate-id/generateId";
 
 export const ProjectData = {
     en: {
         project: [
+            {
+                id: generateId(),
+                title: 'Hierarchical Data Manager',
+                description: 'A React app provides a convenient tool for working with hierarchical data. The project with Redux toolkit, Type Script, MUI, SASS',
+                bg: {
+                    backgroundImage: 'url(' + tree + ')',
+                },
+                sprId: 'tree',
+                demoBtn: 'Demo',
+                demoLink: 'https://tree-node-app.vercel.app/',
+                codeLink: 'https://github.com/veluat/tree-node-app',
+                codeBtn: 'Code'
+            },
             {
                 id: generateId(),
                 title: 'DUAL COUNTER',
@@ -121,6 +135,19 @@ export const ProjectData = {
     },
     ru: {
         project: [
+            {
+                id: generateId(),
+                title: 'Иерархический менеджер',
+                description: 'Приложение React предоставляет удобный инструмент для работы с иерархическими данными. Проект с Redux toolkit, Type Script, MUI, SASS',
+                bg: {
+                    backgroundImage: 'url(' + tree + ')',
+                },
+                sprId: 'tree',
+                demoBtn: 'Демо',
+                demoLink: 'https://tree-node-app.vercel.app/',
+                codeLink: 'https://github.com/veluat/tree-node-app',
+                codeBtn: 'Код'
+            },
             {
                 id: generateId(),
                 title: 'СЧЕТЧИК (2 варианта UI)',
