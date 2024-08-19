@@ -14,7 +14,20 @@ export const ProjectData = {
         project: [
             {
                 id: generateId(),
-                title: 'Hierarchical Data Manager',
+                title: 'WEATHER-MATTER',
+                description: 'SPA allows users to view the weather information of a specific city. React project with Redux-Toolkit, Axios, React router dom',
+                bg: {
+                    backgroundImage: 'url(' + weather + ')',
+                },
+                sprId: 'weather',
+                demoBtn: 'Demo',
+                demoLink: 'https://weather-matter.netlify.app/',
+                codeLink: 'https://github.com/veluat/weather-matter-app',
+                codeBtn: 'Code'
+            },
+            {
+                id: generateId(),
+                title: 'HIERARCHICAL DATA MANAGER',
                 description: 'A React app provides a convenient tool for working with hierarchical data. The project with Redux toolkit, Type Script, MUI, SASS',
                 bg: {
                     backgroundImage: 'url(' + tree + ')',
@@ -28,7 +41,7 @@ export const ProjectData = {
             {
                 id: generateId(),
                 title: 'DUAL COUNTER',
-                description: 'A React app allows users to set the initial and max value of the counter, as well as increase, decrease, reset the counter. The project with Redux, TS, Local Storage',
+                description: 'A React app allows users to set the value, as well as increase, decrease, reset the counter. The project with Redux, TS, Local Storage',
                 bg: {
                     backgroundImage: 'url(' + counter + ')',
                 },
@@ -105,19 +118,6 @@ export const ProjectData = {
             },
             {
                 id: generateId(),
-                title: 'WEATHER-MATTER',
-                description: 'SPA allows users to view the weather information of a specific city. React project with Redux-Toolkit, Axios, React router dom',
-                bg: {
-                    backgroundImage: 'url(' + weather + ')',
-                },
-                sprId: 'weather',
-                demoBtn: 'Demo',
-                demoLink: 'https://weather-matter.netlify.app/',
-                codeLink: 'https://github.com/veluat/weather-matter-app',
-                codeBtn: 'Code'
-            },
-            {
-                id: generateId(),
                 title: 'LEARNING CARDS',
                 description: 'Flashcard learning app to help you learn new topics. React project with Redux Toolkit, Axios, TS, React Hook Form, Zod, React Router Dom, Git, Radix UI',
                 bg: {
@@ -137,7 +137,20 @@ export const ProjectData = {
         project: [
             {
                 id: generateId(),
-                title: 'Иерархический менеджер',
+                title: 'ПРОГНОЗ ПОГОДЫ',
+                description: 'Приложение позволяет клиенту просматривать информацию о погоде в конкретном городе. Проект React с Redux-Toolkit, Axios, React router dom',
+                bg: {
+                    backgroundImage: 'url(' + weather + ')',
+                },
+                sprId: 'weather',
+                demoBtn: 'Демо',
+                demoLink: 'https://weather-matter.netlify.app/',
+                codeLink: 'https://github.com/veluat/weather-matter-app',
+                codeBtn: 'Код'
+            },
+            {
+                id: generateId(),
+                title: 'ИЕРАРХИЧЕСКИЙ УПРАВЛЯЮЩИЙ ДАННЫМИ',
                 description: 'Приложение React предоставляет удобный инструмент для работы с иерархическими данными. Проект с Redux toolkit, Type Script, MUI, SASS',
                 bg: {
                     backgroundImage: 'url(' + tree + ')',
@@ -151,7 +164,7 @@ export const ProjectData = {
             {
                 id: generateId(),
                 title: 'СЧЕТЧИК (2 варианта UI)',
-                description: '2 UI Счетчик позволяет устанавливать начальное и максимальное значение, увеличивать, уменьшать и сбрасывать счетчик. Проект React с Redux, TS, localstorage',
+                description: '2 UI Счетчик позволяет устанавливать начальное и макс значение, увеличивать, уменьшать и сбрасывать счетчик. Проект React с Redux, TS, localstorage',
                 bg: {
                     backgroundImage: 'url(' + counter + ')',
                 },
@@ -224,19 +237,6 @@ export const ProjectData = {
                 demoBtn: 'Демо',
                 demoLink: 'https://veluat.github.io/creative-art-layout',
                 codeLink: 'https://github.com/veluat/creative-art-layout',
-                codeBtn: 'Код'
-            },
-            {
-                id: generateId(),
-                title: 'ПРОГНОЗ ПОГОДЫ',
-                description: 'Одностраничное приложение позволяет пользователям просматривать информацию о погоде в конкретном городе. Проект React с Redux-Toolkit, Axios, React router dom',
-                bg: {
-                    backgroundImage: 'url(' + weather + ')',
-                },
-                sprId: 'weather',
-                demoBtn: 'Демо',
-                demoLink: 'https://weather-matter.netlify.app/',
-                codeLink: 'https://github.com/veluat/weather-matter-app',
                 codeBtn: 'Код'
             },
             {
