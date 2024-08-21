@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Modal.module.scss'
-import en from './../../../assets/resume/Julia-Popova-resume(EN).pdf'
-import ru from './../../../assets/resume/Julia-Popova-resume(RU).pdf'
+import en from './../../../assets/resume/Popova-Julia-resume(EN).pdf'
+import ru from './../../../assets/resume/Popova-Julia-resume(RU).pdf'
 import {Icon} from "../icon/Icon";
 
 
