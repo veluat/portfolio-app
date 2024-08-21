@@ -14,6 +14,19 @@ export const ProjectData = {
         project: [
             {
                 id: generateId(),
+                title: 'TAXI SERVICES',
+                description: 'Example of a business website. Images and text are created by AI. The design was developed by me. Used React, CSS, JavaScript, React Router Dom',
+                bg: {
+                    backgroundImage: 'url(' + taxiImage + ')',
+                },
+                sprId: 'taxi',
+                demoBtn: 'Demo',
+                demoLink: 'https://taxi-services-layout.netlify.app/',
+                codeLink: 'https://github.com/veluat/taxi-services-layout',
+                codeBtn: 'Code'
+            },
+            {
+                id: generateId(),
                 title: 'WEATHER-MATTER',
                 description: 'SPA allows users to view the weather information of a specific city. React project with Redux-Toolkit, Axios, React router dom',
                 bg: {
@@ -92,19 +105,6 @@ export const ProjectData = {
             },
             {
                 id: generateId(),
-                title: 'TAXI SERVICES',
-                description: 'Example of a business website. Images and text are created by AI. The design was developed by me. Used React, CSS, JavaScript, React Router Dom',
-                bg: {
-                    backgroundImage: 'url(' + taxiImage + ')',
-                },
-                sprId: 'taxi',
-                demoBtn: 'Demo',
-                demoLink: 'https://taxi-services-layout.netlify.app/',
-                codeLink: 'https://github.com/veluat/taxi-services-layout',
-                codeBtn: 'Code'
-            },
-            {
-                id: generateId(),
                 title: 'CREATIVE ART',
                 description: 'A web development project for a simple and secure platform for purchasing and exchanging digital ART and NFTs. React project with TS, Styled Components',
                 bg: {
@@ -135,6 +135,19 @@ export const ProjectData = {
     },
     ru: {
         project: [
+            {
+                id: generateId(),
+                title: 'УСЛУГИ ТАКСИ',
+                description: 'Пример бизнес-сайта. Изображения и текст созданы искусственным интеллектом. Дизайн разработан мной. Использованы React, CSS, JavaScript, React Router Dom',
+                bg: {
+                    backgroundImage: 'url(' + taxiImage + ')',
+                },
+                sprId: 'taxi',
+                demoBtn: 'Демо',
+                demoLink: 'https://taxi-services-layout.netlify.app/',
+                codeLink: 'https://github.com/veluat/taxi-services-layout',
+                codeBtn: 'Код'
+            },
             {
                 id: generateId(),
                 title: 'ПРОГНОЗ ПОГОДЫ',
@@ -211,19 +224,6 @@ export const ProjectData = {
                 demoBtn: 'Демо',
                 demoLink: 'https://veluat.github.io/social-network-app',
                 codeLink: 'https://github.com/veluat/social-network-app',
-                codeBtn: 'Код'
-            },
-            {
-                id: generateId(),
-                title: 'УСЛУГИ ТАКСИ',
-                description: 'Пример бизнес-сайта. Изображения и текст созданы искусственным интеллектом. Дизайн разработан мной. Использованы React, CSS, JavaScript, React Router Dom',
-                bg: {
-                    backgroundImage: 'url(' + taxiImage + ')',
-                },
-                sprId: 'taxi',
-                demoBtn: 'Демо',
-                demoLink: 'https://taxi-services-layout.netlify.app/',
-                codeLink: 'https://github.com/veluat/taxi-services-layout',
                 codeBtn: 'Код'
             },
             {
