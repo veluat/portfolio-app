@@ -130,7 +130,7 @@ export const ProjectData = {
                 codeBtn: 'Code'
             },
         ],
-        text: 'My Projects',
+        text: 'My Pet Projects',
         shadowText: 'PORTFOLIO'
     },
     ru: {
@@ -253,7 +253,7 @@ export const ProjectData = {
                 codeBtn: 'Код'
             },
         ],
-        text: 'Мои проекты',
+        text: 'Мои пет-проекты',
         shadowText: 'Портфолио'
     }
 }

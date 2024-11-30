@@ -16,7 +16,7 @@ export const Modal = ({active, setActive, close}) => {
                     <Icon sprId='cv' width='120' height='120' fill='#72E2AEFF' viewBox='0 0 64 64'/>
                 </div>
                 <div className={s.cvBtn}>
-                    <a className={s.resume} href={en} download="Julia-Popova-resume(EN)">Resume(EN)</a>
+                    <a className={s.resume} href={en} download="Julia-Popova-resume(EN).pdf">Resume(EN)</a>
                     <a className={s.resume} href={ru} download="Julia-Popova-resume(RU).pdf">Резюме(RU)</a>
                 </div>
                 <button className={s.close} onClick={closeHandler}>{close}</button>
