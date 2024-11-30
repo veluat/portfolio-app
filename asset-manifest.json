@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio-app/static/css/main.8b7c8fef.css",
-    "main.js": "/portfolio-app/static/js/main.7b06c6bc.js",
+    "main.js": "/portfolio-app/static/js/main.92b59f21.js",
     "static/js/488.9e51c7c4.chunk.js": "/portfolio-app/static/js/488.9e51c7c4.chunk.js",
-    "static/media/Popova-Julia-resume(RU).pdf": "/portfolio-app/static/media/Popova-Julia-resume(RU).38f16d3ffa39f9101458.pdf",
-    "static/media/Popova-Julia-resume(EN).pdf": "/portfolio-app/static/media/Popova-Julia-resume(EN).91644c990818b383e4a7.pdf",
-    "static/media/myPhoto.png": "/portfolio-app/static/media/myPhoto.34d42ac7a07c011cbdc7.png",
+    "static/media/Popova-Julia-resume(RU).pdf": "/portfolio-app/static/media/Popova-Julia-resume(RU).565cd35601878bc56415.pdf",
+    "static/media/Popova-Julia-resume(EN).pdf": "/portfolio-app/static/media/Popova-Julia-resume(EN).4a9e39c9b0b5f70e2375.pdf",
+    "static/media/myPhoto.png": "/portfolio-app/static/media/myPhoto.4066654a00c5bb4b23cd.png",
     "static/media/tree.svg": "/portfolio-app/static/media/tree.2d54c95f64396f7cb3407378961d19fc.svg",
     "static/media/bootstrap.png": "/portfolio-app/static/media/bootstrap.6c2acf8b5a46fd2da552.png",
     "static/media/swagger.png": "/portfolio-app/static/media/swagger.8d5bbd64f679757c8c34.png",
@@ -51,11 +51,11 @@
     "static/media/materialui.svg": "/portfolio-app/static/media/materialui.9a7fa21fef461d272ba8151574584e84.svg",
     "static/media/npm.svg": "/portfolio-app/static/media/npm.c4595f140b8a6b0e634947d37152d0ff.svg",
     "main.8b7c8fef.css.map": "/portfolio-app/static/css/main.8b7c8fef.css.map",
-    "main.7b06c6bc.js.map": "/portfolio-app/static/js/main.7b06c6bc.js.map",
+    "main.92b59f21.js.map": "/portfolio-app/static/js/main.92b59f21.js.map",
     "488.9e51c7c4.chunk.js.map": "/portfolio-app/static/js/488.9e51c7c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8b7c8fef.css",
-    "static/js/main.7b06c6bc.js"
+    "static/js/main.92b59f21.js"
   ]
 }
