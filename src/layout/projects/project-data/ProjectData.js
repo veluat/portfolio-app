@@ -8,6 +8,8 @@ import weatherImage from '../../../assets/images/projects/weather.svg'
 import counterImage from '../../../assets/images/projects/counter.svg'
 import treeImage from '../../../assets/images/projects/tree.svg'
 import codeImage from '../../../assets/images/projects/code.svg'
+import bannerImage from '../../../assets/images/projects/mobile.svg'
+import movieImage from '../../../assets/images/projects/movie.svg'
 import {generateId} from '../../../common/utils/generate-id/generateId'
 
 export const ProjectData = {
@@ -119,15 +121,41 @@ export const ProjectData = {
       },
       {
         id: generateId(),
+        title: 'MOBILE BANNER',
+        description: 'Example of mobile banner for iPhone SE, 8+, 11 Pro, 14, 14 Plus, 14 Pro Max with support 6 languages. HTML5, CSS3, native JavaScript, Vite',
+        bg: {
+          backgroundImage: 'url(' + bannerImage + ')',
+        },
+        sprId: 'mobile banner',
+        demoBtn: 'Demo',
+        demoLink: 'https://test-mobile-banner.vercel.app',
+        codeLink: 'https://github.com/veluat/test-mobile-banner',
+        codeBtn: 'Code'
+      },
+      {
+        id: generateId(),
         title: 'TEST CODE EDITOR',
         description: 'Simplified online code editor for JavaScript and Python. Returns mock responses for console.log() and print(). React project with Ace Editor, MirageJS, Vite, Sass',
         bg: {
           backgroundImage: 'url(' + codeImage + ')',
         },
-        sprId: 'cards',
+        sprId: 'code',
         demoBtn: 'Demo',
         demoLink: 'https://test-code-editor-ten.vercel.app',
         codeLink: 'https://github.com/veluat/test-code-editor',
+        codeBtn: 'Code'
+      },
+      {
+        id: generateId(),
+        title: 'STAR WARS MOVIE LIST',
+        description: 'The application dynamically displays movie data from an open API (swapi.info). The project uses Next.js App Router, TypeScript, and SASS',
+        bg: {
+          backgroundImage: 'url(' + movieImage + ')',
+        },
+        sprId: 'movie',
+        demoBtn: 'Demo',
+        demoLink: 'https://star-wars-movie-next15.netlify.app',
+        codeLink: 'https://github.com/veluat/star-wars-movie-next15',
         codeBtn: 'Code'
       },
       {
@@ -255,13 +283,39 @@ export const ProjectData = {
       },
       {
         id: generateId(),
+        title: 'ВЕБ-БАННЕР',
+        description: 'Тест-проект веб-баннер для мобильных устройств iPhone SE, 8+, 11 Pro, 14, 14 Plus, 14 Pro Max с поддрежкой 6 языков. HTML5, CSS3, native JavaScript, Vite',
+        bg: {
+          backgroundImage: 'url(' + bannerImage + ')',
+        },
+        sprId: 'mobile banner',
+        demoBtn: 'Demo',
+        demoLink: 'https://test-mobile-banner.vercel.app',
+        codeLink: 'https://github.com/veluat/test-mobile-banner',
+        codeBtn: 'Code'
+      },
+      {
+        id: generateId(),
         title: 'ТЕСТ-РЕДАКТОР КОДА',
-        description: 'Упрощённый онлайн редактор кода для JavaScript и Python. Возвращает моковые ответы для console.log() и print(). Проект React с Ace Editor, MirageJS, Vite, Sass',
+        description: 'Упрощённый онлайн редактор кода для JavaScript и Python. Возвращает моковые ответы для console.log() и print(). Проект React с Ace Editor, MirageJS, Vite, SASS',
         bg: {
           backgroundImage: 'url(' + codeImage + ')',
         },
-        sprId: 'cards',
-        demoBtn: 'В разработке',
+        sprId: 'code',
+        demoBtn: 'Demo',
+        demoLink: 'https://test-code-editor-ten.vercel.app',
+        codeLink: 'https://github.com/veluat/test-code-editor',
+        codeBtn: 'Код'
+      },
+      {
+        id: generateId(),
+        title: 'СПИСОК СЕРИЙ STAR WARS',
+        description: 'Приложение динамически отображает данные о фильмах из открытого API (swapi.info). Проект Next.js App Router, TS, SASS',
+        bg: {
+          backgroundImage: 'url(' + movieImage + ')',
+        },
+        sprId: 'movie',
+        demoBtn: 'Демо',
         demoLink: 'https://test-code-editor-ten.vercel.app',
         codeLink: 'https://github.com/veluat/test-code-editor',
         codeBtn: 'Код'
@@ -274,7 +328,7 @@ export const ProjectData = {
           backgroundImage: 'url(' + cardsImage + ')',
         },
         sprId: 'cards',
-        demoBtn: 'Демо',
+        demoBtn: 'В разработке',
         demoLink: '#',
         codeLink: '#',
         codeBtn: 'Код'
