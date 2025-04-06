@@ -134,6 +134,11 @@
         opacity: 1;
         transform: none;
         font-size: 18px;
+        color: white;
+
+        .green {
+          color: $primaryColor;
+        }
 
         &::selection {
           user-select: none;

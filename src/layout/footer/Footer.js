@@ -9,7 +9,7 @@ export const Footer = () => {
                 <SocialBlock/>
             </div>
             <small className={s.copyrightBlock}>
-                <p className={s.copyright}>Copyright © 2023. All Rights Reserved</p>
+                <p className={s.copyright}>Copyright © 2023-2025. All Rights Reserved</p>
             </small>
         </footer>
     );
