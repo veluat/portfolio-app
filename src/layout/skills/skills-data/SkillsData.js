@@ -503,7 +503,7 @@ export const SkillsData = {
         id: generateId(),
         sprId: 'Redux',
         title: 'Redux (Redux Toolkit)',
-        description: 'Actions & thunks, reducer, context API, store, flux, Redux Toolkit, RTK Query',
+        description: 'Actions and asynchronous actions, reducer, using the Context API, state store, Flux, Redux Toolkit, RTK Query for managing network requests and data caching in the application',
         width: '40px',
         height: '40px',
         viewBox: '0 0 50 50'
@@ -529,8 +529,8 @@ export const SkillsData = {
       {
         id: generateId(),
         sprId: 'Settings',
-        title: 'Tools: Webpack, Vite, ESLint, Prettier',
-        description: 'Build Tools: Webpack (zero-config setup, code splitting), Vite (instant HMR) Code Standards: ESLint (custom presets, Git hooks), Prettier (formatting automation)',
+        title: 'Webpack, Vite, ESLint, Prettier',
+        description: 'Build Tools: Webpack (zero-config setup, code splitting), Vite (instant HMR). Code Standards: ESLint (custom presets, Git hooks), Prettier (formatting automation)',
         width: '40px',
         height: '40px',
         viewBox: '0 0 32 32'
@@ -548,7 +548,7 @@ export const SkillsData = {
         id: generateId(),
         sprId: 'Styling',
         title: 'Styling',
-        description: 'Sass (SCSS), BEM, Styled Components, shadcn/ui, Radix UI, Ant Design, Material UI, Tailwind CSS, React- Bootstrap, Mantine, Vuetify',
+        description: 'Sass (SCSS), BEM, Styled Components, Emotion, shadcn/ui, Radix UI, Ant Design, Material UI, Tailwind CSS, React-Bootstrap, Mantine, Vuetify',
         width: '36px',
         height: '36px',
         viewBox: '0 2 64 60'
@@ -662,8 +662,8 @@ export const SkillsData = {
       {
         id: generateId(),
         sprId: 'Settings',
-        title: 'Инструментарий: Webpack, Vite, ESLint, Prettier',
-        description: 'Сборка проектов: Webpack (конфигурация с нуля, оптимизация бандла), Vite (быстрая разработка с HMR). Code quality: ESLint (настройка правил, интеграция в CI), Prettier (единый стиль кода)',
+        title: 'Webpack, Vite, ESLint, Prettier',
+        description: 'Сборка проектов: Webpack (конфигурация с нуля, оптимизация бандла), Vite (быстрая разработка с HMR). Качество кода: ESLint (настройка правил, интеграция в CI), Prettier (единый стиль кода)',
         width: '40px',
         height: '40px',
         viewBox: '0 0 32 32'
@@ -681,7 +681,7 @@ export const SkillsData = {
         id: generateId(),
         sprId: 'Styling',
         title: 'Стилизация',
-        description: 'Sass (SCSS), методология BEM, библиотеки Styled Components, Emotion, shadcn/ui, Radix UI, Ant Design, Material UI, Tailwind CSS',
+        description: 'SASS (SCSS), методология BEM, библиотеки Styled Components, Emotion, shadcn/ui, Radix UI, Ant Design, Material UI, Tailwind CSS, React-Bootstrap, Mantine, Vuetify',
         width: '36px',
         height: '36px',
         viewBox: '0 2 64 60'

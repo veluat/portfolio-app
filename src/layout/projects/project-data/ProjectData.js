@@ -154,7 +154,7 @@ export const ProjectData = {
         },
         sprId: 'movie',
         demoBtn: 'Demo',
-        demoLink: 'https://star-wars-movie-next15.netlify.app',
+        demoLink: 'https://star-wars-movie-next15.netlify.app/',
         codeLink: 'https://github.com/veluat/star-wars-movie-next15',
         codeBtn: 'Code'
       },
@@ -277,7 +277,7 @@ export const ProjectData = {
         },
         sprId: 'creative-art',
         demoBtn: 'Демо',
-        demoLink: 'https://veluat.github.io/creative-art-layout',
+        demoLink: 'https://veluat.github.io/digital-art-layout',
         codeLink: 'https://github.com/veluat/creative-art-layout',
         codeBtn: 'Код'
       },
@@ -316,8 +316,8 @@ export const ProjectData = {
         },
         sprId: 'movie',
         demoBtn: 'Демо',
-        demoLink: 'https://test-code-editor-ten.vercel.app',
-        codeLink: 'https://github.com/veluat/test-code-editor',
+        demoLink: 'https://star-wars-movie-next15.netlify.app/',
+        codeLink: 'https://github.com/veluat/star-wars-movie-next15',
         codeBtn: 'Код'
       },
       {
